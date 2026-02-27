@@ -2,7 +2,7 @@
 
 ##  Giới thiệu
 Đây là **dự án cá nhân** em thực hiện trong quá trình mới bắt đầu học lập trình web.  
-Dự án được hoàn thành trong khoảng **1 tháng ** và em sẽ **tiếp tục cải thiện, bổ sung thêm các tính năng mới** trong quá trình học.  
+Dự án được hoàn thành trong khoảng **1 tháng** và em sẽ **tiếp tục cải thiện, bổ sung thêm các tính năng mới** trong quá trình học.  
 
 Em rất mong nhận được **những góp ý, nhận xét** từ anh/chị để giúp em **nâng cao kỹ năng và hoàn thiện hơn** trong tương lai.  
 Em xin chân thành cảm ơn! 
