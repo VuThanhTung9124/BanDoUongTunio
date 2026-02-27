@@ -1,0 +1,160 @@
+﻿@{
+    ViewBag.Title = "Thống kê";
+}
+
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Thống kê</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body class="bg-gray-50 text-gray-800">
+
+    <!-- ===== HEADER ===== -->
+    <header class="bg-white border-b">
+        <div class="max-w-7xl mx-auto px-6 py-4">
+            <h1 class="text-xl font-semibold">Thống kê hệ thống</h1>
+            <p class="text-sm text-gray-500">Doanh thu – Đơn hàng – Khách hàng</p>
+        </div>
+    </header>
+
+    <!-- ===== MAIN ===== -->
+    <main class="max-w-7xl mx-auto px-6 py-6 space-y-10">
+
+        <!-- ===== TỔNG QUAN ===== -->
+        <section>
+            <h2 class="font-semibold mb-4">
+                <i class="fa-solid fa-chart-pie mr-2 text-indigo-500"></i>
+                Tổng quan
+            </h2>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-6">
+
+                <div class="rounded-xl p-5 bg-green-500 text-white">
+                    <p class="text-2xl font-bold">@ViewBag.TongDonHang</p>
+                    <p class="text-sm">Tổng đơn hàng</p>
+                </div>
+
+                <div class="rounded-xl p-5 bg-purple-500 text-white">
+                    <p class="text-2xl font-bold">
+                        @String.Format("{0:N0}đ", ViewBag.TongDoanhThu ?? 0)
+                    </p>
+                    <p class="text-sm">Tổng doanh thu</p>
+                </div>
+
+                <div class="rounded-xl p-5 bg-indigo-500 text-white">
+                    <p class="text-2xl font-bold">@ViewBag.TongSanPham</p>
+                    <p class="text-sm">Tổng sản phẩm</p>
+                </div>
+
+                <div class="rounded-xl p-5 bg-orange-500 text-white">
+                    <p class="text-2xl font-bold">@ViewBag.TongTaiKhoan</p>
+                    <p class="text-sm">Tổng tài khoản</p>
+                </div>
+
+                <div class="rounded-xl p-5 bg-pink-500 text-white">
+                    <p class="text-2xl font-bold">@ViewBag.TongDanhMuc</p>
+                    <p class="text-sm">Tổng danh mục</p>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- ===== THỐNG KÊ SẢN PHẨM ===== -->
+        <section>
+            <h2 class="font-semibold mb-4">
+                <i class="fa-solid fa-mug-hot mr-2 text-orange-500"></i>
+                Thống kê sản phẩm
+            </h2>
+
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-6">
+
+                <div class="bg-white p-5 rounded-xl shadow">
+                    <p class="font-semibold text-green-600">Bán nhiều nhất</p>
+                    <p>@(ViewBag.SPBanNhieu ?? "Không có dữ liệu")</p>
+                </div>
+
+                <div class="bg-white p-5 rounded-xl shadow">
+                    <p class="font-semibold text-red-600">Bán ít nhất</p>
+                    <p>@(ViewBag.SPBanIt ?? "Không có dữ liệu")</p>
+                </div>
+
+                <div class="bg-white p-5 rounded-xl shadow">
+                    <p class="font-semibold text-purple-600">Giá cao nhất</p>
+                    <p>@String.Format("{0:N0}đ", ViewBag.GiaCaoNhat ?? 0)</p>
+                </div>
+
+                <div class="bg-white p-5 rounded-xl shadow">
+                    <p class="font-semibold text-indigo-600">Giá thấp nhất</p>
+                    <p>@String.Format("{0:N0}đ", ViewBag.GiaThapNhat ?? 0)</p>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- ===== THỐNG KÊ ĐƠN HÀNG ===== -->
+        <section>
+            <h2 class="font-semibold mb-4">
+                <i class="fa-solid fa-receipt mr-2 text-green-600"></i>
+                Thống kê đơn hàng
+            </h2>
+
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-6">
+
+                <div class="border border-yellow-400 p-5 rounded-xl">
+                    <p class="text-xl font-bold text-yellow-500">
+                        @ViewBag.DonChoXacNhan
+                    </p>
+                    <p class="text-sm">Chờ xác nhận</p>
+                </div>
+
+                <div class="border border-green-400 p-5 rounded-xl">
+                    <p class="text-xl font-bold text-green-600">
+                        @ViewBag.DonDaXacNhan
+                    </p>
+                    <p class="text-sm">Đã xác nhận</p>
+                </div>
+
+                <div class="border border-red-400 p-5 rounded-xl">
+                    <p class="text-xl font-bold text-red-600">
+                        @ViewBag.DonDaHuy
+                    </p>
+                    <p class="text-sm">Đã hủy</p>
+                </div>
+
+                <div class="border border-indigo-400 p-5 rounded-xl">
+                    <p class="text-xl font-bold text-indigo-600">
+                        @String.Format("{0:N0}đ", ViewBag.GiaTriTB ?? 0)
+                    </p>
+                    <p class="text-sm">Giá trị TB / đơn</p>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- ===== KHÁCH HÀNG MUA NHIỀU NHẤT ===== -->
+        <section>
+            <h2 class="font-semibold mb-4">
+                <i class="fa-solid fa-user mr-2 text-purple-600"></i>
+                Khách hàng mua nhiều nhất
+            </h2>
+
+            <div class="bg-white rounded-xl shadow p-6 space-y-2">
+
+                <p><b>Họ tên:</b> @ViewBag.TKMuaNhieu_HoTen</p>
+                <p><b>SĐT:</b> @ViewBag.TKMuaNhieu_SDT</p>
+                <p><b>Email:</b> @ViewBag.TKMuaNhieu_Email</p>
+                <p><b>Số đơn đã mua:</b> @ViewBag.TKMuaNhieu_SoDon</p>
+            </div>
+        </section>
+
+    </main>
+
+</body>
+</html>

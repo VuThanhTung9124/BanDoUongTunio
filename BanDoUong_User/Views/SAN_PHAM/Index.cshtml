@@ -1,0 +1,491 @@
+﻿@model PagedList.IPagedList<BanDoUong_User.Models.SAN_PHAM>
+@using PagedList.Mvc
+
+@{
+    var danhMucs = Session["DanhMuc"] as List<string>;
+    ViewBag.Title = "Sản phẩm";
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Danh sách sản phẩm</title>
+
+    <!-- Tailwind -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Font Awesome (icon CSS) -->
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+
+<body class="bg-gray-100 text-gray-800">
+
+    <!-- HEADER -->
+    <header class="bg-blue-600 text-white">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex items-center gap-4">
+
+            <div class="text-xl font-bold flex items-center gap-2">
+                <i class="fa-solid fa-store"></i> Tunio
+            </div>
+
+            <!-- SEARCH -->
+            <!-- SEARCH -->
+            <form method="get" action="/SAN_PHAM/Index" class="flex-1 relative" id="searchForm">
+                <i class="fa fa-search absolute left-4 top-3 text-gray-400"></i>
+
+                <input type="text"
+                       id="searchInput"
+                       name="searchSP"
+                       value="@ViewBag.SearchSP"
+                       placeholder="Bạn cần tìm sản phẩm gì?"
+                       class="w-full pl-10 pr-12 py-2 rounded-full text-black outline-none" />
+
+                <!-- Nút mic -->
+                <button type="button"
+                        onclick="startVoice()"
+                        class="absolute right-3 top-2">
+                    <i id="micIcon" class="fa fa-microphone text-red-500"></i>
+                </button>
+            </form>
+
+            <!-- ACTIONS -->
+            <div class="flex items-center gap-6 text-sm">
+
+                <i class="fa-regular fa-heart"></i>
+
+                @if (Session["NguoiDung"] == null)
+                {
+                    <!-- CHƯA ĐĂNG NHẬP -->
+                    <a href="@Url.Action("DangNhap", "TAI_KHOAN")"
+                       class="flex items-center gap-2 hover:underline">
+                        <i class="fa-regular fa-user"></i>
+                        Đăng nhập
+                    </a>
+                }
+                else
+                {
+                    <!-- ĐÃ ĐĂNG NHẬP -->
+                    <div class="relative group">
+
+                        <!-- TÊN USER -->
+                        <div class="cursor-pointer flex items-center gap-2 py-2">
+                            <i class="fa-regular fa-user"></i>
+                            <span class="font-medium">
+                                Xin chào, @Session["NguoiDung"]
+                            </span>
+                            <i class="fa-solid fa-chevron-down text-xs"></i>
+                        </div>
+
+                        <!-- DROPDOWN -->
+                        <div class="absolute right-0 top-full
+                        w-44
+                        bg-white border rounded-xl shadow-lg
+                        opacity-0 invisible
+                        group-hover:opacity-100
+                        group-hover:visible
+                        transition
+                        z-50">
+
+                            <a href="@Url.Action("Index", "DON_HANG")"
+                               class="flex items-center gap-2
+                          px-4 py-3
+                          text-blue-700 font-medium
+                          hover:bg-blue-50
+                          rounded-t-xl">
+                                <i class="fa-solid fa-box"></i>
+                                Đơn hàng
+                            </a>
+
+                            <a href="@Url.Action("DangXuat", "TAI_KHOAN")"
+                               class="flex items-center gap-2
+                          px-4 py-3
+                          text-red-600 font-medium
+                          hover:bg-red-50
+                          rounded-b-xl">
+                                <i class="fa-solid fa-right-from-bracket"></i>
+                                Đăng xuất
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- GIỎ HÀNG -->
+                    <a href="@Url.Action("Index", "GIO_HANG")"
+                       class="relative">
+                        <i class="fa-solid fa-cart-shopping text-lg"></i>
+                        <span class="absolute -top-2 -right-2
+                         bg-red-500 text-white
+                         text-xs rounded-full px-1">
+                            @Session["so_luong"]
+                        </span>
+
+                        <span class="absolute -top-2 -right-2
+             min-w-[20px] h-[20px]
+             px-1
+             bg-red-500 text-white
+             text-[11px] font-semibold
+             rounded-full
+             flex items-center justify-center">
+                            @Session["so_luong"]
+                        </span>
+
+                    </a>
+                }
+            </div>
+
+
+        </div>
+    </header>
+
+    <!-- MAIN -->
+    <div class="max-w-7xl mx-auto px-6 py-6 flex gap-6">
+
+        <!-- FILTER -->
+        <aside class="w-64 bg-white rounded-xl p-4 h-fit shadow-sm">
+            <h3 class="font-semibold mb-4 flex items-center gap-2">
+                <i class="fa-solid fa-filter text-blue-600"></i> Chọn lọc
+            </h3>
+
+            <!-- CATEGORY -->
+            <label class="text-sm font-medium mb-2 block">Danh mục</label>
+            <select class="w-full border rounded-lg px-3 py-2 text-sm"
+                    onchange="location.href=this.value">
+                <option value="@Url.Action("Index")">Tất cả</option>
+                @foreach (var dm in danhMucs)
+                {
+                    <option value="@Url.Action("Index", new {
+                            category = dm,
+                            searchSP = ViewBag.SearchSP,
+                            sortPrice = ViewBag.SortPrice
+                        })"
+                            @(ViewBag.Category == dm ? "selected" : "")>
+                        @dm
+                    </option>
+                }
+            </select>
+
+            <!-- SORT -->
+            <form method="get" class="mt-4">
+                <input type="hidden" name="searchSP" value="@ViewBag.SearchSP" />
+                <input type="hidden" name="category" value="@ViewBag.Category" />
+
+                <label class="text-sm font-medium mb-2 block">Sắp xếp</label>
+                <select name="sortPrice"
+                        onchange="this.form.submit()"
+                        class="w-full border rounded-lg px-3 py-2 text-sm">
+                    <option value="">Mặc định</option>
+                    <option value="asc" @(ViewBag.SortPrice == "asc" ? "selected" : "")>
+                        Giá tăng dần
+                    </option>
+                    <option value="desc" @(ViewBag.SortPrice == "desc" ? "selected" : "")>
+                        Giá giảm dần
+                    </option>
+                </select>
+            </form>
+
+
+        </aside>
+
+        
+
+
+
+        <!-- PRODUCTS -->
+        <main class="flex-1">
+
+            <!-- WEATHER -->
+            <div id="weatherBox"
+                 class="bg-gradient-to-r from-blue-500 to-cyan-400
+                text-white p-4 rounded-xl mb-6 shadow-md text-sm">
+                Đang tải thời tiết...
+            </div>
+            <div class="grid grid-cols-4 gap-6">
+
+                @foreach (var item in Model)
+                {
+                    <div class="bg-white rounded-xl p-4 shadow hover:shadow-md transition">
+
+                        <a href="@Url.Action("Details", new { id = item.id })">
+                            @{
+                                string imagePath = "~/Image/Image_DoUong/" + item.hinh_anh;
+                            }
+
+                            <img src="@Url.Content(imagePath)"
+                                 class="h-40 mx-auto object-contain"
+                                 alt="@item.ten_san_pham" />
+
+
+                            <p class="font-semibold mt-3">
+                                @($"{item.gia_co_ban:N0} VNĐ")
+                            </p>
+
+                            <p class="text-sm text-gray-600 min-h-[40px]">
+                                @item.ten_san_pham
+                            </p>
+
+                            <p class="text-green-600 text-xs flex items-center gap-1">
+                                <i class="fa-solid fa-truck"></i> Sẵn sàng giao hàng
+                            </p>
+
+                            <button class="mt-3 w-full bg-blue-600 text-white py-2
+                               rounded-full text-sm hover:bg-blue-700">
+                                <i class="fa fa-cart-plus mr-1"></i> Thêm vào giỏ
+                            </button>
+                        </a>
+                    </div>
+                }
+                </div>
+        </main>
+    </div>
+
+    <!-- PAGINATION -->
+    <div class="flex justify-center gap-2 my-8">
+
+        @* PREVIOUS *@
+        <a href="@Url.Action("Index", new {
+        page = Model.PageNumber > 1 ? Model.PageNumber - 1 : 1,
+        category = ViewBag.Category,
+        searchSP = ViewBag.SearchSP,
+        sortPrice = ViewBag.SortPrice
+    })"
+           class="px-3 py-2 border rounded
+              @(Model.PageNumber == 1
+                ? "bg-gray-200 text-gray-400 cursor-not-allowed"
+                : "bg-white hover:bg-blue-100")">
+            «
+        </a>
+
+        @* PAGE NUMBERS *@
+        @for (int i = 1; i <= Model.PageCount; i++)
+        {
+            if (i == Model.PageNumber)
+            {
+                <span class="px-3 py-2 rounded
+                         bg-blue-600 text-white
+                         border border-blue-600 font-semibold">
+                    @i
+                </span>
+            }
+            else
+            {
+                <a href="@Url.Action("Index", new {
+                page = i,
+                category = ViewBag.Category,
+                searchSP = ViewBag.SearchSP,
+                sortPrice = ViewBag.SortPrice
+            })"
+                   class="px-3 py-2 border rounded bg-white hover:bg-blue-100">
+                    @i
+                </a>
+            }
+        }
+
+        @* NEXT *@
+        <a href="@Url.Action("Index", new {
+        page = Model.PageNumber < Model.PageCount
+            ? Model.PageNumber + 1
+            : Model.PageCount,
+        category = ViewBag.Category,
+        searchSP = ViewBag.SearchSP,
+        sortPrice = ViewBag.SortPrice
+    })"
+           class="px-3 py-2 border rounded
+              @(Model.PageNumber == Model.PageCount
+                ? "bg-gray-200 text-gray-400 cursor-not-allowed"
+                : "bg-white hover:bg-blue-100")">
+            »
+        </a>
+
+    </div>
+
+
+    <!-- FOOTER -->
+    <footer class="bg-gray-50 border-t mt-16">
+        <div class="max-w-7xl mx-auto px-6 py-12
+                grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 text-sm">
+
+            <!-- BRAND -->
+            <div>
+                <h4 class="text-lg font-bold text-blue-600 mb-3 flex items-center gap-2">
+                    <i class="fa-solid fa-mug-hot"></i>
+                    Tunio
+                </h4>
+                <p class="text-gray-600 leading-relaxed">
+                    Thương hiệu đồ uống uy tín tại Việt Nam, mang đến trải nghiệm
+                    hương vị tươi mới mỗi ngày.
+                </p>
+            </div>
+
+            <!-- POLICY -->
+            <div>
+                <h4 class="font-semibold mb-3 uppercase tracking-wide">
+                    Chính sách
+                </h4>
+                <ul class="space-y-2 text-gray-600">
+                    <li class="flex items-center gap-2 hover:text-blue-600 cursor-pointer">
+                        <i class="fa-solid fa-truck-fast"></i>
+                        Giao hàng
+                    </li>
+                    <li class="flex items-center gap-2 hover:text-blue-600 cursor-pointer">
+                        <i class="fa-solid fa-rotate-left"></i>
+                        Đổi trả
+                    </li>
+                    <li class="flex items-center gap-2 hover:text-blue-600 cursor-pointer">
+                        <i class="fa-solid fa-shield-halved"></i>
+                        Bảo mật
+                    </li>
+                </ul>
+            </div>
+
+            <!-- SUPPORT -->
+            <div>
+                <h4 class="font-semibold mb-3 uppercase tracking-wide">
+                    Hỗ trợ
+                </h4>
+                <ul class="space-y-2 text-gray-600">
+                    <li class="flex items-center gap-2 hover:text-blue-600 cursor-pointer">
+                        <i class="fa-solid fa-book"></i>
+                        Hướng dẫn mua hàng
+                    </li>
+                    <li class="flex items-center gap-2 hover:text-blue-600 cursor-pointer">
+                        <i class="fa-solid fa-credit-card"></i>
+                        Thanh toán
+                    </li>
+                    <li class="flex items-center gap-2 hover:text-blue-600 cursor-pointer">
+                        <i class="fa-solid fa-headset"></i>
+                        Liên hệ hỗ trợ
+                    </li>
+                </ul>
+            </div>
+
+            <!-- CONTACT -->
+            <div>
+                <h4 class="font-semibold mb-3 uppercase tracking-wide">
+                    Liên hệ
+                </h4>
+                <ul class="space-y-2 text-gray-600">
+                    <li class="flex items-center gap-2">
+                        <i class="fa-solid fa-phone text-blue-600"></i>
+                        0344 888 302
+                    </li>
+                    <li class="flex items-center gap-2">
+                        <i class="fa-solid fa-envelope text-blue-600"></i>
+                        vuthanhtung.itwork@gmail.com
+                    </li>
+                </ul>
+
+                <!-- SOCIAL -->
+                <div class="flex gap-4 mt-4">
+                    <a href="#" class="text-gray-400 hover:text-blue-600 text-lg">
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </a>
+                    <a href="#" class="text-gray-400 hover:text-pink-500 text-lg">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                    <a href="#" class="text-gray-400 hover:text-red-600 text-lg">
+                        <i class="fa-brands fa-youtube"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- COPYRIGHT -->
+        <div class="border-t py-4 text-center text-xs text-gray-500 bg-white">
+            © 2026 <span class="font-semibold text-blue-600">Tunio</span>. All rights reserved.
+        </div>
+    </footer>
+
+    <script>
+        function startVoice() {
+
+            if (!('webkitSpeechRecognition' in window)) {
+                alert("Trình duyệt không hỗ trợ!");
+                return;
+            }
+
+            var recognition = new webkitSpeechRecognition();
+            recognition.lang = "vi-VN";
+            recognition.interimResults = false;
+
+            var mic = document.getElementById("micIcon");
+
+            // 🎤 Khi bắt đầu nghe → đổi sang màu xanh
+            recognition.onstart = function () {
+                mic.classList.remove("text-red-500");
+                mic.classList.add("text-green-500");
+            };
+
+            // 🛑 Khi kết thúc → đổi lại màu đỏ
+            recognition.onend = function () {
+                mic.classList.remove("text-green-500");
+                mic.classList.add("text-red-500");
+            };
+
+            recognition.onresult = function (event) {
+                var text = event.results[0][0].transcript;
+                document.getElementById("searchInput").value = text;
+
+                document.getElementById("searchForm").submit();
+            };
+
+            recognition.onerror = function (event) {
+                alert("Lỗi mic: " + event.error);
+            };
+
+            recognition.start();
+        }
+    </script>
+
+    <script>
+        if (!navigator.geolocation) {
+            document.getElementById("weatherBox").innerHTML =
+                "Trình duyệt không hỗ trợ định vị.";
+        } else {
+
+            navigator.geolocation.getCurrentPosition(
+                function (position) {
+
+                    const lat = position.coords.latitude;
+                    const lon = position.coords.longitude;
+
+                    fetch(`https://api.open-meteo.com/v1/forecast?latitude=${lat}&longitude=${lon}&current_weather=true`)
+                        .then(res => res.json())
+                        .then(data => {
+
+                            const temp = Math.round(data.current_weather.temperature);
+
+                            let suggestion = "";
+
+                            if (temp <= 20)
+                                suggestion = "❄️ Trời đang lạnh, nhớ mặc ấm nhé! Thưởng thức một ly trà nóng hoặc cacao nóng sẽ rất tuyệt đó ☕";
+                            else if (temp >= 30)
+                                suggestion = "🔥 Trời khá nóng, đừng quên uống đủ nước! Một ly trà chanh, trà đào hoặc nước ép cam mát lạnh sẽ giúp bạn giải nhiệt 🧊🍊";
+                            else
+                                suggestion = "🌤 Thời tiết dễ chịu, đây là thời điểm hoàn hảo để thưởng thức trà sữa, cà phê hoặc nước ép yêu thích của bạn!";
+
+                            document.getElementById("weatherBox").innerHTML =
+                                `🌡 Nhiệt độ hiện tại: ${temp}°C<br>${suggestion}`;
+                        })
+                        .catch(() => {
+                            document.getElementById("weatherBox").innerHTML =
+                                "Không tải được thời tiết.";
+                        });
+
+                },
+                function () {
+                    document.getElementById("weatherBox").innerHTML =
+                        "Bạn chưa cho phép truy cập vị trí.";
+                }
+            );
+        }
+    </script>
+
+
+</body>
+</html>
+
+

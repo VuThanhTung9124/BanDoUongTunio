@@ -1,0 +1,116 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>@ViewBag.Title - Admin</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    @Styles.Render("~/Content/css")
+
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet" />
+
+    <!-- Tailwind -->
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+@{
+    var controller = ViewContext.RouteData.Values["controller"]?.ToString();
+}
+
+<body class="bg-gray-100">
+    <div class="flex h-screen overflow-hidden">
+
+        <!-- SIDEBAR -->
+        <aside class="w-[280px] bg-gray-900 text-gray-200 flex flex-col">
+
+            <!-- TOP -->
+            <div class="p-6">
+                <!-- LOGO -->
+                <div class="flex items-center gap-3 mb-8">
+                    <div class="w-11 h-11 rounded-xl bg-blue-600 flex items-center justify-center">
+                        <i class="fa-solid fa-receipt text-white"></i>
+                    </div>
+                    <div>
+                        <h4 class="text-lg font-bold">Quản Lý</h4>
+                        <span class="text-sm text-gray-400">Đồ Uống Tunio</span>
+                    </div>
+                </div>
+
+                <!-- MENU -->
+                <nav class="space-y-2">
+                    <a href="@Url.Action("Index","Home")"
+                       class="flex items-center gap-4 px-4 py-3 rounded-xl transition
+                       @(controller=="Home" ? "bg-blue-600 text-white shadow-lg" : "hover:bg-white/10")">
+                        <i class="fa-solid fa-border-all w-5"></i>
+                        Trang chủ
+                    </a>
+
+                    <a href="@Url.Action("Index","DANH_MUC")"
+                       class="flex items-center gap-4 px-4 py-3 rounded-xl transition
+                       @(controller=="DANH_MUC" ? "bg-blue-600 text-white shadow-lg" : "hover:bg-white/10")">
+                        <i class="fa-solid fa-tag w-5"></i>
+                        Quản lý danh mục
+                    </a>
+
+                    <a href="@Url.Action("Index","SAN_PHAM")"
+                       class="flex items-center gap-4 px-4 py-3 rounded-xl transition
+                       @(controller=="SAN_PHAM" ? "bg-blue-600 text-white shadow-lg" : "hover:bg-white/10")">
+                        <i class="fa-solid fa-cube w-5"></i>
+                        Quản lý sản phẩm
+                    </a>
+
+                    <a href="@Url.Action("Index","TOPPINGs")"
+                       class="flex items-center gap-4 px-4 py-3 rounded-xl transition
+                       @(controller=="TOPPINGs" ? "bg-blue-600 text-white shadow-lg" : "hover:bg-white/10")">
+                        <i class="fa-solid fa-plus w-5"></i>
+                        Quản lý topping
+                    </a>
+
+                    <a href="@Url.Action("Index","DON_HANG")"
+                       class="flex items-center gap-4 px-4 py-3 rounded-xl transition
+                       @(controller=="DON_HANG" ? "bg-blue-600 text-white shadow-lg" : "hover:bg-white/10")">
+                        <i class="fa-solid fa-clipboard-list w-5"></i>
+                        Quản lý đơn hàng
+                    </a>
+
+                    <a href="@Url.Action("Index","TAI_KHOAN")"
+                       class="flex items-center gap-4 px-4 py-3 rounded-xl transition
+                       @(controller=="TAI_KHOAN" ? "bg-blue-600 text-white shadow-lg" : "hover:bg-white/10")">
+                        <i class="fa-solid fa-users w-5"></i>
+                        Quản lý tài khoản
+                    </a>
+
+                    <a href="@Url.Action("Index","ThongKe")"
+                       class="flex items-center gap-4 px-4 py-3 rounded-xl transition
+                       @(controller=="ThongKe" ? "bg-blue-600 text-white shadow-lg" : "hover:bg-white/10")">
+                        <i class="fa-solid fa-chart-column w-5"></i>
+                        Thống kê
+                    </a>
+                </nav>
+            </div>
+
+            <!-- FOOTER (SÁT ĐÁY) -->
+            <div class="mt-auto p-4 border-t border-white/10">
+                <div class="flex items-center gap-3">
+                    <div class="w-9 h-9 rounded-full bg-blue-600 flex items-center justify-center font-bold">
+                        A
+                    </div>
+                    <div>
+                        <strong class="block leading-tight">Admin</strong>
+                        <span class="text-sm text-gray-400">Quản trị viên</span>
+                    </div>
+                </div>
+            </div>
+        </aside>
+
+        <!-- CONTENT -->
+        <main class="flex-1 overflow-y-auto p-8 bg-gray-100">
+            @RenderBody()
+        </main>
+    </div>
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+</body>
+</html>

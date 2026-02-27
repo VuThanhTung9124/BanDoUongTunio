@@ -1,0 +1,126 @@
+﻿@model BanDoUongTunio.Models.SAN_PHAM
+
+@{
+    ViewBag.Title = "Xác nhận xóa sản phẩm";
+}
+
+<style>
+    .delete-wrapper {
+        max-width: 440px;
+        margin: 60px auto;
+        background: #fff;
+        border-radius: 20px;
+        padding: 32px 26px;
+        text-align: center;
+        box-shadow: 0 25px 50px rgba(0,0,0,0.1);
+    }
+
+    .delete-icon {
+        width: 72px;
+        height: 72px;
+        margin: 0 auto 16px;
+        background: rgba(239,68,68,0.15);
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+        .delete-icon i {
+            color: #ef4444;
+            font-size: 28px;
+        }
+
+    .delete-title {
+        font-size: 18px;
+        font-weight: 600;
+        color: #111827;
+        margin-bottom: 10px;
+    }
+
+    .delete-desc {
+        font-size: 14px;
+        color: #6b7280;
+        line-height: 1.6;
+        margin-bottom: 26px;
+    }
+
+    .product-info {
+        background: #f9fafb;
+        border-radius: 12px;
+        padding: 12px;
+        font-size: 14px;
+        color: #374151;
+        margin-bottom: 22px;
+        text-align: left;
+    }
+
+        .product-info div {
+            margin-bottom: 6px;
+        }
+
+    .delete-actions {
+        display: flex;
+        gap: 12px;
+    }
+
+    .btn-cancel {
+        flex: 1;
+        padding: 10px;
+        border-radius: 999px;
+        border: 1px solid #e5e7eb;
+        background: #fff;
+        font-weight: 600;
+        color: #374151;
+        text-decoration: none;
+        text-align: center;
+    }
+
+    .btn-delete {
+        flex: 1;
+        padding: 10px;
+        border-radius: 999px;
+        border: none;
+        background: #ef4444;
+        color: #fff;
+        font-weight: 600;
+    }
+
+        .btn-delete:hover {
+            background: #dc2626;
+        }
+</style>
+
+<div class="delete-wrapper">
+    <!-- ICON -->
+    <div class="delete-icon">
+        <i class="fa-solid fa-trash"></i>
+    </div>
+
+    <!-- TEXT -->
+    <div class="delete-title">Xác nhận xóa sản phẩm</div>
+    <div class="delete-desc">
+        Bạn có chắc chắn muốn xóa sản phẩm
+        <strong>@Model.ten_san_pham</strong>?<br />
+        Hành động này không thể hoàn tác.
+    </div>
+
+    <!-- INFO -->
+    <div class="product-info">
+        <div><strong>Danh mục:</strong> @Model.DANH_MUC.ten_danh_muc</div>
+        <div><strong>Giá:</strong> @String.Format("{0:N0} VNĐ", Model.gia_co_ban) VNĐ</div>
+        <div><strong>Mô tả:</strong> @Model.mo_ta</div>
+    </div>
+
+    <!-- FORM -->
+    @using (Html.BeginForm())
+    {
+        @Html.AntiForgeryToken()
+        @Html.HiddenFor(model => model.id)
+
+        <div class="delete-actions">
+            <a href="@Url.Action("Index")" class="btn-cancel">Hủy</a>
+            <button type="submit" class="btn-delete">Xóa</button>
+        </div>
+    }
+</div>

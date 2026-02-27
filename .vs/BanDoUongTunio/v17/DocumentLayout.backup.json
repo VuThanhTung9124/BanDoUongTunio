@@ -1,0 +1,1338 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Th\u1EF1c t\u1EADp doanh nghi\u1EC7p\\Project\\BanDoUongTunio\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{07EE7CDE-77FA-40CF-B47D-66CCFF3289BA}|BanDoUong_User\\BanDoUong_User.csproj|c:\\th\u1EF1c t\u1EADp doanh nghi\u1EC7p\\project\\bandouongtunio\\bandouong_user\\views\\san_pham\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{07EE7CDE-77FA-40CF-B47D-66CCFF3289BA}|BanDoUong_User\\BanDoUong_User.csproj|solutionrelative:bandouong_user\\views\\san_pham\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D819550F-F6F7-4C88-A4C7-BA7DBC1CC9A0}|BanDoUongTunio\\BanDoUongTunio.csproj|C:\\Th\u1EF1c t\u1EADp doanh nghi\u1EC7p\\Project\\BanDoUongTunio\\bandouongtunio\\views\\don_hang\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D819550F-F6F7-4C88-A4C7-BA7DBC1CC9A0}|BanDoUongTunio\\BanDoUongTunio.csproj|solutionrelative:bandouongtunio\\views\\don_hang\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{07EE7CDE-77FA-40CF-B47D-66CCFF3289BA}|BanDoUong_User\\BanDoUong_User.csproj|C:\\Th\u1EF1c t\u1EADp doanh nghi\u1EC7p\\Project\\BanDoUongTunio\\bandouong_user\\controllers\\don_hangcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{07EE7CDE-77FA-40CF-B47D-66CCFF3289BA}|BanDoUong_User\\BanDoUong_User.csproj|solutionrelative:bandouong_user\\controllers\\don_hangcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D819550F-F6F7-4C88-A4C7-BA7DBC1CC9A0}|BanDoUongTunio\\BanDoUongTunio.csproj|C:\\Th\u1EF1c t\u1EADp doanh nghi\u1EC7p\\Project\\BanDoUongTunio\\bandouongtunio\\controllers\\don_hangcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D819550F-F6F7-4C88-A4C7-BA7DBC1CC9A0}|BanDoUongTunio\\BanDoUongTunio.csproj|solutionrelative:bandouongtunio\\controllers\\don_hangcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D819550F-F6F7-4C88-A4C7-BA7DBC1CC9A0}|BanDoUongTunio\\BanDoUongTunio.csproj|C:\\Th\u1EF1c t\u1EADp doanh nghi\u1EC7p\\Project\\BanDoUongTunio\\bandouongtunio\\views\\don_hang\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D819550F-F6F7-4C88-A4C7-BA7DBC1CC9A0}|BanDoUongTunio\\BanDoUongTunio.csproj|solutionrelative:bandouongtunio\\views\\don_hang\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D819550F-F6F7-4C88-A4C7-BA7DBC1CC9A0}|BanDoUongTunio\\BanDoUongTunio.csproj|C:\\Th\u1EF1c t\u1EADp doanh nghi\u1EC7p\\Project\\BanDoUongTunio\\bandouongtunio\\views\\don_hang\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D819550F-F6F7-4C88-A4C7-BA7DBC1CC9A0}|BanDoUongTunio\\BanDoUongTunio.csproj|solutionrelative:bandouongtunio\\views\\don_hang\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D819550F-F6F7-4C88-A4C7-BA7DBC1CC9A0}|BanDoUongTunio\\BanDoUongTunio.csproj|C:\\Th\u1EF1c t\u1EADp doanh nghi\u1EC7p\\Project\\BanDoUongTunio\\bandouongtunio\\views\\don_hang\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D819550F-F6F7-4C88-A4C7-BA7DBC1CC9A0}|BanDoUongTunio\\BanDoUongTunio.csproj|solutionrelative:bandouongtunio\\views\\don_hang\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{07EE7CDE-77FA-40CF-B47D-66CCFF3289BA}|BanDoUong_User\\BanDoUong_User.csproj|C:\\Th\u1EF1c t\u1EADp doanh nghi\u1EC7p\\Project\\BanDoUongTunio\\bandouong_user\\views\\don_hang\\thanhtoan.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{07EE7CDE-77FA-40CF-B47D-66CCFF3289BA}|BanDoUong_User\\BanDoUong_User.csproj|solutionrelative:bandouong_user\\views\\don_hang\\thanhtoan.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{07EE7CDE-77FA-40CF-B47D-66CCFF3289BA}|BanDoUong_User\\BanDoUong_User.csproj|C:\\Th\u1EF1c t\u1EADp doanh nghi\u1EC7p\\Project\\BanDoUongTunio\\bandouong_user\\views\\don_hang\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{07EE7CDE-77FA-40CF-B47D-66CCFF3289BA}|BanDoUong_User\\BanDoUong_User.csproj|solutionrelative:bandouong_user\\views\\don_hang\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{07EE7CDE-77FA-40CF-B47D-66CCFF3289BA}|BanDoUong_User\\BanDoUong_User.csproj|C:\\Th\u1EF1c t\u1EADp doanh nghi\u1EC7p\\Project\\BanDoUongTunio\\bandouong_user\\views\\don_hang\\hoantat.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{07EE7CDE-77FA-40CF-B47D-66CCFF3289BA}|BanDoUong_User\\BanDoUong_User.csproj|solutionrelative:bandouong_user\\views\\don_hang\\hoantat.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{07EE7CDE-77FA-40CF-B47D-66CCFF3289BA}|BanDoUong_User\\BanDoUong_User.csproj|C:\\Th\u1EF1c t\u1EADp doanh nghi\u1EC7p\\Project\\BanDoUongTunio\\bandouong_user\\views\\san_pham\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{07EE7CDE-77FA-40CF-B47D-66CCFF3289BA}|BanDoUong_User\\BanDoUong_User.csproj|solutionrelative:bandouong_user\\views\\san_pham\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{07EE7CDE-77FA-40CF-B47D-66CCFF3289BA}|BanDoUong_User\\BanDoUong_User.csproj|C:\\Th\u1EF1c t\u1EADp doanh nghi\u1EC7p\\Project\\BanDoUongTunio\\bandouong_user\\controllers\\san_phamcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{07EE7CDE-77FA-40CF-B47D-66CCFF3289BA}|BanDoUong_User\\BanDoUong_User.csproj|solutionrelative:bandouong_user\\controllers\\san_phamcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{07EE7CDE-77FA-40CF-B47D-66CCFF3289BA}|BanDoUong_User\\BanDoUong_User.csproj|C:\\Th\u1EF1c t\u1EADp doanh nghi\u1EC7p\\Project\\BanDoUongTunio\\bandouong_user\\views\\gio_hang\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{07EE7CDE-77FA-40CF-B47D-66CCFF3289BA}|BanDoUong_User\\BanDoUong_User.csproj|solutionrelative:bandouong_user\\views\\gio_hang\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{07EE7CDE-77FA-40CF-B47D-66CCFF3289BA}|BanDoUong_User\\BanDoUong_User.csproj|C:\\Th\u1EF1c t\u1EADp doanh nghi\u1EC7p\\Project\\BanDoUongTunio\\bandouong_user\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{07EE7CDE-77FA-40CF-B47D-66CCFF3289BA}|BanDoUong_User\\BanDoUong_User.csproj|solutionrelative:bandouong_user\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{07EE7CDE-77FA-40CF-B47D-66CCFF3289BA}|BanDoUong_User\\BanDoUong_User.csproj|C:\\Th\u1EF1c t\u1EADp doanh nghi\u1EC7p\\Project\\BanDoUongTunio\\bandouong_user\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{07EE7CDE-77FA-40CF-B47D-66CCFF3289BA}|BanDoUong_User\\BanDoUong_User.csproj|solutionrelative:bandouong_user\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{07EE7CDE-77FA-40CF-B47D-66CCFF3289BA}|BanDoUong_User\\BanDoUong_User.csproj|C:\\Th\u1EF1c t\u1EADp doanh nghi\u1EC7p\\Project\\BanDoUongTunio\\bandouong_user\\views\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{07EE7CDE-77FA-40CF-B47D-66CCFF3289BA}|BanDoUong_User\\BanDoUong_User.csproj|solutionrelative:bandouong_user\\views\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{07EE7CDE-77FA-40CF-B47D-66CCFF3289BA}|BanDoUong_User\\BanDoUong_User.csproj|C:\\Th\u1EF1c t\u1EADp doanh nghi\u1EC7p\\Project\\BanDoUongTunio\\bandouong_user\\web.release.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{07EE7CDE-77FA-40CF-B47D-66CCFF3289BA}|BanDoUong_User\\BanDoUong_User.csproj|solutionrelative:bandouong_user\\web.release.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{07EE7CDE-77FA-40CF-B47D-66CCFF3289BA}|BanDoUong_User\\BanDoUong_User.csproj|C:\\Th\u1EF1c t\u1EADp doanh nghi\u1EC7p\\Project\\BanDoUongTunio\\bandouong_user\\web.debug.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{07EE7CDE-77FA-40CF-B47D-66CCFF3289BA}|BanDoUong_User\\BanDoUong_User.csproj|solutionrelative:bandouong_user\\web.debug.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{07EE7CDE-77FA-40CF-B47D-66CCFF3289BA}|BanDoUong_User\\BanDoUong_User.csproj|C:\\Th\u1EF1c t\u1EADp doanh nghi\u1EC7p\\Project\\BanDoUongTunio\\bandouong_user\\controllers\\tai_khoancontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{07EE7CDE-77FA-40CF-B47D-66CCFF3289BA}|BanDoUong_User\\BanDoUong_User.csproj|solutionrelative:bandouong_user\\controllers\\tai_khoancontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{07EE7CDE-77FA-40CF-B47D-66CCFF3289BA}|BanDoUong_User\\BanDoUong_User.csproj|C:\\Th\u1EF1c t\u1EADp doanh nghi\u1EC7p\\Project\\BanDoUongTunio\\bandouong_user\\controllers\\gio_hangcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{07EE7CDE-77FA-40CF-B47D-66CCFF3289BA}|BanDoUong_User\\BanDoUong_User.csproj|solutionrelative:bandouong_user\\controllers\\gio_hangcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D819550F-F6F7-4C88-A4C7-BA7DBC1CC9A0}|BanDoUongTunio\\BanDoUongTunio.csproj|C:\\Th\u1EF1c t\u1EADp doanh nghi\u1EC7p\\Project\\BanDoUongTunio\\bandouongtunio\\views\\thongke\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D819550F-F6F7-4C88-A4C7-BA7DBC1CC9A0}|BanDoUongTunio\\BanDoUongTunio.csproj|solutionrelative:bandouongtunio\\views\\thongke\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{07EE7CDE-77FA-40CF-B47D-66CCFF3289BA}|BanDoUong_User\\BanDoUong_User.csproj|C:\\Th\u1EF1c t\u1EADp doanh nghi\u1EC7p\\Project\\BanDoUongTunio\\bandouong_user\\views\\tai_khoan\\dangky.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{07EE7CDE-77FA-40CF-B47D-66CCFF3289BA}|BanDoUong_User\\BanDoUong_User.csproj|solutionrelative:bandouong_user\\views\\tai_khoan\\dangky.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{07EE7CDE-77FA-40CF-B47D-66CCFF3289BA}|BanDoUong_User\\BanDoUong_User.csproj|C:\\Th\u1EF1c t\u1EADp doanh nghi\u1EC7p\\Project\\BanDoUongTunio\\bandouong_user\\views\\tai_khoan\\dangnhap.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{07EE7CDE-77FA-40CF-B47D-66CCFF3289BA}|BanDoUong_User\\BanDoUong_User.csproj|solutionrelative:bandouong_user\\views\\tai_khoan\\dangnhap.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D819550F-F6F7-4C88-A4C7-BA7DBC1CC9A0}|BanDoUongTunio\\BanDoUongTunio.csproj|C:\\Th\u1EF1c t\u1EADp doanh nghi\u1EC7p\\Project\\BanDoUongTunio\\bandouongtunio\\controllers\\tai_khoancontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D819550F-F6F7-4C88-A4C7-BA7DBC1CC9A0}|BanDoUongTunio\\BanDoUongTunio.csproj|solutionrelative:bandouongtunio\\controllers\\tai_khoancontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D819550F-F6F7-4C88-A4C7-BA7DBC1CC9A0}|BanDoUongTunio\\BanDoUongTunio.csproj|C:\\Th\u1EF1c t\u1EADp doanh nghi\u1EC7p\\Project\\BanDoUongTunio\\bandouongtunio\\views\\tai_khoan\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D819550F-F6F7-4C88-A4C7-BA7DBC1CC9A0}|BanDoUongTunio\\BanDoUongTunio.csproj|solutionrelative:bandouongtunio\\views\\tai_khoan\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D819550F-F6F7-4C88-A4C7-BA7DBC1CC9A0}|BanDoUongTunio\\BanDoUongTunio.csproj|C:\\Th\u1EF1c t\u1EADp doanh nghi\u1EC7p\\Project\\BanDoUongTunio\\bandouongtunio\\models\\gio_hang.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D819550F-F6F7-4C88-A4C7-BA7DBC1CC9A0}|BanDoUongTunio\\BanDoUongTunio.csproj|solutionrelative:bandouongtunio\\models\\gio_hang.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D819550F-F6F7-4C88-A4C7-BA7DBC1CC9A0}|BanDoUongTunio\\BanDoUongTunio.csproj|C:\\Th\u1EF1c t\u1EADp doanh nghi\u1EC7p\\Project\\BanDoUongTunio\\bandouongtunio\\models\\don_hang.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D819550F-F6F7-4C88-A4C7-BA7DBC1CC9A0}|BanDoUongTunio\\BanDoUongTunio.csproj|solutionrelative:bandouongtunio\\models\\don_hang.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D819550F-F6F7-4C88-A4C7-BA7DBC1CC9A0}|BanDoUongTunio\\BanDoUongTunio.csproj|C:\\Th\u1EF1c t\u1EADp doanh nghi\u1EC7p\\Project\\BanDoUongTunio\\bandouongtunio\\models\\dia_chi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D819550F-F6F7-4C88-A4C7-BA7DBC1CC9A0}|BanDoUongTunio\\BanDoUongTunio.csproj|solutionrelative:bandouongtunio\\models\\dia_chi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D819550F-F6F7-4C88-A4C7-BA7DBC1CC9A0}|BanDoUongTunio\\BanDoUongTunio.csproj|C:\\Th\u1EF1c t\u1EADp doanh nghi\u1EC7p\\Project\\BanDoUongTunio\\bandouongtunio\\models\\tai_khoan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D819550F-F6F7-4C88-A4C7-BA7DBC1CC9A0}|BanDoUongTunio\\BanDoUongTunio.csproj|solutionrelative:bandouongtunio\\models\\tai_khoan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D819550F-F6F7-4C88-A4C7-BA7DBC1CC9A0}|BanDoUongTunio\\BanDoUongTunio.csproj|C:\\Th\u1EF1c t\u1EADp doanh nghi\u1EC7p\\Project\\BanDoUongTunio\\bandouongtunio\\views\\san_pham\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D819550F-F6F7-4C88-A4C7-BA7DBC1CC9A0}|BanDoUongTunio\\BanDoUongTunio.csproj|solutionrelative:bandouongtunio\\views\\san_pham\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D819550F-F6F7-4C88-A4C7-BA7DBC1CC9A0}|BanDoUongTunio\\BanDoUongTunio.csproj|C:\\Th\u1EF1c t\u1EADp doanh nghi\u1EC7p\\Project\\BanDoUongTunio\\bandouongtunio\\controllers\\san_phamcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D819550F-F6F7-4C88-A4C7-BA7DBC1CC9A0}|BanDoUongTunio\\BanDoUongTunio.csproj|solutionrelative:bandouongtunio\\controllers\\san_phamcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D819550F-F6F7-4C88-A4C7-BA7DBC1CC9A0}|BanDoUongTunio\\BanDoUongTunio.csproj|C:\\Th\u1EF1c t\u1EADp doanh nghi\u1EC7p\\Project\\BanDoUongTunio\\bandouongtunio\\views\\san_pham\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D819550F-F6F7-4C88-A4C7-BA7DBC1CC9A0}|BanDoUongTunio\\BanDoUongTunio.csproj|solutionrelative:bandouongtunio\\views\\san_pham\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D819550F-F6F7-4C88-A4C7-BA7DBC1CC9A0}|BanDoUongTunio\\BanDoUongTunio.csproj|C:\\Th\u1EF1c t\u1EADp doanh nghi\u1EC7p\\Project\\BanDoUongTunio\\bandouongtunio\\views\\san_pham\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D819550F-F6F7-4C88-A4C7-BA7DBC1CC9A0}|BanDoUongTunio\\BanDoUongTunio.csproj|solutionrelative:bandouongtunio\\views\\san_pham\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D819550F-F6F7-4C88-A4C7-BA7DBC1CC9A0}|BanDoUongTunio\\BanDoUongTunio.csproj|C:\\Th\u1EF1c t\u1EADp doanh nghi\u1EC7p\\Project\\BanDoUongTunio\\bandouongtunio\\views\\san_pham\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D819550F-F6F7-4C88-A4C7-BA7DBC1CC9A0}|BanDoUongTunio\\BanDoUongTunio.csproj|solutionrelative:bandouongtunio\\views\\san_pham\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D819550F-F6F7-4C88-A4C7-BA7DBC1CC9A0}|BanDoUongTunio\\BanDoUongTunio.csproj|C:\\Th\u1EF1c t\u1EADp doanh nghi\u1EC7p\\Project\\BanDoUongTunio\\bandouongtunio\\models\\san_pham.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D819550F-F6F7-4C88-A4C7-BA7DBC1CC9A0}|BanDoUongTunio\\BanDoUongTunio.csproj|solutionrelative:bandouongtunio\\models\\san_pham.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D819550F-F6F7-4C88-A4C7-BA7DBC1CC9A0}|BanDoUongTunio\\BanDoUongTunio.csproj|C:\\Th\u1EF1c t\u1EADp doanh nghi\u1EC7p\\Project\\BanDoUongTunio\\bandouongtunio\\models\\san_pham_size.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D819550F-F6F7-4C88-A4C7-BA7DBC1CC9A0}|BanDoUongTunio\\BanDoUongTunio.csproj|solutionrelative:bandouongtunio\\models\\san_pham_size.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D819550F-F6F7-4C88-A4C7-BA7DBC1CC9A0}|BanDoUongTunio\\BanDoUongTunio.csproj|C:\\Th\u1EF1c t\u1EADp doanh nghi\u1EC7p\\Project\\BanDoUongTunio\\bandouongtunio\\controllers\\danh_muccontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D819550F-F6F7-4C88-A4C7-BA7DBC1CC9A0}|BanDoUongTunio\\BanDoUongTunio.csproj|solutionrelative:bandouongtunio\\controllers\\danh_muccontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D819550F-F6F7-4C88-A4C7-BA7DBC1CC9A0}|BanDoUongTunio\\BanDoUongTunio.csproj|C:\\Th\u1EF1c t\u1EADp doanh nghi\u1EC7p\\Project\\BanDoUongTunio\\bandouongtunio\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D819550F-F6F7-4C88-A4C7-BA7DBC1CC9A0}|BanDoUongTunio\\BanDoUongTunio.csproj|solutionrelative:bandouongtunio\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D819550F-F6F7-4C88-A4C7-BA7DBC1CC9A0}|BanDoUongTunio\\BanDoUongTunio.csproj|C:\\Th\u1EF1c t\u1EADp doanh nghi\u1EC7p\\Project\\BanDoUongTunio\\bandouongtunio\\views\\shared\\error.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D819550F-F6F7-4C88-A4C7-BA7DBC1CC9A0}|BanDoUongTunio\\BanDoUongTunio.csproj|solutionrelative:bandouongtunio\\views\\shared\\error.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D819550F-F6F7-4C88-A4C7-BA7DBC1CC9A0}|BanDoUongTunio\\BanDoUongTunio.csproj|C:\\Th\u1EF1c t\u1EADp doanh nghi\u1EC7p\\Project\\BanDoUongTunio\\bandouongtunio\\views\\toppings\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D819550F-F6F7-4C88-A4C7-BA7DBC1CC9A0}|BanDoUongTunio\\BanDoUongTunio.csproj|solutionrelative:bandouongtunio\\views\\toppings\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D819550F-F6F7-4C88-A4C7-BA7DBC1CC9A0}|BanDoUongTunio\\BanDoUongTunio.csproj|C:\\Th\u1EF1c t\u1EADp doanh nghi\u1EC7p\\Project\\BanDoUongTunio\\bandouongtunio\\views\\toppings\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D819550F-F6F7-4C88-A4C7-BA7DBC1CC9A0}|BanDoUongTunio\\BanDoUongTunio.csproj|solutionrelative:bandouongtunio\\views\\toppings\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D819550F-F6F7-4C88-A4C7-BA7DBC1CC9A0}|BanDoUongTunio\\BanDoUongTunio.csproj|C:\\Th\u1EF1c t\u1EADp doanh nghi\u1EC7p\\Project\\BanDoUongTunio\\bandouongtunio\\views\\toppings\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D819550F-F6F7-4C88-A4C7-BA7DBC1CC9A0}|BanDoUongTunio\\BanDoUongTunio.csproj|solutionrelative:bandouongtunio\\views\\toppings\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D819550F-F6F7-4C88-A4C7-BA7DBC1CC9A0}|BanDoUongTunio\\BanDoUongTunio.csproj|C:\\Th\u1EF1c t\u1EADp doanh nghi\u1EC7p\\Project\\BanDoUongTunio\\bandouongtunio\\models\\topping.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D819550F-F6F7-4C88-A4C7-BA7DBC1CC9A0}|BanDoUongTunio\\BanDoUongTunio.csproj|solutionrelative:bandouongtunio\\models\\topping.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D819550F-F6F7-4C88-A4C7-BA7DBC1CC9A0}|BanDoUongTunio\\BanDoUongTunio.csproj|C:\\Th\u1EF1c t\u1EADp doanh nghi\u1EC7p\\Project\\BanDoUongTunio\\bandouongtunio\\views\\danh_muc\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D819550F-F6F7-4C88-A4C7-BA7DBC1CC9A0}|BanDoUongTunio\\BanDoUongTunio.csproj|solutionrelative:bandouongtunio\\views\\danh_muc\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D819550F-F6F7-4C88-A4C7-BA7DBC1CC9A0}|BanDoUongTunio\\BanDoUongTunio.csproj|C:\\Th\u1EF1c t\u1EADp doanh nghi\u1EC7p\\Project\\BanDoUongTunio\\bandouongtunio\\views\\danh_muc\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D819550F-F6F7-4C88-A4C7-BA7DBC1CC9A0}|BanDoUongTunio\\BanDoUongTunio.csproj|solutionrelative:bandouongtunio\\views\\danh_muc\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D819550F-F6F7-4C88-A4C7-BA7DBC1CC9A0}|BanDoUongTunio\\BanDoUongTunio.csproj|C:\\Th\u1EF1c t\u1EADp doanh nghi\u1EC7p\\Project\\BanDoUongTunio\\bandouongtunio\\models\\danh_muc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D819550F-F6F7-4C88-A4C7-BA7DBC1CC9A0}|BanDoUongTunio\\BanDoUongTunio.csproj|solutionrelative:bandouongtunio\\models\\danh_muc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D819550F-F6F7-4C88-A4C7-BA7DBC1CC9A0}|BanDoUongTunio\\BanDoUongTunio.csproj|C:\\Th\u1EF1c t\u1EADp doanh nghi\u1EC7p\\Project\\BanDoUongTunio\\bandouongtunio\\views\\danh_muc\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D819550F-F6F7-4C88-A4C7-BA7DBC1CC9A0}|BanDoUongTunio\\BanDoUongTunio.csproj|solutionrelative:bandouongtunio\\views\\danh_muc\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D819550F-F6F7-4C88-A4C7-BA7DBC1CC9A0}|BanDoUongTunio\\BanDoUongTunio.csproj|C:\\Th\u1EF1c t\u1EADp doanh nghi\u1EC7p\\Project\\BanDoUongTunio\\bandouongtunio\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D819550F-F6F7-4C88-A4C7-BA7DBC1CC9A0}|BanDoUongTunio\\BanDoUongTunio.csproj|solutionrelative:bandouongtunio\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{07EE7CDE-77FA-40CF-B47D-66CCFF3289BA}|BanDoUong_User\\BanDoUong_User.csproj|C:\\Th\u1EF1c t\u1EADp doanh nghi\u1EC7p\\Project\\BanDoUongTunio\\bandouong_user\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{07EE7CDE-77FA-40CF-B47D-66CCFF3289BA}|BanDoUong_User\\BanDoUong_User.csproj|solutionrelative:bandouong_user\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D819550F-F6F7-4C88-A4C7-BA7DBC1CC9A0}|BanDoUongTunio\\BanDoUongTunio.csproj|C:\\Th\u1EF1c t\u1EADp doanh nghi\u1EC7p\\Project\\BanDoUongTunio\\bandouongtunio\\controllers\\thongkecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D819550F-F6F7-4C88-A4C7-BA7DBC1CC9A0}|BanDoUongTunio\\BanDoUongTunio.csproj|solutionrelative:bandouongtunio\\controllers\\thongkecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D819550F-F6F7-4C88-A4C7-BA7DBC1CC9A0}|BanDoUongTunio\\BanDoUongTunio.csproj|C:\\Th\u1EF1c t\u1EADp doanh nghi\u1EC7p\\Project\\BanDoUongTunio\\bandouongtunio\\models\\chi_tiet_don_hang.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D819550F-F6F7-4C88-A4C7-BA7DBC1CC9A0}|BanDoUongTunio\\BanDoUongTunio.csproj|solutionrelative:bandouongtunio\\models\\chi_tiet_don_hang.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D819550F-F6F7-4C88-A4C7-BA7DBC1CC9A0}|BanDoUongTunio\\BanDoUongTunio.csproj|C:\\Th\u1EF1c t\u1EADp doanh nghi\u1EC7p\\Project\\BanDoUongTunio\\bandouongtunio\\models\\chi_tiet_don_hang_topping.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D819550F-F6F7-4C88-A4C7-BA7DBC1CC9A0}|BanDoUongTunio\\BanDoUongTunio.csproj|solutionrelative:bandouongtunio\\models\\chi_tiet_don_hang_topping.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D819550F-F6F7-4C88-A4C7-BA7DBC1CC9A0}|BanDoUongTunio\\BanDoUongTunio.csproj|C:\\Th\u1EF1c t\u1EADp doanh nghi\u1EC7p\\Project\\BanDoUongTunio\\bandouongtunio\\models\\chi_tiet_gio_hang.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D819550F-F6F7-4C88-A4C7-BA7DBC1CC9A0}|BanDoUongTunio\\BanDoUongTunio.csproj|solutionrelative:bandouongtunio\\models\\chi_tiet_gio_hang.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D819550F-F6F7-4C88-A4C7-BA7DBC1CC9A0}|BanDoUongTunio\\BanDoUongTunio.csproj|C:\\Th\u1EF1c t\u1EADp doanh nghi\u1EC7p\\Project\\BanDoUongTunio\\bandouongtunio\\models\\ql_ban_do_uongdb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D819550F-F6F7-4C88-A4C7-BA7DBC1CC9A0}|BanDoUongTunio\\BanDoUongTunio.csproj|solutionrelative:bandouongtunio\\models\\ql_ban_do_uongdb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D819550F-F6F7-4C88-A4C7-BA7DBC1CC9A0}|BanDoUongTunio\\BanDoUongTunio.csproj|C:\\Th\u1EF1c t\u1EADp doanh nghi\u1EC7p\\Project\\BanDoUongTunio\\bandouongtunio\\models\\size.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D819550F-F6F7-4C88-A4C7-BA7DBC1CC9A0}|BanDoUongTunio\\BanDoUongTunio.csproj|solutionrelative:bandouongtunio\\models\\size.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D819550F-F6F7-4C88-A4C7-BA7DBC1CC9A0}|BanDoUongTunio\\BanDoUongTunio.csproj|C:\\Th\u1EF1c t\u1EADp doanh nghi\u1EC7p\\Project\\BanDoUongTunio\\bandouongtunio\\models\\thanh_toan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D819550F-F6F7-4C88-A4C7-BA7DBC1CC9A0}|BanDoUongTunio\\BanDoUongTunio.csproj|solutionrelative:bandouongtunio\\models\\thanh_toan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D819550F-F6F7-4C88-A4C7-BA7DBC1CC9A0}|BanDoUongTunio\\BanDoUongTunio.csproj|C:\\Th\u1EF1c t\u1EADp doanh nghi\u1EC7p\\Project\\BanDoUongTunio\\bandouongtunio\\controllers\\toppingscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D819550F-F6F7-4C88-A4C7-BA7DBC1CC9A0}|BanDoUongTunio\\BanDoUongTunio.csproj|solutionrelative:bandouongtunio\\controllers\\toppingscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D819550F-F6F7-4C88-A4C7-BA7DBC1CC9A0}|BanDoUongTunio\\BanDoUongTunio.csproj|C:\\Th\u1EF1c t\u1EADp doanh nghi\u1EC7p\\Project\\BanDoUongTunio\\bandouongtunio\\views\\tai_khoan\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D819550F-F6F7-4C88-A4C7-BA7DBC1CC9A0}|BanDoUongTunio\\BanDoUongTunio.csproj|solutionrelative:bandouongtunio\\views\\tai_khoan\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D819550F-F6F7-4C88-A4C7-BA7DBC1CC9A0}|BanDoUongTunio\\BanDoUongTunio.csproj|C:\\Th\u1EF1c t\u1EADp doanh nghi\u1EC7p\\Project\\BanDoUongTunio\\bandouongtunio\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D819550F-F6F7-4C88-A4C7-BA7DBC1CC9A0}|BanDoUongTunio\\BanDoUongTunio.csproj|solutionrelative:bandouongtunio\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{07EE7CDE-77FA-40CF-B47D-66CCFF3289BA}|BanDoUong_User\\BanDoUong_User.csproj|C:\\Th\u1EF1c t\u1EADp doanh nghi\u1EC7p\\Project\\BanDoUongTunio\\bandouong_user\\views\\shared\\error.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{07EE7CDE-77FA-40CF-B47D-66CCFF3289BA}|BanDoUong_User\\BanDoUong_User.csproj|solutionrelative:bandouong_user\\views\\shared\\error.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{07EE7CDE-77FA-40CF-B47D-66CCFF3289BA}|BanDoUong_User\\BanDoUong_User.csproj|C:\\Th\u1EF1c t\u1EADp doanh nghi\u1EC7p\\Project\\BanDoUongTunio\\bandouong_user\\viewmodels\\thanhtoanvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{07EE7CDE-77FA-40CF-B47D-66CCFF3289BA}|BanDoUong_User\\BanDoUong_User.csproj|solutionrelative:bandouong_user\\viewmodels\\thanhtoanvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{07EE7CDE-77FA-40CF-B47D-66CCFF3289BA}|BanDoUong_User\\BanDoUong_User.csproj|C:\\Th\u1EF1c t\u1EADp doanh nghi\u1EC7p\\Project\\BanDoUongTunio\\bandouong_user\\models\\danh_muc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{07EE7CDE-77FA-40CF-B47D-66CCFF3289BA}|BanDoUong_User\\BanDoUong_User.csproj|solutionrelative:bandouong_user\\models\\danh_muc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{07EE7CDE-77FA-40CF-B47D-66CCFF3289BA}|BanDoUong_User\\BanDoUong_User.csproj|C:\\Th\u1EF1c t\u1EADp doanh nghi\u1EC7p\\Project\\BanDoUongTunio\\bandouong_user\\models\\chi_tiet_don_hang.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{07EE7CDE-77FA-40CF-B47D-66CCFF3289BA}|BanDoUong_User\\BanDoUong_User.csproj|solutionrelative:bandouong_user\\models\\chi_tiet_don_hang.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{07EE7CDE-77FA-40CF-B47D-66CCFF3289BA}|BanDoUong_User\\BanDoUong_User.csproj|C:\\Th\u1EF1c t\u1EADp doanh nghi\u1EC7p\\Project\\BanDoUongTunio\\bandouong_user\\models\\chi_tiet_don_hang_topping.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{07EE7CDE-77FA-40CF-B47D-66CCFF3289BA}|BanDoUong_User\\BanDoUong_User.csproj|solutionrelative:bandouong_user\\models\\chi_tiet_don_hang_topping.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{07EE7CDE-77FA-40CF-B47D-66CCFF3289BA}|BanDoUong_User\\BanDoUong_User.csproj|C:\\Th\u1EF1c t\u1EADp doanh nghi\u1EC7p\\Project\\BanDoUongTunio\\bandouong_user\\models\\chi_tiet_gio_hang.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{07EE7CDE-77FA-40CF-B47D-66CCFF3289BA}|BanDoUong_User\\BanDoUong_User.csproj|solutionrelative:bandouong_user\\models\\chi_tiet_gio_hang.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{07EE7CDE-77FA-40CF-B47D-66CCFF3289BA}|BanDoUong_User\\BanDoUong_User.csproj|C:\\Th\u1EF1c t\u1EADp doanh nghi\u1EC7p\\Project\\BanDoUongTunio\\bandouong_user\\models\\dia_chi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{07EE7CDE-77FA-40CF-B47D-66CCFF3289BA}|BanDoUong_User\\BanDoUong_User.csproj|solutionrelative:bandouong_user\\models\\dia_chi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{07EE7CDE-77FA-40CF-B47D-66CCFF3289BA}|BanDoUong_User\\BanDoUong_User.csproj|C:\\Th\u1EF1c t\u1EADp doanh nghi\u1EC7p\\Project\\BanDoUongTunio\\bandouong_user\\models\\don_hang.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{07EE7CDE-77FA-40CF-B47D-66CCFF3289BA}|BanDoUong_User\\BanDoUong_User.csproj|solutionrelative:bandouong_user\\models\\don_hang.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{07EE7CDE-77FA-40CF-B47D-66CCFF3289BA}|BanDoUong_User\\BanDoUong_User.csproj|C:\\Th\u1EF1c t\u1EADp doanh nghi\u1EC7p\\Project\\BanDoUongTunio\\bandouong_user\\models\\gio_hang.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{07EE7CDE-77FA-40CF-B47D-66CCFF3289BA}|BanDoUong_User\\BanDoUong_User.csproj|solutionrelative:bandouong_user\\models\\gio_hang.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{07EE7CDE-77FA-40CF-B47D-66CCFF3289BA}|BanDoUong_User\\BanDoUong_User.csproj|C:\\Th\u1EF1c t\u1EADp doanh nghi\u1EC7p\\Project\\BanDoUongTunio\\bandouong_user\\models\\ql_ban_do_uongdb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{07EE7CDE-77FA-40CF-B47D-66CCFF3289BA}|BanDoUong_User\\BanDoUong_User.csproj|solutionrelative:bandouong_user\\models\\ql_ban_do_uongdb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{07EE7CDE-77FA-40CF-B47D-66CCFF3289BA}|BanDoUong_User\\BanDoUong_User.csproj|C:\\Th\u1EF1c t\u1EADp doanh nghi\u1EC7p\\Project\\BanDoUongTunio\\bandouong_user\\models\\san_pham.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{07EE7CDE-77FA-40CF-B47D-66CCFF3289BA}|BanDoUong_User\\BanDoUong_User.csproj|solutionrelative:bandouong_user\\models\\san_pham.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{07EE7CDE-77FA-40CF-B47D-66CCFF3289BA}|BanDoUong_User\\BanDoUong_User.csproj|C:\\Th\u1EF1c t\u1EADp doanh nghi\u1EC7p\\Project\\BanDoUongTunio\\bandouong_user\\models\\san_pham_size.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{07EE7CDE-77FA-40CF-B47D-66CCFF3289BA}|BanDoUong_User\\BanDoUong_User.csproj|solutionrelative:bandouong_user\\models\\san_pham_size.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{07EE7CDE-77FA-40CF-B47D-66CCFF3289BA}|BanDoUong_User\\BanDoUong_User.csproj|C:\\Th\u1EF1c t\u1EADp doanh nghi\u1EC7p\\Project\\BanDoUongTunio\\bandouong_user\\models\\size.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{07EE7CDE-77FA-40CF-B47D-66CCFF3289BA}|BanDoUong_User\\BanDoUong_User.csproj|solutionrelative:bandouong_user\\models\\size.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{07EE7CDE-77FA-40CF-B47D-66CCFF3289BA}|BanDoUong_User\\BanDoUong_User.csproj|C:\\Th\u1EF1c t\u1EADp doanh nghi\u1EC7p\\Project\\BanDoUongTunio\\bandouong_user\\models\\tai_khoan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{07EE7CDE-77FA-40CF-B47D-66CCFF3289BA}|BanDoUong_User\\BanDoUong_User.csproj|solutionrelative:bandouong_user\\models\\tai_khoan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{07EE7CDE-77FA-40CF-B47D-66CCFF3289BA}|BanDoUong_User\\BanDoUong_User.csproj|C:\\Th\u1EF1c t\u1EADp doanh nghi\u1EC7p\\Project\\BanDoUongTunio\\bandouong_user\\models\\thanh_toan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{07EE7CDE-77FA-40CF-B47D-66CCFF3289BA}|BanDoUong_User\\BanDoUong_User.csproj|solutionrelative:bandouong_user\\models\\thanh_toan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{07EE7CDE-77FA-40CF-B47D-66CCFF3289BA}|BanDoUong_User\\BanDoUong_User.csproj|C:\\Th\u1EF1c t\u1EADp doanh nghi\u1EC7p\\Project\\BanDoUongTunio\\bandouong_user\\models\\topping.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{07EE7CDE-77FA-40CF-B47D-66CCFF3289BA}|BanDoUong_User\\BanDoUong_User.csproj|solutionrelative:bandouong_user\\models\\topping.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{07EE7CDE-77FA-40CF-B47D-66CCFF3289BA}|BanDoUong_User\\BanDoUong_User.csproj|C:\\Th\u1EF1c t\u1EADp doanh nghi\u1EC7p\\Project\\BanDoUongTunio\\bandouong_user\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{07EE7CDE-77FA-40CF-B47D-66CCFF3289BA}|BanDoUong_User\\BanDoUong_User.csproj|solutionrelative:bandouong_user\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D819550F-F6F7-4C88-A4C7-BA7DBC1CC9A0}|BanDoUongTunio\\BanDoUongTunio.csproj|C:\\Th\u1EF1c t\u1EADp doanh nghi\u1EC7p\\Project\\BanDoUongTunio\\bandouongtunio\\views\\toppings\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D819550F-F6F7-4C88-A4C7-BA7DBC1CC9A0}|BanDoUongTunio\\BanDoUongTunio.csproj|solutionrelative:bandouongtunio\\views\\toppings\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D819550F-F6F7-4C88-A4C7-BA7DBC1CC9A0}|BanDoUongTunio\\BanDoUongTunio.csproj|C:\\Th\u1EF1c t\u1EADp doanh nghi\u1EC7p\\Project\\BanDoUongTunio\\bandouongtunio\\views\\danh_muc\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D819550F-F6F7-4C88-A4C7-BA7DBC1CC9A0}|BanDoUongTunio\\BanDoUongTunio.csproj|solutionrelative:bandouongtunio\\views\\danh_muc\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D819550F-F6F7-4C88-A4C7-BA7DBC1CC9A0}|BanDoUongTunio\\BanDoUongTunio.csproj|C:\\Th\u1EF1c t\u1EADp doanh nghi\u1EC7p\\Project\\BanDoUongTunio\\bandouongtunio\\app_start\\routeconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D819550F-F6F7-4C88-A4C7-BA7DBC1CC9A0}|BanDoUongTunio\\BanDoUongTunio.csproj|solutionrelative:bandouongtunio\\app_start\\routeconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{07EE7CDE-77FA-40CF-B47D-66CCFF3289BA}|BanDoUong_User\\BanDoUong_User.csproj|C:\\Th\u1EF1c t\u1EADp doanh nghi\u1EC7p\\Project\\BanDoUongTunio\\bandouong_user\\app_start\\routeconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{07EE7CDE-77FA-40CF-B47D-66CCFF3289BA}|BanDoUong_User\\BanDoUong_User.csproj|solutionrelative:bandouong_user\\app_start\\routeconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D819550F-F6F7-4C88-A4C7-BA7DBC1CC9A0}|BanDoUongTunio\\BanDoUongTunio.csproj|C:\\Th\u1EF1c t\u1EADp doanh nghi\u1EC7p\\Project\\BanDoUongTunio\\bandouongtunio\\app_start\\filterconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D819550F-F6F7-4C88-A4C7-BA7DBC1CC9A0}|BanDoUongTunio\\BanDoUongTunio.csproj|solutionrelative:bandouongtunio\\app_start\\filterconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D819550F-F6F7-4C88-A4C7-BA7DBC1CC9A0}|BanDoUongTunio\\BanDoUongTunio.csproj|C:\\Th\u1EF1c t\u1EADp doanh nghi\u1EC7p\\Project\\BanDoUongTunio\\bandouongtunio\\app_start\\bundleconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D819550F-F6F7-4C88-A4C7-BA7DBC1CC9A0}|BanDoUongTunio\\BanDoUongTunio.csproj|solutionrelative:bandouongtunio\\app_start\\bundleconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 4,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Delete.cshtml",
+              "DocumentMoniker": "C:\\Th\u1EF1c t\u1EADp doanh nghi\u1EC7p\\Project\\BanDoUongTunio\\BanDoUongTunio\\Views\\DON_HANG\\Delete.cshtml",
+              "RelativeDocumentMoniker": "BanDoUongTunio\\Views\\DON_HANG\\Delete.cshtml",
+              "ToolTip": "C:\\Th\u1EF1c t\u1EADp doanh nghi\u1EC7p\\Project\\BanDoUongTunio\\BanDoUongTunio\\Views\\DON_HANG\\Delete.cshtml",
+              "RelativeToolTip": "BanDoUongTunio\\Views\\DON_HANG\\Delete.cshtml",
+              "ViewState": "AgIAAGYAAAAAAAAAAAAAAIgAAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-02-03T14:40:50.828Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Details.cshtml",
+              "DocumentMoniker": "C:\\Th\u1EF1c t\u1EADp doanh nghi\u1EC7p\\Project\\BanDoUongTunio\\BanDoUongTunio\\Views\\DON_HANG\\Details.cshtml",
+              "RelativeDocumentMoniker": "BanDoUongTunio\\Views\\DON_HANG\\Details.cshtml",
+              "ToolTip": "C:\\Th\u1EF1c t\u1EADp doanh nghi\u1EC7p\\Project\\BanDoUongTunio\\BanDoUongTunio\\Views\\DON_HANG\\Details.cshtml",
+              "RelativeToolTip": "BanDoUongTunio\\Views\\DON_HANG\\Details.cshtml",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAAACYAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-02-03T14:38:16.816Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "C:\\Th\u1EF1c t\u1EADp doanh nghi\u1EC7p\\Project\\BanDoUongTunio\\BanDoUongTunio\\Views\\DON_HANG\\Edit.cshtml",
+              "RelativeDocumentMoniker": "BanDoUongTunio\\Views\\DON_HANG\\Edit.cshtml",
+              "ToolTip": "C:\\Th\u1EF1c t\u1EADp doanh nghi\u1EC7p\\Project\\BanDoUongTunio\\BanDoUongTunio\\Views\\DON_HANG\\Edit.cshtml",
+              "RelativeToolTip": "BanDoUongTunio\\Views\\DON_HANG\\Edit.cshtml",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAACsAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-02-03T14:41:02.902Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Th\u1EF1c t\u1EADp doanh nghi\u1EC7p\\Project\\BanDoUongTunio\\BanDoUong_User\\Views\\SAN_PHAM\\Index.cshtml",
+              "RelativeDocumentMoniker": "BanDoUong_User\\Views\\SAN_PHAM\\Index.cshtml",
+              "ToolTip": "C:\\Th\u1EF1c t\u1EADp doanh nghi\u1EC7p\\Project\\BanDoUongTunio\\BanDoUong_User\\Views\\SAN_PHAM\\Index.cshtml",
+              "RelativeToolTip": "BanDoUong_User\\Views\\SAN_PHAM\\Index.cshtml",
+              "ViewState": "AgIAAMoAAAAAAAAAAAAAANQAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-01-20T02:37:38.491Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Web.config",
+              "DocumentMoniker": "C:\\Th\u1EF1c t\u1EADp doanh nghi\u1EC7p\\Project\\BanDoUongTunio\\BanDoUong_User\\Web.config",
+              "RelativeDocumentMoniker": "BanDoUong_User\\Web.config",
+              "ToolTip": "C:\\Th\u1EF1c t\u1EADp doanh nghi\u1EC7p\\Project\\BanDoUongTunio\\BanDoUong_User\\Web.config",
+              "RelativeToolTip": "BanDoUong_User\\Web.config",
+              "ViewState": "AgIAABsAAAAAAAAAAAAAADcAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2026-02-20T03:49:20.358Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "ThanhToan.cshtml",
+              "DocumentMoniker": "C:\\Th\u1EF1c t\u1EADp doanh nghi\u1EC7p\\Project\\BanDoUongTunio\\BanDoUong_User\\Views\\DON_HANG\\ThanhToan.cshtml",
+              "RelativeDocumentMoniker": "BanDoUong_User\\Views\\DON_HANG\\ThanhToan.cshtml",
+              "ToolTip": "C:\\Th\u1EF1c t\u1EADp doanh nghi\u1EC7p\\Project\\BanDoUongTunio\\BanDoUong_User\\Views\\DON_HANG\\ThanhToan.cshtml",
+              "RelativeToolTip": "BanDoUong_User\\Views\\DON_HANG\\ThanhToan.cshtml",
+              "ViewState": "AgIAAFUBAAAAAAAAAAAAwGkBAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-02-01T14:21:11.083Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "DON_HANGController.cs",
+              "DocumentMoniker": "C:\\Th\u1EF1c t\u1EADp doanh nghi\u1EC7p\\Project\\BanDoUongTunio\\BanDoUongTunio\\Controllers\\DON_HANGController.cs",
+              "RelativeDocumentMoniker": "BanDoUongTunio\\Controllers\\DON_HANGController.cs",
+              "ToolTip": "C:\\Th\u1EF1c t\u1EADp doanh nghi\u1EC7p\\Project\\BanDoUongTunio\\BanDoUongTunio\\Controllers\\DON_HANGController.cs",
+              "RelativeToolTip": "BanDoUongTunio\\Controllers\\DON_HANGController.cs",
+              "ViewState": "AgIAAOEAAAAAAAAAAAAAAP8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-03T14:20:20.746Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "DON_HANGController.cs",
+              "DocumentMoniker": "C:\\Th\u1EF1c t\u1EADp doanh nghi\u1EC7p\\Project\\BanDoUongTunio\\BanDoUong_User\\Controllers\\DON_HANGController.cs",
+              "RelativeDocumentMoniker": "BanDoUong_User\\Controllers\\DON_HANGController.cs",
+              "ToolTip": "C:\\Th\u1EF1c t\u1EADp doanh nghi\u1EC7p\\Project\\BanDoUongTunio\\BanDoUong_User\\Controllers\\DON_HANGController.cs",
+              "RelativeToolTip": "BanDoUong_User\\Controllers\\DON_HANGController.cs",
+              "ViewState": "AgIAAPgAAAAAAAAAAAAAAAcBAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-01T13:57:44.271Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Th\u1EF1c t\u1EADp doanh nghi\u1EC7p\\Project\\BanDoUongTunio\\BanDoUongTunio\\Views\\DON_HANG\\Index.cshtml",
+              "RelativeDocumentMoniker": "BanDoUongTunio\\Views\\DON_HANG\\Index.cshtml",
+              "ToolTip": "C:\\Th\u1EF1c t\u1EADp doanh nghi\u1EC7p\\Project\\BanDoUongTunio\\BanDoUongTunio\\Views\\DON_HANG\\Index.cshtml",
+              "RelativeToolTip": "BanDoUongTunio\\Views\\DON_HANG\\Index.cshtml",
+              "ViewState": "AgIAAOIAAAAAAAAAAAAAwAsBAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-02-03T14:24:14.271Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Th\u1EF1c t\u1EADp doanh nghi\u1EC7p\\Project\\BanDoUongTunio\\BanDoUong_User\\Views\\GIO_HANG\\Index.cshtml",
+              "RelativeDocumentMoniker": "BanDoUong_User\\Views\\GIO_HANG\\Index.cshtml",
+              "ToolTip": "C:\\Th\u1EF1c t\u1EADp doanh nghi\u1EC7p\\Project\\BanDoUongTunio\\BanDoUong_User\\Views\\GIO_HANG\\Index.cshtml",
+              "RelativeToolTip": "BanDoUong_User\\Views\\GIO_HANG\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB0AAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-01-21T07:07:58.712Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Th\u1EF1c t\u1EADp doanh nghi\u1EC7p\\Project\\BanDoUongTunio\\BanDoUong_User\\Views\\DON_HANG\\Index.cshtml",
+              "RelativeDocumentMoniker": "BanDoUong_User\\Views\\DON_HANG\\Index.cshtml",
+              "ToolTip": "C:\\Th\u1EF1c t\u1EADp doanh nghi\u1EC7p\\Project\\BanDoUongTunio\\BanDoUong_User\\Views\\DON_HANG\\Index.cshtml",
+              "RelativeToolTip": "BanDoUong_User\\Views\\DON_HANG\\Index.cshtml",
+              "ViewState": "AgIAABgAAAAAAAAAAAAAADAAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-02-02T08:13:53.808Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "SAN_PHAMController.cs",
+              "DocumentMoniker": "C:\\Th\u1EF1c t\u1EADp doanh nghi\u1EC7p\\Project\\BanDoUongTunio\\BanDoUong_User\\Controllers\\SAN_PHAMController.cs",
+              "RelativeDocumentMoniker": "BanDoUong_User\\Controllers\\SAN_PHAMController.cs",
+              "ToolTip": "C:\\Th\u1EF1c t\u1EADp doanh nghi\u1EC7p\\Project\\BanDoUongTunio\\BanDoUong_User\\Controllers\\SAN_PHAMController.cs",
+              "RelativeToolTip": "BanDoUong_User\\Controllers\\SAN_PHAMController.cs",
+              "ViewState": "AgIAAB0AAAAAAAAAAAAAAC8AAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-20T02:37:33.448Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "Web.config",
+              "DocumentMoniker": "C:\\Th\u1EF1c t\u1EADp doanh nghi\u1EC7p\\Project\\BanDoUongTunio\\BanDoUong_User\\Views\\Web.config",
+              "RelativeDocumentMoniker": "BanDoUong_User\\Views\\Web.config",
+              "ToolTip": "C:\\Th\u1EF1c t\u1EADp doanh nghi\u1EC7p\\Project\\BanDoUongTunio\\BanDoUong_User\\Views\\Web.config",
+              "RelativeToolTip": "BanDoUong_User\\Views\\Web.config",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAowBQAAAATAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2026-02-20T03:41:55.363Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "Web.Release.config",
+              "DocumentMoniker": "C:\\Th\u1EF1c t\u1EADp doanh nghi\u1EC7p\\Project\\BanDoUongTunio\\BanDoUong_User\\Web.Release.config",
+              "RelativeDocumentMoniker": "BanDoUong_User\\Web.Release.config",
+              "ToolTip": "C:\\Th\u1EF1c t\u1EADp doanh nghi\u1EC7p\\Project\\BanDoUongTunio\\BanDoUong_User\\Web.Release.config",
+              "RelativeToolTip": "BanDoUong_User\\Web.Release.config",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2026-02-20T03:49:36.996Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "HoanTat.cshtml",
+              "DocumentMoniker": "C:\\Th\u1EF1c t\u1EADp doanh nghi\u1EC7p\\Project\\BanDoUongTunio\\BanDoUong_User\\Views\\DON_HANG\\HoanTat.cshtml",
+              "RelativeDocumentMoniker": "BanDoUong_User\\Views\\DON_HANG\\HoanTat.cshtml",
+              "ToolTip": "C:\\Th\u1EF1c t\u1EADp doanh nghi\u1EC7p\\Project\\BanDoUongTunio\\BanDoUong_User\\Views\\DON_HANG\\HoanTat.cshtml",
+              "RelativeToolTip": "BanDoUong_User\\Views\\DON_HANG\\HoanTat.cshtml",
+              "ViewState": "AgIAACQAAAAAAAAAAAAAAD0AAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-02-02T05:07:53.849Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Details.cshtml",
+              "DocumentMoniker": "C:\\Th\u1EF1c t\u1EADp doanh nghi\u1EC7p\\Project\\BanDoUongTunio\\BanDoUong_User\\Views\\SAN_PHAM\\Details.cshtml",
+              "RelativeDocumentMoniker": "BanDoUong_User\\Views\\SAN_PHAM\\Details.cshtml",
+              "ToolTip": "C:\\Th\u1EF1c t\u1EADp doanh nghi\u1EC7p\\Project\\BanDoUongTunio\\BanDoUong_User\\Views\\SAN_PHAM\\Details.cshtml",
+              "RelativeToolTip": "BanDoUong_User\\Views\\SAN_PHAM\\Details.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-01-20T03:19:59.754Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Th\u1EF1c t\u1EADp doanh nghi\u1EC7p\\Project\\BanDoUongTunio\\BanDoUong_User\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "BanDoUong_User\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Th\u1EF1c t\u1EADp doanh nghi\u1EC7p\\Project\\BanDoUongTunio\\BanDoUong_User\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "BanDoUong_User\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-01-20T02:47:05.373Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "Web.Debug.config",
+              "DocumentMoniker": "C:\\Th\u1EF1c t\u1EADp doanh nghi\u1EC7p\\Project\\BanDoUongTunio\\BanDoUong_User\\Web.Debug.config",
+              "RelativeDocumentMoniker": "BanDoUong_User\\Web.Debug.config",
+              "ToolTip": "C:\\Th\u1EF1c t\u1EADp doanh nghi\u1EC7p\\Project\\BanDoUongTunio\\BanDoUong_User\\Web.Debug.config",
+              "RelativeToolTip": "BanDoUong_User\\Web.Debug.config",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2026-02-20T03:49:34.525Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "TAI_KHOANController.cs",
+              "DocumentMoniker": "C:\\Th\u1EF1c t\u1EADp doanh nghi\u1EC7p\\Project\\BanDoUongTunio\\BanDoUong_User\\Controllers\\TAI_KHOANController.cs",
+              "RelativeDocumentMoniker": "BanDoUong_User\\Controllers\\TAI_KHOANController.cs",
+              "ToolTip": "C:\\Th\u1EF1c t\u1EADp doanh nghi\u1EC7p\\Project\\BanDoUongTunio\\BanDoUong_User\\Controllers\\TAI_KHOANController.cs",
+              "RelativeToolTip": "BanDoUong_User\\Controllers\\TAI_KHOANController.cs",
+              "ViewState": "AgIAABoAAAAAAAAAAAAAwDAAAAA1AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-20T03:38:54.121Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Th\u1EF1c t\u1EADp doanh nghi\u1EC7p\\Project\\BanDoUongTunio\\BanDoUongTunio\\Views\\ThongKe\\Index.cshtml",
+              "RelativeDocumentMoniker": "BanDoUongTunio\\Views\\ThongKe\\Index.cshtml",
+              "ToolTip": "C:\\Th\u1EF1c t\u1EADp doanh nghi\u1EC7p\\Project\\BanDoUongTunio\\BanDoUongTunio\\Views\\ThongKe\\Index.cshtml",
+              "RelativeToolTip": "BanDoUongTunio\\Views\\ThongKe\\Index.cshtml",
+              "ViewState": "AgIAAH0AAAAAAAAAAAAqwJEAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-02-04T04:01:48.022Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "GIO_HANGController.cs",
+              "DocumentMoniker": "C:\\Th\u1EF1c t\u1EADp doanh nghi\u1EC7p\\Project\\BanDoUongTunio\\BanDoUong_User\\Controllers\\GIO_HANGController.cs",
+              "RelativeDocumentMoniker": "BanDoUong_User\\Controllers\\GIO_HANGController.cs",
+              "ToolTip": "C:\\Th\u1EF1c t\u1EADp doanh nghi\u1EC7p\\Project\\BanDoUongTunio\\BanDoUong_User\\Controllers\\GIO_HANGController.cs",
+              "RelativeToolTip": "BanDoUong_User\\Controllers\\GIO_HANGController.cs",
+              "ViewState": "AgIAAGIAAAAAAAAAAAAkwIkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-21T02:47:43.65Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "DangKy.cshtml",
+              "DocumentMoniker": "C:\\Th\u1EF1c t\u1EADp doanh nghi\u1EC7p\\Project\\BanDoUongTunio\\BanDoUong_User\\Views\\TAI_KHOAN\\DangKy.cshtml",
+              "RelativeDocumentMoniker": "BanDoUong_User\\Views\\TAI_KHOAN\\DangKy.cshtml",
+              "ToolTip": "C:\\Th\u1EF1c t\u1EADp doanh nghi\u1EC7p\\Project\\BanDoUongTunio\\BanDoUong_User\\Views\\TAI_KHOAN\\DangKy.cshtml",
+              "RelativeToolTip": "BanDoUong_User\\Views\\TAI_KHOAN\\DangKy.cshtml",
+              "ViewState": "AgIAAEsAAAAAAAAAAAAIwJMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-01-20T08:20:04.733Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "DangNhap.cshtml",
+              "DocumentMoniker": "C:\\Th\u1EF1c t\u1EADp doanh nghi\u1EC7p\\Project\\BanDoUongTunio\\BanDoUong_User\\Views\\TAI_KHOAN\\DangNhap.cshtml",
+              "RelativeDocumentMoniker": "BanDoUong_User\\Views\\TAI_KHOAN\\DangNhap.cshtml",
+              "ToolTip": "C:\\Th\u1EF1c t\u1EADp doanh nghi\u1EC7p\\Project\\BanDoUongTunio\\BanDoUong_User\\Views\\TAI_KHOAN\\DangNhap.cshtml",
+              "RelativeToolTip": "BanDoUong_User\\Views\\TAI_KHOAN\\DangNhap.cshtml",
+              "ViewState": "AgIAADwAAAAAAAAAAAAowF0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-01-20T08:05:19.3Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Th\u1EF1c t\u1EADp doanh nghi\u1EC7p\\Project\\BanDoUongTunio\\BanDoUongTunio\\Views\\TAI_KHOAN\\Index.cshtml",
+              "RelativeDocumentMoniker": "BanDoUongTunio\\Views\\TAI_KHOAN\\Index.cshtml",
+              "ToolTip": "C:\\Th\u1EF1c t\u1EADp doanh nghi\u1EC7p\\Project\\BanDoUongTunio\\BanDoUongTunio\\Views\\TAI_KHOAN\\Index.cshtml",
+              "RelativeToolTip": "BanDoUongTunio\\Views\\TAI_KHOAN\\Index.cshtml",
+              "ViewState": "AgIAAPgAAAAAAAAAAAAcwBEBAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-01-25T03:48:46.393Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "TAI_KHOANController.cs",
+              "DocumentMoniker": "C:\\Th\u1EF1c t\u1EADp doanh nghi\u1EC7p\\Project\\BanDoUongTunio\\BanDoUongTunio\\Controllers\\TAI_KHOANController.cs",
+              "RelativeDocumentMoniker": "BanDoUongTunio\\Controllers\\TAI_KHOANController.cs",
+              "ToolTip": "C:\\Th\u1EF1c t\u1EADp doanh nghi\u1EC7p\\Project\\BanDoUongTunio\\BanDoUongTunio\\Controllers\\TAI_KHOANController.cs",
+              "RelativeToolTip": "BanDoUongTunio\\Controllers\\TAI_KHOANController.cs",
+              "ViewState": "AgIAAJIAAAAAAAAAAAAkwLkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-19T08:44:54.486Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "GIO_HANG.cs",
+              "DocumentMoniker": "C:\\Th\u1EF1c t\u1EADp doanh nghi\u1EC7p\\Project\\BanDoUongTunio\\BanDoUongTunio\\Models\\GIO_HANG.cs",
+              "RelativeDocumentMoniker": "BanDoUongTunio\\Models\\GIO_HANG.cs",
+              "ToolTip": "C:\\Th\u1EF1c t\u1EADp doanh nghi\u1EC7p\\Project\\BanDoUongTunio\\BanDoUongTunio\\Models\\GIO_HANG.cs",
+              "RelativeToolTip": "BanDoUongTunio\\Models\\GIO_HANG.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-04T08:24:20.782Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "DON_HANG.cs",
+              "DocumentMoniker": "C:\\Th\u1EF1c t\u1EADp doanh nghi\u1EC7p\\Project\\BanDoUongTunio\\BanDoUongTunio\\Models\\DON_HANG.cs",
+              "RelativeDocumentMoniker": "BanDoUongTunio\\Models\\DON_HANG.cs",
+              "ToolTip": "C:\\Th\u1EF1c t\u1EADp doanh nghi\u1EC7p\\Project\\BanDoUongTunio\\BanDoUongTunio\\Models\\DON_HANG.cs",
+              "RelativeToolTip": "BanDoUongTunio\\Models\\DON_HANG.cs",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAcwCgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-03T14:54:10.429Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "DIA_CHI.cs",
+              "DocumentMoniker": "C:\\Th\u1EF1c t\u1EADp doanh nghi\u1EC7p\\Project\\BanDoUongTunio\\BanDoUongTunio\\Models\\DIA_CHI.cs",
+              "RelativeDocumentMoniker": "BanDoUongTunio\\Models\\DIA_CHI.cs",
+              "ToolTip": "C:\\Th\u1EF1c t\u1EADp doanh nghi\u1EC7p\\Project\\BanDoUongTunio\\BanDoUongTunio\\Models\\DIA_CHI.cs",
+              "RelativeToolTip": "BanDoUongTunio\\Models\\DIA_CHI.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAcwCYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-29T04:17:29.06Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "TAI_KHOAN.cs",
+              "DocumentMoniker": "C:\\Th\u1EF1c t\u1EADp doanh nghi\u1EC7p\\Project\\BanDoUongTunio\\BanDoUongTunio\\Models\\TAI_KHOAN.cs",
+              "RelativeDocumentMoniker": "BanDoUongTunio\\Models\\TAI_KHOAN.cs",
+              "ToolTip": "C:\\Th\u1EF1c t\u1EADp doanh nghi\u1EC7p\\Project\\BanDoUongTunio\\BanDoUongTunio\\Models\\TAI_KHOAN.cs",
+              "RelativeToolTip": "BanDoUongTunio\\Models\\TAI_KHOAN.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAiwCcAAAA0AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-03T15:42:54.386Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "C:\\Th\u1EF1c t\u1EADp doanh nghi\u1EC7p\\Project\\BanDoUongTunio\\BanDoUongTunio\\Views\\SAN_PHAM\\Edit.cshtml",
+              "RelativeDocumentMoniker": "BanDoUongTunio\\Views\\SAN_PHAM\\Edit.cshtml",
+              "ToolTip": "C:\\Th\u1EF1c t\u1EADp doanh nghi\u1EC7p\\Project\\BanDoUongTunio\\BanDoUongTunio\\Views\\SAN_PHAM\\Edit.cshtml",
+              "RelativeToolTip": "BanDoUongTunio\\Views\\SAN_PHAM\\Edit.cshtml",
+              "ViewState": "AgIAAHsAAAAAAAAAAAAAAKEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-01-26T08:28:19.627Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "SAN_PHAMController.cs",
+              "DocumentMoniker": "C:\\Th\u1EF1c t\u1EADp doanh nghi\u1EC7p\\Project\\BanDoUongTunio\\BanDoUongTunio\\Controllers\\SAN_PHAMController.cs",
+              "RelativeDocumentMoniker": "BanDoUongTunio\\Controllers\\SAN_PHAMController.cs",
+              "ToolTip": "C:\\Th\u1EF1c t\u1EADp doanh nghi\u1EC7p\\Project\\BanDoUongTunio\\BanDoUongTunio\\Controllers\\SAN_PHAMController.cs",
+              "RelativeToolTip": "BanDoUongTunio\\Controllers\\SAN_PHAMController.cs",
+              "ViewState": "AgIAAJQAAAAAAAAAAAAYwLMAAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-19T03:11:20.36Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Th\u1EF1c t\u1EADp doanh nghi\u1EC7p\\Project\\BanDoUongTunio\\BanDoUongTunio\\Views\\SAN_PHAM\\Index.cshtml",
+              "RelativeDocumentMoniker": "BanDoUongTunio\\Views\\SAN_PHAM\\Index.cshtml",
+              "ToolTip": "C:\\Th\u1EF1c t\u1EADp doanh nghi\u1EC7p\\Project\\BanDoUongTunio\\BanDoUongTunio\\Views\\SAN_PHAM\\Index.cshtml",
+              "RelativeToolTip": "BanDoUongTunio\\Views\\SAN_PHAM\\Index.cshtml",
+              "ViewState": "AgIAAD0BAAAAAAAAAAAowF8BAABoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-01-23T02:58:35.002Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "Delete.cshtml",
+              "DocumentMoniker": "C:\\Th\u1EF1c t\u1EADp doanh nghi\u1EC7p\\Project\\BanDoUongTunio\\BanDoUongTunio\\Views\\SAN_PHAM\\Delete.cshtml",
+              "RelativeDocumentMoniker": "BanDoUongTunio\\Views\\SAN_PHAM\\Delete.cshtml",
+              "ToolTip": "C:\\Th\u1EF1c t\u1EADp doanh nghi\u1EC7p\\Project\\BanDoUongTunio\\BanDoUongTunio\\Views\\SAN_PHAM\\Delete.cshtml",
+              "RelativeToolTip": "BanDoUongTunio\\Views\\SAN_PHAM\\Delete.cshtml",
+              "ViewState": "AgIAAFcAAAAAAAAAAAAAAG4AAABRAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-01-26T08:28:16.703Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "C:\\Th\u1EF1c t\u1EADp doanh nghi\u1EC7p\\Project\\BanDoUongTunio\\BanDoUongTunio\\Views\\SAN_PHAM\\Create.cshtml",
+              "RelativeDocumentMoniker": "BanDoUongTunio\\Views\\SAN_PHAM\\Create.cshtml",
+              "ToolTip": "C:\\Th\u1EF1c t\u1EADp doanh nghi\u1EC7p\\Project\\BanDoUongTunio\\BanDoUongTunio\\Views\\SAN_PHAM\\Create.cshtml",
+              "RelativeToolTip": "BanDoUongTunio\\Views\\SAN_PHAM\\Create.cshtml",
+              "ViewState": "AgIAAF0AAAAAAAAAAAAowMMAAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-01-29T04:14:37.215Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "SAN_PHAM.cs",
+              "DocumentMoniker": "C:\\Th\u1EF1c t\u1EADp doanh nghi\u1EC7p\\Project\\BanDoUongTunio\\BanDoUongTunio\\Models\\SAN_PHAM.cs",
+              "RelativeDocumentMoniker": "BanDoUongTunio\\Models\\SAN_PHAM.cs",
+              "ToolTip": "C:\\Th\u1EF1c t\u1EADp doanh nghi\u1EC7p\\Project\\BanDoUongTunio\\BanDoUongTunio\\Models\\SAN_PHAM.cs",
+              "RelativeToolTip": "BanDoUongTunio\\Models\\SAN_PHAM.cs",
+              "ViewState": "AgIAABIAAAAAAAAAAAA4wB8AAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-29T04:14:56.968Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 35,
+              "Title": "SAN_PHAM_SIZE.cs",
+              "DocumentMoniker": "C:\\Th\u1EF1c t\u1EADp doanh nghi\u1EC7p\\Project\\BanDoUongTunio\\BanDoUongTunio\\Models\\SAN_PHAM_SIZE.cs",
+              "RelativeDocumentMoniker": "BanDoUongTunio\\Models\\SAN_PHAM_SIZE.cs",
+              "ToolTip": "C:\\Th\u1EF1c t\u1EADp doanh nghi\u1EC7p\\Project\\BanDoUongTunio\\BanDoUongTunio\\Models\\SAN_PHAM_SIZE.cs",
+              "RelativeToolTip": "BanDoUongTunio\\Models\\SAN_PHAM_SIZE.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-19T08:06:41.057Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 39,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "C:\\Th\u1EF1c t\u1EADp doanh nghi\u1EC7p\\Project\\BanDoUongTunio\\BanDoUongTunio\\Views\\TOPPINGs\\Edit.cshtml",
+              "RelativeDocumentMoniker": "BanDoUongTunio\\Views\\TOPPINGs\\Edit.cshtml",
+              "ToolTip": "C:\\Th\u1EF1c t\u1EADp doanh nghi\u1EC7p\\Project\\BanDoUongTunio\\BanDoUongTunio\\Views\\TOPPINGs\\Edit.cshtml",
+              "RelativeToolTip": "BanDoUongTunio\\Views\\TOPPINGs\\Edit.cshtml",
+              "ViewState": "AgIAAEEAAAAAAAAAAADwv0wAAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-01-19T09:19:28.841Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 36,
+              "Title": "DANH_MUCController.cs",
+              "DocumentMoniker": "C:\\Th\u1EF1c t\u1EADp doanh nghi\u1EC7p\\Project\\BanDoUongTunio\\BanDoUongTunio\\Controllers\\DANH_MUCController.cs",
+              "RelativeDocumentMoniker": "BanDoUongTunio\\Controllers\\DANH_MUCController.cs",
+              "ToolTip": "C:\\Th\u1EF1c t\u1EADp doanh nghi\u1EC7p\\Project\\BanDoUongTunio\\BanDoUongTunio\\Controllers\\DANH_MUCController.cs",
+              "RelativeToolTip": "BanDoUongTunio\\Controllers\\DANH_MUCController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-19T03:05:20.773Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 37,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Th\u1EF1c t\u1EADp doanh nghi\u1EC7p\\Project\\BanDoUongTunio\\BanDoUongTunio\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "BanDoUongTunio\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Th\u1EF1c t\u1EADp doanh nghi\u1EC7p\\Project\\BanDoUongTunio\\BanDoUongTunio\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "BanDoUongTunio\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAowCQAAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-01-19T03:33:38.435Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 38,
+              "Title": "Error.cshtml",
+              "DocumentMoniker": "C:\\Th\u1EF1c t\u1EADp doanh nghi\u1EC7p\\Project\\BanDoUongTunio\\BanDoUongTunio\\Views\\Shared\\Error.cshtml",
+              "RelativeDocumentMoniker": "BanDoUongTunio\\Views\\Shared\\Error.cshtml",
+              "ToolTip": "C:\\Th\u1EF1c t\u1EADp doanh nghi\u1EC7p\\Project\\BanDoUongTunio\\BanDoUongTunio\\Views\\Shared\\Error.cshtml",
+              "RelativeToolTip": "BanDoUongTunio\\Views\\Shared\\Error.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-01-19T03:45:55.404Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 40,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "C:\\Th\u1EF1c t\u1EADp doanh nghi\u1EC7p\\Project\\BanDoUongTunio\\BanDoUongTunio\\Views\\TOPPINGs\\Create.cshtml",
+              "RelativeDocumentMoniker": "BanDoUongTunio\\Views\\TOPPINGs\\Create.cshtml",
+              "ToolTip": "C:\\Th\u1EF1c t\u1EADp doanh nghi\u1EC7p\\Project\\BanDoUongTunio\\BanDoUongTunio\\Views\\TOPPINGs\\Create.cshtml",
+              "RelativeToolTip": "BanDoUongTunio\\Views\\TOPPINGs\\Create.cshtml",
+              "ViewState": "AgIAADwAAAAAAAAAAAAIwEwAAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-01-30T02:48:27.454Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 41,
+              "Title": "Delete.cshtml",
+              "DocumentMoniker": "C:\\Th\u1EF1c t\u1EADp doanh nghi\u1EC7p\\Project\\BanDoUongTunio\\BanDoUongTunio\\Views\\TOPPINGs\\Delete.cshtml",
+              "RelativeDocumentMoniker": "BanDoUongTunio\\Views\\TOPPINGs\\Delete.cshtml",
+              "ToolTip": "C:\\Th\u1EF1c t\u1EADp doanh nghi\u1EC7p\\Project\\BanDoUongTunio\\BanDoUongTunio\\Views\\TOPPINGs\\Delete.cshtml",
+              "RelativeToolTip": "BanDoUongTunio\\Views\\TOPPINGs\\Delete.cshtml",
+              "ViewState": "AgIAAFcAAAAAAAAAAAAAAGkAAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-01-29T04:25:49.329Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 42,
+              "Title": "TOPPING.cs",
+              "DocumentMoniker": "C:\\Th\u1EF1c t\u1EADp doanh nghi\u1EC7p\\Project\\BanDoUongTunio\\BanDoUongTunio\\Models\\TOPPING.cs",
+              "RelativeDocumentMoniker": "BanDoUongTunio\\Models\\TOPPING.cs",
+              "ToolTip": "C:\\Th\u1EF1c t\u1EADp doanh nghi\u1EC7p\\Project\\BanDoUongTunio\\BanDoUongTunio\\Models\\TOPPING.cs",
+              "RelativeToolTip": "BanDoUongTunio\\Models\\TOPPING.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAABCAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-19T14:39:15.216Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 45,
+              "Title": "DANH_MUC.cs",
+              "DocumentMoniker": "C:\\Th\u1EF1c t\u1EADp doanh nghi\u1EC7p\\Project\\BanDoUongTunio\\BanDoUongTunio\\Models\\DANH_MUC.cs",
+              "RelativeDocumentMoniker": "BanDoUongTunio\\Models\\DANH_MUC.cs",
+              "ToolTip": "C:\\Th\u1EF1c t\u1EADp doanh nghi\u1EC7p\\Project\\BanDoUongTunio\\BanDoUongTunio\\Models\\DANH_MUC.cs",
+              "RelativeToolTip": "BanDoUongTunio\\Models\\DANH_MUC.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-19T14:39:54.798Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 43,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "C:\\Th\u1EF1c t\u1EADp doanh nghi\u1EC7p\\Project\\BanDoUongTunio\\BanDoUongTunio\\Views\\DANH_MUC\\Edit.cshtml",
+              "RelativeDocumentMoniker": "BanDoUongTunio\\Views\\DANH_MUC\\Edit.cshtml",
+              "ToolTip": "C:\\Th\u1EF1c t\u1EADp doanh nghi\u1EC7p\\Project\\BanDoUongTunio\\BanDoUongTunio\\Views\\DANH_MUC\\Edit.cshtml",
+              "RelativeToolTip": "BanDoUongTunio\\Views\\DANH_MUC\\Edit.cshtml",
+              "ViewState": "AgIAAEYAAAAAAAAAAAAwwFgAAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-01-19T03:53:37.774Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 46,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Th\u1EF1c t\u1EADp doanh nghi\u1EC7p\\Project\\BanDoUongTunio\\BanDoUongTunio\\Views\\DANH_MUC\\Index.cshtml",
+              "RelativeDocumentMoniker": "BanDoUongTunio\\Views\\DANH_MUC\\Index.cshtml",
+              "ToolTip": "C:\\Th\u1EF1c t\u1EADp doanh nghi\u1EC7p\\Project\\BanDoUongTunio\\BanDoUongTunio\\Views\\DANH_MUC\\Index.cshtml",
+              "RelativeToolTip": "BanDoUongTunio\\Views\\DANH_MUC\\Index.cshtml",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABYAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-01-29T04:17:42.764Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 44,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "C:\\Th\u1EF1c t\u1EADp doanh nghi\u1EC7p\\Project\\BanDoUongTunio\\BanDoUongTunio\\Views\\DANH_MUC\\Create.cshtml",
+              "RelativeDocumentMoniker": "BanDoUongTunio\\Views\\DANH_MUC\\Create.cshtml",
+              "ToolTip": "C:\\Th\u1EF1c t\u1EADp doanh nghi\u1EC7p\\Project\\BanDoUongTunio\\BanDoUongTunio\\Views\\DANH_MUC\\Create.cshtml",
+              "RelativeToolTip": "BanDoUongTunio\\Views\\DANH_MUC\\Create.cshtml",
+              "ViewState": "AgIAAGAAAAAAAAAAAAAcwFgAAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-01-19T03:53:39.937Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 47,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Th\u1EF1c t\u1EADp doanh nghi\u1EC7p\\Project\\BanDoUongTunio\\BanDoUongTunio\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "BanDoUongTunio\\Views\\Home\\Index.cshtml",
+              "ToolTip": "C:\\Th\u1EF1c t\u1EADp doanh nghi\u1EC7p\\Project\\BanDoUongTunio\\BanDoUongTunio\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "BanDoUongTunio\\Views\\Home\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-01-28T08:10:08.236Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 48,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "C:\\Th\u1EF1c t\u1EADp doanh nghi\u1EC7p\\Project\\BanDoUongTunio\\BanDoUong_User\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "BanDoUong_User\\Controllers\\HomeController.cs",
+              "ToolTip": "C:\\Th\u1EF1c t\u1EADp doanh nghi\u1EC7p\\Project\\BanDoUongTunio\\BanDoUong_User\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "BanDoUong_User\\Controllers\\HomeController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-20T04:27:41.357Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 49,
+              "Title": "ThongKeController.cs",
+              "DocumentMoniker": "C:\\Th\u1EF1c t\u1EADp doanh nghi\u1EC7p\\Project\\BanDoUongTunio\\BanDoUongTunio\\Controllers\\ThongKeController.cs",
+              "RelativeDocumentMoniker": "BanDoUongTunio\\Controllers\\ThongKeController.cs",
+              "ToolTip": "C:\\Th\u1EF1c t\u1EADp doanh nghi\u1EC7p\\Project\\BanDoUongTunio\\BanDoUongTunio\\Controllers\\ThongKeController.cs",
+              "RelativeToolTip": "BanDoUongTunio\\Controllers\\ThongKeController.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAgwCgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-04T03:53:29.883Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 50,
+              "Title": "CHI_TIET_DON_HANG.cs",
+              "DocumentMoniker": "C:\\Th\u1EF1c t\u1EADp doanh nghi\u1EC7p\\Project\\BanDoUongTunio\\BanDoUongTunio\\Models\\CHI_TIET_DON_HANG.cs",
+              "RelativeDocumentMoniker": "BanDoUongTunio\\Models\\CHI_TIET_DON_HANG.cs",
+              "ToolTip": "C:\\Th\u1EF1c t\u1EADp doanh nghi\u1EC7p\\Project\\BanDoUongTunio\\BanDoUongTunio\\Models\\CHI_TIET_DON_HANG.cs",
+              "RelativeToolTip": "BanDoUongTunio\\Models\\CHI_TIET_DON_HANG.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAUwCYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-03T14:54:02.968Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 51,
+              "Title": "CHI_TIET_DON_HANG_TOPPING.cs",
+              "DocumentMoniker": "C:\\Th\u1EF1c t\u1EADp doanh nghi\u1EC7p\\Project\\BanDoUongTunio\\BanDoUongTunio\\Models\\CHI_TIET_DON_HANG_TOPPING.cs",
+              "RelativeDocumentMoniker": "BanDoUongTunio\\Models\\CHI_TIET_DON_HANG_TOPPING.cs",
+              "ToolTip": "C:\\Th\u1EF1c t\u1EADp doanh nghi\u1EC7p\\Project\\BanDoUongTunio\\BanDoUongTunio\\Models\\CHI_TIET_DON_HANG_TOPPING.cs",
+              "RelativeToolTip": "BanDoUongTunio\\Models\\CHI_TIET_DON_HANG_TOPPING.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-03T14:54:54.669Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 52,
+              "Title": "CHI_TIET_GIO_HANG.cs",
+              "DocumentMoniker": "C:\\Th\u1EF1c t\u1EADp doanh nghi\u1EC7p\\Project\\BanDoUongTunio\\BanDoUongTunio\\Models\\CHI_TIET_GIO_HANG.cs",
+              "RelativeDocumentMoniker": "BanDoUongTunio\\Models\\CHI_TIET_GIO_HANG.cs",
+              "ToolTip": "C:\\Th\u1EF1c t\u1EADp doanh nghi\u1EC7p\\Project\\BanDoUongTunio\\BanDoUongTunio\\Models\\CHI_TIET_GIO_HANG.cs",
+              "RelativeToolTip": "BanDoUongTunio\\Models\\CHI_TIET_GIO_HANG.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-19T14:39:13.312Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 53,
+              "Title": "QL_BAN_DO_UONGDb.cs",
+              "DocumentMoniker": "C:\\Th\u1EF1c t\u1EADp doanh nghi\u1EC7p\\Project\\BanDoUongTunio\\BanDoUongTunio\\Models\\QL_BAN_DO_UONGDb.cs",
+              "RelativeDocumentMoniker": "BanDoUongTunio\\Models\\QL_BAN_DO_UONGDb.cs",
+              "ToolTip": "C:\\Th\u1EF1c t\u1EADp doanh nghi\u1EC7p\\Project\\BanDoUongTunio\\BanDoUongTunio\\Models\\QL_BAN_DO_UONGDb.cs",
+              "RelativeToolTip": "BanDoUongTunio\\Models\\QL_BAN_DO_UONGDb.cs",
+              "ViewState": "AgIAAGIAAAAAAAAAAAAkwIkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-19T03:00:19.077Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 54,
+              "Title": "SIZE.cs",
+              "DocumentMoniker": "C:\\Th\u1EF1c t\u1EADp doanh nghi\u1EC7p\\Project\\BanDoUongTunio\\BanDoUongTunio\\Models\\SIZE.cs",
+              "RelativeDocumentMoniker": "BanDoUongTunio\\Models\\SIZE.cs",
+              "ToolTip": "C:\\Th\u1EF1c t\u1EADp doanh nghi\u1EC7p\\Project\\BanDoUongTunio\\BanDoUongTunio\\Models\\SIZE.cs",
+              "RelativeToolTip": "BanDoUongTunio\\Models\\SIZE.cs",
+              "ViewState": "AgIAAAEAAAAAAAAAAAAqwCIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-19T03:01:03.689Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 55,
+              "Title": "THANH_TOAN.cs",
+              "DocumentMoniker": "C:\\Th\u1EF1c t\u1EADp doanh nghi\u1EC7p\\Project\\BanDoUongTunio\\BanDoUongTunio\\Models\\THANH_TOAN.cs",
+              "RelativeDocumentMoniker": "BanDoUongTunio\\Models\\THANH_TOAN.cs",
+              "ToolTip": "C:\\Th\u1EF1c t\u1EADp doanh nghi\u1EC7p\\Project\\BanDoUongTunio\\BanDoUongTunio\\Models\\THANH_TOAN.cs",
+              "RelativeToolTip": "BanDoUongTunio\\Models\\THANH_TOAN.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-19T14:39:16.394Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 56,
+              "Title": "TOPPINGsController.cs",
+              "DocumentMoniker": "C:\\Th\u1EF1c t\u1EADp doanh nghi\u1EC7p\\Project\\BanDoUongTunio\\BanDoUongTunio\\Controllers\\TOPPINGsController.cs",
+              "RelativeDocumentMoniker": "BanDoUongTunio\\Controllers\\TOPPINGsController.cs",
+              "ToolTip": "C:\\Th\u1EF1c t\u1EADp doanh nghi\u1EC7p\\Project\\BanDoUongTunio\\BanDoUongTunio\\Controllers\\TOPPINGsController.cs",
+              "RelativeToolTip": "BanDoUongTunio\\Controllers\\TOPPINGsController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-19T08:43:47.997Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 57,
+              "Title": "Delete.cshtml",
+              "DocumentMoniker": "C:\\Th\u1EF1c t\u1EADp doanh nghi\u1EC7p\\Project\\BanDoUongTunio\\BanDoUongTunio\\Views\\TAI_KHOAN\\Delete.cshtml",
+              "RelativeDocumentMoniker": "BanDoUongTunio\\Views\\TAI_KHOAN\\Delete.cshtml",
+              "ToolTip": "C:\\Th\u1EF1c t\u1EADp doanh nghi\u1EC7p\\Project\\BanDoUongTunio\\BanDoUongTunio\\Views\\TAI_KHOAN\\Delete.cshtml",
+              "RelativeToolTip": "BanDoUongTunio\\Views\\TAI_KHOAN\\Delete.cshtml",
+              "ViewState": "AgIAAF0AAAAAAAAAAAAkwH4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-01-29T03:23:44.018Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 58,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "C:\\Th\u1EF1c t\u1EADp doanh nghi\u1EC7p\\Project\\BanDoUongTunio\\BanDoUongTunio\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "BanDoUongTunio\\Controllers\\HomeController.cs",
+              "ToolTip": "C:\\Th\u1EF1c t\u1EADp doanh nghi\u1EC7p\\Project\\BanDoUongTunio\\BanDoUongTunio\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "BanDoUongTunio\\Controllers\\HomeController.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABoAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-28T08:09:47.111Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 59,
+              "Title": "Error.cshtml",
+              "DocumentMoniker": "C:\\Th\u1EF1c t\u1EADp doanh nghi\u1EC7p\\Project\\BanDoUongTunio\\BanDoUong_User\\Views\\Shared\\Error.cshtml",
+              "RelativeDocumentMoniker": "BanDoUong_User\\Views\\Shared\\Error.cshtml",
+              "ToolTip": "C:\\Th\u1EF1c t\u1EADp doanh nghi\u1EC7p\\Project\\BanDoUongTunio\\BanDoUong_User\\Views\\Shared\\Error.cshtml",
+              "RelativeToolTip": "BanDoUong_User\\Views\\Shared\\Error.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-01-20T09:02:27.548Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 60,
+              "Title": "ThanhToanVM.cs",
+              "DocumentMoniker": "C:\\Th\u1EF1c t\u1EADp doanh nghi\u1EC7p\\Project\\BanDoUongTunio\\BanDoUong_User\\ViewModels\\ThanhToanVM.cs",
+              "RelativeDocumentMoniker": "BanDoUong_User\\ViewModels\\ThanhToanVM.cs",
+              "ToolTip": "C:\\Th\u1EF1c t\u1EADp doanh nghi\u1EC7p\\Project\\BanDoUongTunio\\BanDoUong_User\\ViewModels\\ThanhToanVM.cs",
+              "RelativeToolTip": "BanDoUong_User\\ViewModels\\ThanhToanVM.cs",
+              "ViewState": "AgIAABIAAAAAAAAAAAAowCkAAAA5AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-02T03:39:49.006Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 61,
+              "Title": "DANH_MUC.cs",
+              "DocumentMoniker": "C:\\Th\u1EF1c t\u1EADp doanh nghi\u1EC7p\\Project\\BanDoUongTunio\\BanDoUong_User\\Models\\DANH_MUC.cs",
+              "RelativeDocumentMoniker": "BanDoUong_User\\Models\\DANH_MUC.cs",
+              "ToolTip": "C:\\Th\u1EF1c t\u1EADp doanh nghi\u1EC7p\\Project\\BanDoUongTunio\\BanDoUong_User\\Models\\DANH_MUC.cs",
+              "RelativeToolTip": "BanDoUong_User\\Models\\DANH_MUC.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-21T07:07:54.079Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 62,
+              "Title": "CHI_TIET_DON_HANG.cs",
+              "DocumentMoniker": "C:\\Th\u1EF1c t\u1EADp doanh nghi\u1EC7p\\Project\\BanDoUongTunio\\BanDoUong_User\\Models\\CHI_TIET_DON_HANG.cs",
+              "RelativeDocumentMoniker": "BanDoUong_User\\Models\\CHI_TIET_DON_HANG.cs",
+              "ToolTip": "C:\\Th\u1EF1c t\u1EADp doanh nghi\u1EC7p\\Project\\BanDoUongTunio\\BanDoUong_User\\Models\\CHI_TIET_DON_HANG.cs",
+              "RelativeToolTip": "BanDoUong_User\\Models\\CHI_TIET_DON_HANG.cs",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAwwCYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-01T13:58:41.703Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 63,
+              "Title": "CHI_TIET_DON_HANG_TOPPING.cs",
+              "DocumentMoniker": "C:\\Th\u1EF1c t\u1EADp doanh nghi\u1EC7p\\Project\\BanDoUongTunio\\BanDoUong_User\\Models\\CHI_TIET_DON_HANG_TOPPING.cs",
+              "RelativeDocumentMoniker": "BanDoUong_User\\Models\\CHI_TIET_DON_HANG_TOPPING.cs",
+              "ToolTip": "C:\\Th\u1EF1c t\u1EADp doanh nghi\u1EC7p\\Project\\BanDoUongTunio\\BanDoUong_User\\Models\\CHI_TIET_DON_HANG_TOPPING.cs",
+              "RelativeToolTip": "BanDoUong_User\\Models\\CHI_TIET_DON_HANG_TOPPING.cs",
+              "ViewState": "AgIAAAEAAAAAAAAAAAAIwBkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-22T03:13:37.25Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 64,
+              "Title": "CHI_TIET_GIO_HANG.cs",
+              "DocumentMoniker": "C:\\Th\u1EF1c t\u1EADp doanh nghi\u1EC7p\\Project\\BanDoUongTunio\\BanDoUong_User\\Models\\CHI_TIET_GIO_HANG.cs",
+              "RelativeDocumentMoniker": "BanDoUong_User\\Models\\CHI_TIET_GIO_HANG.cs",
+              "ToolTip": "C:\\Th\u1EF1c t\u1EADp doanh nghi\u1EC7p\\Project\\BanDoUongTunio\\BanDoUong_User\\Models\\CHI_TIET_GIO_HANG.cs",
+              "RelativeToolTip": "BanDoUong_User\\Models\\CHI_TIET_GIO_HANG.cs",
+              "ViewState": "AgIAAAQAAAAAAAAAAADwvxsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-21T02:52:48.271Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 65,
+              "Title": "DIA_CHI.cs",
+              "DocumentMoniker": "C:\\Th\u1EF1c t\u1EADp doanh nghi\u1EC7p\\Project\\BanDoUongTunio\\BanDoUong_User\\Models\\DIA_CHI.cs",
+              "RelativeDocumentMoniker": "BanDoUong_User\\Models\\DIA_CHI.cs",
+              "ToolTip": "C:\\Th\u1EF1c t\u1EADp doanh nghi\u1EC7p\\Project\\BanDoUongTunio\\BanDoUong_User\\Models\\DIA_CHI.cs",
+              "RelativeToolTip": "BanDoUong_User\\Models\\DIA_CHI.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAIwCYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-21T07:07:44.117Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 66,
+              "Title": "DON_HANG.cs",
+              "DocumentMoniker": "C:\\Th\u1EF1c t\u1EADp doanh nghi\u1EC7p\\Project\\BanDoUongTunio\\BanDoUong_User\\Models\\DON_HANG.cs",
+              "RelativeDocumentMoniker": "BanDoUong_User\\Models\\DON_HANG.cs",
+              "ToolTip": "C:\\Th\u1EF1c t\u1EADp doanh nghi\u1EC7p\\Project\\BanDoUongTunio\\BanDoUong_User\\Models\\DON_HANG.cs",
+              "RelativeToolTip": "BanDoUong_User\\Models\\DON_HANG.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAADwvycAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-22T03:13:33.425Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 67,
+              "Title": "GIO_HANG.cs",
+              "DocumentMoniker": "C:\\Th\u1EF1c t\u1EADp doanh nghi\u1EC7p\\Project\\BanDoUongTunio\\BanDoUong_User\\Models\\GIO_HANG.cs",
+              "RelativeDocumentMoniker": "BanDoUong_User\\Models\\GIO_HANG.cs",
+              "ToolTip": "C:\\Th\u1EF1c t\u1EADp doanh nghi\u1EC7p\\Project\\BanDoUongTunio\\BanDoUong_User\\Models\\GIO_HANG.cs",
+              "RelativeToolTip": "BanDoUong_User\\Models\\GIO_HANG.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-21T02:48:15.952Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 68,
+              "Title": "QL_BAN_DO_UONGDb.cs",
+              "DocumentMoniker": "C:\\Th\u1EF1c t\u1EADp doanh nghi\u1EC7p\\Project\\BanDoUongTunio\\BanDoUong_User\\Models\\QL_BAN_DO_UONGDb.cs",
+              "RelativeDocumentMoniker": "BanDoUong_User\\Models\\QL_BAN_DO_UONGDb.cs",
+              "ToolTip": "C:\\Th\u1EF1c t\u1EADp doanh nghi\u1EC7p\\Project\\BanDoUongTunio\\BanDoUong_User\\Models\\QL_BAN_DO_UONGDb.cs",
+              "RelativeToolTip": "BanDoUong_User\\Models\\QL_BAN_DO_UONGDb.cs",
+              "ViewState": "AgIAAGoAAAAAAAAAAAAAwIkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-20T02:35:55.854Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 69,
+              "Title": "SAN_PHAM.cs",
+              "DocumentMoniker": "C:\\Th\u1EF1c t\u1EADp doanh nghi\u1EC7p\\Project\\BanDoUongTunio\\BanDoUong_User\\Models\\SAN_PHAM.cs",
+              "RelativeDocumentMoniker": "BanDoUong_User\\Models\\SAN_PHAM.cs",
+              "ToolTip": "C:\\Th\u1EF1c t\u1EADp doanh nghi\u1EC7p\\Project\\BanDoUongTunio\\BanDoUong_User\\Models\\SAN_PHAM.cs",
+              "RelativeToolTip": "BanDoUong_User\\Models\\SAN_PHAM.cs",
+              "ViewState": "AgIAABUAAAAAAAAAAAAIwC0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-21T07:16:07.07Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 70,
+              "Title": "SAN_PHAM_SIZE.cs",
+              "DocumentMoniker": "C:\\Th\u1EF1c t\u1EADp doanh nghi\u1EC7p\\Project\\BanDoUongTunio\\BanDoUong_User\\Models\\SAN_PHAM_SIZE.cs",
+              "RelativeDocumentMoniker": "BanDoUong_User\\Models\\SAN_PHAM_SIZE.cs",
+              "ToolTip": "C:\\Th\u1EF1c t\u1EADp doanh nghi\u1EC7p\\Project\\BanDoUongTunio\\BanDoUong_User\\Models\\SAN_PHAM_SIZE.cs",
+              "RelativeToolTip": "BanDoUong_User\\Models\\SAN_PHAM_SIZE.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-21T07:16:06.783Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 71,
+              "Title": "SIZE.cs",
+              "DocumentMoniker": "C:\\Th\u1EF1c t\u1EADp doanh nghi\u1EC7p\\Project\\BanDoUongTunio\\BanDoUong_User\\Models\\SIZE.cs",
+              "RelativeDocumentMoniker": "BanDoUong_User\\Models\\SIZE.cs",
+              "ToolTip": "C:\\Th\u1EF1c t\u1EADp doanh nghi\u1EC7p\\Project\\BanDoUongTunio\\BanDoUong_User\\Models\\SIZE.cs",
+              "RelativeToolTip": "BanDoUong_User\\Models\\SIZE.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAUwCIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-22T03:14:49.152Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 72,
+              "Title": "TAI_KHOAN.cs",
+              "DocumentMoniker": "C:\\Th\u1EF1c t\u1EADp doanh nghi\u1EC7p\\Project\\BanDoUongTunio\\BanDoUong_User\\Models\\TAI_KHOAN.cs",
+              "RelativeDocumentMoniker": "BanDoUong_User\\Models\\TAI_KHOAN.cs",
+              "ToolTip": "C:\\Th\u1EF1c t\u1EADp doanh nghi\u1EC7p\\Project\\BanDoUongTunio\\BanDoUong_User\\Models\\TAI_KHOAN.cs",
+              "RelativeToolTip": "BanDoUong_User\\Models\\TAI_KHOAN.cs",
+              "ViewState": "AgIAABsAAAAAAAAAAAAcwDUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-20T08:30:54.624Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 73,
+              "Title": "THANH_TOAN.cs",
+              "DocumentMoniker": "C:\\Th\u1EF1c t\u1EADp doanh nghi\u1EC7p\\Project\\BanDoUongTunio\\BanDoUong_User\\Models\\THANH_TOAN.cs",
+              "RelativeDocumentMoniker": "BanDoUong_User\\Models\\THANH_TOAN.cs",
+              "ToolTip": "C:\\Th\u1EF1c t\u1EADp doanh nghi\u1EC7p\\Project\\BanDoUongTunio\\BanDoUong_User\\Models\\THANH_TOAN.cs",
+              "RelativeToolTip": "BanDoUong_User\\Models\\THANH_TOAN.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-01T13:59:36.225Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 74,
+              "Title": "TOPPING.cs",
+              "DocumentMoniker": "C:\\Th\u1EF1c t\u1EADp doanh nghi\u1EC7p\\Project\\BanDoUongTunio\\BanDoUong_User\\Models\\TOPPING.cs",
+              "RelativeDocumentMoniker": "BanDoUong_User\\Models\\TOPPING.cs",
+              "ToolTip": "C:\\Th\u1EF1c t\u1EADp doanh nghi\u1EC7p\\Project\\BanDoUongTunio\\BanDoUong_User\\Models\\TOPPING.cs",
+              "RelativeToolTip": "BanDoUong_User\\Models\\TOPPING.cs",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAcwBwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-01T13:59:10.492Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 75,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Th\u1EF1c t\u1EADp doanh nghi\u1EC7p\\Project\\BanDoUongTunio\\BanDoUong_User\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "BanDoUong_User\\Views\\Home\\Index.cshtml",
+              "ToolTip": "C:\\Th\u1EF1c t\u1EADp doanh nghi\u1EC7p\\Project\\BanDoUongTunio\\BanDoUong_User\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "BanDoUong_User\\Views\\Home\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-01-30T14:51:13.067Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 76,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Th\u1EF1c t\u1EADp doanh nghi\u1EC7p\\Project\\BanDoUongTunio\\BanDoUongTunio\\Views\\TOPPINGs\\Index.cshtml",
+              "RelativeDocumentMoniker": "BanDoUongTunio\\Views\\TOPPINGs\\Index.cshtml",
+              "ToolTip": "C:\\Th\u1EF1c t\u1EADp doanh nghi\u1EC7p\\Project\\BanDoUongTunio\\BanDoUongTunio\\Views\\TOPPINGs\\Index.cshtml",
+              "RelativeToolTip": "BanDoUongTunio\\Views\\TOPPINGs\\Index.cshtml",
+              "ViewState": "AgIAACMAAAAAAAAAAAAiwHIAAAA0AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-01-19T09:19:31.281Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 77,
+              "Title": "Delete.cshtml",
+              "DocumentMoniker": "C:\\Th\u1EF1c t\u1EADp doanh nghi\u1EC7p\\Project\\BanDoUongTunio\\BanDoUongTunio\\Views\\DANH_MUC\\Delete.cshtml",
+              "RelativeDocumentMoniker": "BanDoUongTunio\\Views\\DANH_MUC\\Delete.cshtml",
+              "ToolTip": "C:\\Th\u1EF1c t\u1EADp doanh nghi\u1EC7p\\Project\\BanDoUongTunio\\BanDoUongTunio\\Views\\DANH_MUC\\Delete.cshtml",
+              "RelativeToolTip": "BanDoUongTunio\\Views\\DANH_MUC\\Delete.cshtml",
+              "ViewState": "AgIAAEgAAAAAAAAAAADwv1QAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-01-19T03:53:38.477Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 78,
+              "Title": "RouteConfig.cs",
+              "DocumentMoniker": "C:\\Th\u1EF1c t\u1EADp doanh nghi\u1EC7p\\Project\\BanDoUongTunio\\BanDoUongTunio\\App_Start\\RouteConfig.cs",
+              "RelativeDocumentMoniker": "BanDoUongTunio\\App_Start\\RouteConfig.cs",
+              "ToolTip": "C:\\Th\u1EF1c t\u1EADp doanh nghi\u1EC7p\\Project\\BanDoUongTunio\\BanDoUongTunio\\App_Start\\RouteConfig.cs",
+              "RelativeToolTip": "BanDoUongTunio\\App_Start\\RouteConfig.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAyAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-19T03:33:28.625Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 79,
+              "Title": "RouteConfig.cs",
+              "DocumentMoniker": "C:\\Th\u1EF1c t\u1EADp doanh nghi\u1EC7p\\Project\\BanDoUongTunio\\BanDoUong_User\\App_Start\\RouteConfig.cs",
+              "RelativeDocumentMoniker": "BanDoUong_User\\App_Start\\RouteConfig.cs",
+              "ToolTip": "C:\\Th\u1EF1c t\u1EADp doanh nghi\u1EC7p\\Project\\BanDoUongTunio\\BanDoUong_User\\App_Start\\RouteConfig.cs",
+              "RelativeToolTip": "BanDoUong_User\\App_Start\\RouteConfig.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAAwBIAAABHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-20T03:39:02.756Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 80,
+              "Title": "FilterConfig.cs",
+              "DocumentMoniker": "C:\\Th\u1EF1c t\u1EADp doanh nghi\u1EC7p\\Project\\BanDoUongTunio\\BanDoUongTunio\\App_Start\\FilterConfig.cs",
+              "RelativeDocumentMoniker": "BanDoUongTunio\\App_Start\\FilterConfig.cs",
+              "ToolTip": "C:\\Th\u1EF1c t\u1EADp doanh nghi\u1EC7p\\Project\\BanDoUongTunio\\BanDoUongTunio\\App_Start\\FilterConfig.cs",
+              "RelativeToolTip": "BanDoUongTunio\\App_Start\\FilterConfig.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-19T03:33:29.626Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 81,
+              "Title": "BundleConfig.cs",
+              "DocumentMoniker": "C:\\Th\u1EF1c t\u1EADp doanh nghi\u1EC7p\\Project\\BanDoUongTunio\\BanDoUongTunio\\App_Start\\BundleConfig.cs",
+              "RelativeDocumentMoniker": "BanDoUongTunio\\App_Start\\BundleConfig.cs",
+              "ToolTip": "C:\\Th\u1EF1c t\u1EADp doanh nghi\u1EC7p\\Project\\BanDoUongTunio\\BanDoUongTunio\\App_Start\\BundleConfig.cs",
+              "RelativeToolTip": "BanDoUongTunio\\App_Start\\BundleConfig.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAQwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-19T03:33:30.306Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

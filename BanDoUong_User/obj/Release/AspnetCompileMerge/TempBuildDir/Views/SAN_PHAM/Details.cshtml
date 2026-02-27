@@ -1,0 +1,459 @@
+﻿@model BanDoUong_User.Models.SAN_PHAM
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>@Model.ten_san_pham</title>
+
+    <!-- Tailwind -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Font Awesome (icon CSS) -->
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+
+<body class="bg-gray-100 min-h-screen">
+    <!-- HEADER -->
+    <header class="bg-blue-600 text-white">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex items-center gap-4">
+
+            <div class="text-xl font-bold flex items-center gap-2">
+                <i class="fa-solid fa-store"></i> Tunio
+            </div>
+
+            <!-- SEARCH -->
+            <form method="get" action="/SAN_PHAM/Index" class="flex-1 relative">
+                <i class="fa fa-search absolute left-4 top-3 text-gray-400"></i>
+                <input type="text"
+                       name="searchSP"
+                       value="@ViewBag.SearchSP"
+                       placeholder="Bạn cần tìm sản phẩm gì?"
+                       class="w-full pl-10 pr-4 py-2 rounded-full text-black outline-none" />
+            </form>
+
+            <!-- ACTIONS -->
+            <div class="flex items-center gap-6 text-sm">
+
+                <i class="fa-regular fa-heart"></i>
+
+                @if (Session["NguoiDung"] == null)
+                {
+                    <!-- CHƯA ĐĂNG NHẬP -->
+                    <a href="@Url.Action("DangNhap", "TAI_KHOAN")"
+                       class="flex items-center gap-2 hover:underline">
+                        <i class="fa-regular fa-user"></i>
+                        Đăng nhập
+                    </a>
+                }
+                else
+                {
+                    <!-- ĐÃ ĐĂNG NHẬP -->
+                    <div class="relative group">
+
+                        <!-- TÊN USER -->
+                        <div class="cursor-pointer flex items-center gap-2 py-2">
+                            <i class="fa-regular fa-user"></i>
+                            <span class="font-medium">
+                                Xin chào, @Session["NguoiDung"]
+                            </span>
+                            <i class="fa-solid fa-chevron-down text-xs"></i>
+                        </div>
+
+                        <!-- DROPDOWN -->
+                        <div class="absolute right-0 top-full
+                    w-44
+                    bg-white border rounded-xl shadow-lg
+                    opacity-0 invisible
+                    group-hover:opacity-100
+                    group-hover:visible
+                    transition
+                    z-50">
+
+                            <a href="@Url.Action("Index", "DON_HANG")"
+                               class="flex items-center gap-2
+                      px-4 py-3
+                      text-blue-700 font-medium
+                      hover:bg-blue-50
+                      rounded-t-xl">
+                                <i class="fa-solid fa-box"></i>
+                                Đơn hàng
+                            </a>
+
+                            <a href="@Url.Action("DangXuat", "TAI_KHOAN")"
+                               class="flex items-center gap-2
+                      px-4 py-3
+                      text-red-600 font-medium
+                      hover:bg-red-50
+                      rounded-b-xl">
+                                <i class="fa-solid fa-right-from-bracket"></i>
+                                Đăng xuất
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- GIỎ HÀNG -->
+                    <a href="@Url.Action("Index", "GIO_HANG")"
+                       class="relative">
+                        <i class="fa-solid fa-cart-shopping text-lg"></i>
+                        <span class="absolute -top-2 -right-2
+                     bg-red-500 text-white
+                     text-xs rounded-full px-1">
+                            @Session["so_luong"]
+                        </span>
+
+                        <span class="absolute -top-2 -right-2
+         min-w-[20px] h-[20px]
+         px-1
+         bg-red-500 text-white
+         text-[11px] font-semibold
+         rounded-full
+         flex items-center justify-center">
+                            @Session["so_luong"]
+                        </span>
+
+                    </a>
+                }
+            </div>
+
+
+        </div>
+    </header>
+
+    <!-- HEADER MINI -->
+    @*<header class="bg-blue-600 text-white">
+        <div class="max-w-5xl mx-auto px-6 py-4 flex items-center justify-between">
+            <h1 class="font-semibold text-lg flex items-center gap-2">
+                <i class="fa-solid fa-box"></i> Chi tiết sản phẩm
+            </h1>
+            <a href="@Url.Action("Index")"
+               class="text-white hover:opacity-80">
+                <i class="fa-solid fa-xmark text-xl"></i>
+            </a>
+        </div>
+    </header>*@
+
+    <!-- MAIN -->
+    <div class="max-w-5xl mx-auto p-6">
+
+        @using (Html.BeginForm("ThemGioHang", "SAN_PHAM", FormMethod.Post))
+        {
+            @Html.Hidden("sanPhamId", Model.id)
+
+        <div class="bg-white rounded-2xl shadow-md overflow-hidden">
+            <div class="max-w-5xl mx-auto px-6 py-4 flex items-center justify-between">
+                <h1 class="font-semibold text-lg flex items-center gap-2">
+                    <i class="fa-solid fa-box"></i> Chi tiết sản phẩm
+                </h1>
+                <a href="@Url.Action("Index")"
+                   class="w-10 h-10 flex items-center justify-center
+          rounded-full
+          text-gray-500 hover:text-red-600
+          hover:bg-gray-100 transition">
+                    <i class="fa-solid fa-xmark text-lg"></i>
+                </a>
+
+            </div>
+
+            <!-- CONTENT -->
+            <div class="grid grid-cols-2 gap-8 p-8">
+
+                <!-- IMAGE -->
+                <div class="bg-gray-50 rounded-xl overflow-hidden h-[380px]">
+                    @{
+                        string imagePath = "~/Image/Image_DoUong/" + Model.hinh_anh;
+                    }
+
+                    <img src="@Url.Content(imagePath)"
+                         alt="@Model.ten_san_pham"
+                         class="w-full h-full object-cover" />
+                </div>
+
+
+                <!-- INFO -->
+                <div>
+                    <h2 class="text-3xl font-bold mb-2">
+                        @Model.ten_san_pham
+                    </h2>
+
+                    <p class="text-blue-600 text-3xl font-bold mb-4">
+                        @($"{Model.gia_co_ban:N0} VNĐ")
+                    </p>
+
+                    <p class="text-gray-600 leading-relaxed mb-6">
+                        @Model.mo_ta
+                    </p>
+
+                    <!-- STATUS -->
+                    <p class="text-green-600 text-sm flex items-center gap-2 mb-6">
+                        <i class="fa-solid fa-truck"></i>
+                        Sẵn sàng giao hàng
+                    </p>
+
+                    <!-- SIZE -->
+                    <div class="mb-6">
+                        <h3 class="font-semibold mb-3">
+                            <i class="fa-solid fa-ruler-combined mr-1"></i>
+                            Chọn size
+                        </h3>
+
+                        <div class="flex flex-wrap gap-3">
+                            @foreach (var spSize in Model.SAN_PHAM_SIZE)
+                            {
+                                <label class="cursor-pointer">
+                                    <input type="radio"
+                                           name="sizeId"
+                                           value="@spSize.size_id"
+                                           class="hidden peer"
+                                           required />
+
+                                    <div class="px-6 py-3 rounded-xl border
+                                                peer-checked:border-blue-600
+                                                peer-checked:bg-blue-600
+                                                peer-checked:text-white
+                                                transition text-center">
+                                        <div class="font-semibold">
+                                            @spSize.SIZE.ten_size
+                                        </div>
+                                        <div class="text-sm">
+                                            + @($"{spSize.gia:N0} VNĐ")
+                                        </div>
+                                    </div>
+                                </label>
+                            }
+                        </div>
+                    </div>
+
+                    <!-- QUANTITY -->
+                    <div class="mb-8">
+                        <h3 class="font-semibold mb-3 flex items-center gap-2">
+                            <i class="fa-solid fa-hashtag"></i>
+                            Số lượng
+                        </h3>
+
+                        <div class="flex items-center gap-4">
+
+                            <!-- Button - -->
+                            <button type="button"
+                                    onclick="giamSoLuong()"
+                                    class="w-10 h-10 rounded-full border
+                       flex items-center justify-center
+                       text-xl font-bold
+                       hover:bg-gray-100">
+                                −
+                            </button>
+
+                            <!-- Hiển thị số -->
+                            <span id="soLuongHienThi"
+                                  class="w-12 text-center text-xl font-semibold">
+                                1
+                            </span>
+
+                            <!-- Button + -->
+                            <button type="button"
+                                    onclick="tangSoLuong()"
+                                    class="w-10 h-10 rounded-full border
+                       flex items-center justify-center
+                       text-xl font-bold
+                       hover:bg-gray-100">
+                                +
+                            </button>
+
+                            <!-- Input hidden gửi về controller -->
+                            <input type="hidden"
+                                   id="soLuong"
+                                   name="soLuong"
+                                   value="1" />
+                        </div>
+                    </div>
+
+
+                    <!-- ACTION -->
+                    <button type="submit"
+                            class="w-full py-4 rounded-full
+                                   bg-blue-600 hover:bg-blue-700
+                                   text-white font-semibold text-lg flex
+                                   items-center justify-center gap-2">
+                        <i class="fa-solid fa-cart-plus"></i>
+                        Thêm vào giỏ hàng
+                    </button>
+                </div>
+            </div>
+        </div>
+        }
+    </div>
+
+    @{
+        var sanPhamTuongTu = ViewBag.SanPhamTuongTu as List<BanDoUong_User.Models.SAN_PHAM>;
+    }
+
+    @if (sanPhamTuongTu != null && sanPhamTuongTu.Any())
+    {
+        <div class="max-w-5xl mx-auto mt-10 px-6">
+
+            <h2 class="text-xl font-bold mb-6 flex items-center gap-2">
+                <i class="fa-solid fa-layer-group text-blue-600"></i>
+                Sản phẩm tương tự
+            </h2>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
+
+                @foreach (var sp in sanPhamTuongTu)
+                {
+                    string imgPath = "~/Image/Image_DoUong/" + sp.hinh_anh;
+
+                    <a href="@Url.Action("Details", "SAN_PHAM", new { id = sp.id })"
+                       class="bg-white rounded-xl shadow hover:shadow-lg
+                          transition overflow-hidden group">
+
+                        <!-- IMAGE -->
+                        <div class="h-40 bg-gray-50 overflow-hidden">
+                            <img src="@Url.Content(imgPath)"
+                                 alt="@sp.ten_san_pham"
+                                 class="w-full h-full object-cover
+                                    group-hover:scale-105 transition" />
+                        </div>
+
+                        <!-- INFO -->
+                        <div class="p-4">
+                            <h3 class="font-semibold text-sm line-clamp-2 mb-2">
+                                @sp.ten_san_pham
+                            </h3>
+
+                            <p class="text-blue-600 font-bold">
+                                @($"{sp.gia_co_ban:N0} VNĐ")
+                            </p>
+                        </div>
+                    </a>
+                }
+            </div>
+        </div>
+    }
+
+
+    <!-- FOOTER -->
+    <footer class="bg-gray-50 border-t mt-16">
+        <div class="max-w-7xl mx-auto px-6 py-12
+                grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 text-sm">
+
+            <!-- BRAND -->
+            <div>
+                <h4 class="text-lg font-bold text-blue-600 mb-3 flex items-center gap-2">
+                    <i class="fa-solid fa-mug-hot"></i>
+                    Tunio
+                </h4>
+                <p class="text-gray-600 leading-relaxed">
+                    Thương hiệu đồ uống uy tín tại Việt Nam, mang đến trải nghiệm
+                    hương vị tươi mới mỗi ngày.
+                </p>
+            </div>
+
+            <!-- POLICY -->
+            <div>
+                <h4 class="font-semibold mb-3 uppercase tracking-wide">
+                    Chính sách
+                </h4>
+                <ul class="space-y-2 text-gray-600">
+                    <li class="flex items-center gap-2 hover:text-blue-600 cursor-pointer">
+                        <i class="fa-solid fa-truck-fast"></i>
+                        Giao hàng
+                    </li>
+                    <li class="flex items-center gap-2 hover:text-blue-600 cursor-pointer">
+                        <i class="fa-solid fa-rotate-left"></i>
+                        Đổi trả
+                    </li>
+                    <li class="flex items-center gap-2 hover:text-blue-600 cursor-pointer">
+                        <i class="fa-solid fa-shield-halved"></i>
+                        Bảo mật
+                    </li>
+                </ul>
+            </div>
+
+            <!-- SUPPORT -->
+            <div>
+                <h4 class="font-semibold mb-3 uppercase tracking-wide">
+                    Hỗ trợ
+                </h4>
+                <ul class="space-y-2 text-gray-600">
+                    <li class="flex items-center gap-2 hover:text-blue-600 cursor-pointer">
+                        <i class="fa-solid fa-book"></i>
+                        Hướng dẫn mua hàng
+                    </li>
+                    <li class="flex items-center gap-2 hover:text-blue-600 cursor-pointer">
+                        <i class="fa-solid fa-credit-card"></i>
+                        Thanh toán
+                    </li>
+                    <li class="flex items-center gap-2 hover:text-blue-600 cursor-pointer">
+                        <i class="fa-solid fa-headset"></i>
+                        Liên hệ hỗ trợ
+                    </li>
+                </ul>
+            </div>
+
+            <!-- CONTACT -->
+            <div>
+                <h4 class="font-semibold mb-3 uppercase tracking-wide">
+                    Liên hệ
+                </h4>
+                <ul class="space-y-2 text-gray-600">
+                    <li class="flex items-center gap-2">
+                        <i class="fa-solid fa-phone text-blue-600"></i>
+                        0344 888 302
+                    </li>
+                    <li class="flex items-center gap-2">
+                        <i class="fa-solid fa-envelope text-blue-600"></i>
+                        vuthanhtung.itwork@gmail.com
+                    </li>
+                </ul>
+
+                <!-- SOCIAL -->
+                <div class="flex gap-4 mt-4">
+                    <a href="#" class="text-gray-400 hover:text-blue-600 text-lg">
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </a>
+                    <a href="#" class="text-gray-400 hover:text-pink-500 text-lg">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                    <a href="#" class="text-gray-400 hover:text-red-600 text-lg">
+                        <i class="fa-brands fa-youtube"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- COPYRIGHT -->
+        <div class="border-t py-4 text-center text-xs text-gray-500 bg-white">
+            © 2026 <span class="font-semibold text-blue-600">Tunio</span>. All rights reserved.
+        </div>
+    </footer>
+
+
+</body>
+
+<script>
+    let soLuong = 1;
+
+    function tangSoLuong() {
+        soLuong++;
+        capNhatSoLuong();
+    }
+
+    function giamSoLuong() {
+        if (soLuong > 1) {
+            soLuong--;
+            capNhatSoLuong();
+        }
+    }
+
+    function capNhatSoLuong() {
+        document.getElementById("soLuong").value = soLuong;
+        document.getElementById("soLuongHienThi").innerText = soLuong;
+    }
+</script>
+
+</html>

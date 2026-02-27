@@ -1,0 +1,186 @@
+﻿@model BanDoUongTunio.Models.SAN_PHAM
+
+@{
+    ViewBag.Title = "Sửa sản phẩm";
+}
+
+<style>
+    .form-wrapper {
+        max-width: 700px;
+        margin: 40px auto;
+        background: #fff;
+        border-radius: 20px;
+        padding: 32px 30px;
+        box-shadow: 0 20px 40px rgba(0,0,0,0.08);
+    }
+
+    .form-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 22px;
+    }
+
+        .form-header h5 {
+            font-weight: 600;
+            color: #111827;
+            margin: 0;
+        }
+
+    .close-btn {
+        font-size: 20px;
+        color: #9ca3af;
+        text-decoration: none;
+    }
+
+    .form-group label {
+        font-weight: 500;
+        color: #374151;
+        margin-bottom: 6px;
+    }
+
+    .form-control {
+        border-radius: 12px;
+        padding: 12px 14px;
+        border: 1px solid #e5e7eb;
+        box-shadow: none;
+    }
+
+        .form-control:focus {
+            border-color: #f97316;
+            box-shadow: 0 0 0 2px rgba(249,115,22,0.15);
+        }
+
+    textarea.form-control {
+        min-height: 90px;
+        resize: none;
+    }
+
+    .form-row {
+        display: flex;
+        gap: 16px;
+    }
+
+    .form-col {
+        flex: 1;
+    }
+
+    .form-actions {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 28px;
+    }
+
+    .btn-cancel {
+        flex: 1;
+        border-radius: 999px;
+        padding: 11px;
+        border: 1px solid #e5e7eb;
+        background: #fff;
+        font-weight: 600;
+        color: #374151;
+        margin-right: 12px;
+        text-align: center;
+        text-decoration: none;
+    }
+
+    .btn-submit {
+        flex: 1;
+        border-radius: 999px;
+        padding: 11px;
+        background: #2563eb;
+        color: #fff;
+        font-weight: 600;
+        border: none;
+    }
+</style>
+
+@using (Html.BeginForm("Edit", "SAN_PHAM", FormMethod.Post, new { enctype = "multipart/form-data" }))
+
+{
+    @Html.AntiForgeryToken()
+    @Html.HiddenFor(model => model.id)
+
+    <div class="form-wrapper">
+        <!-- HEADER -->
+        <div class="form-header">
+            <h5>Sửa sản phẩm</h5>
+            <a href="@Url.Action("Index")" class="close-btn">&times;</a>
+        </div>
+
+        @Html.ValidationSummary(true, "", new { @class = "text-danger mb-3" })
+
+        <!-- DANH MỤC -->
+        <div class="form-group mb-3">
+            @Html.LabelFor(model => model.danh_muc_id, "Danh mục")
+            @Html.DropDownList(
+                "danh_muc_id",
+                null,
+                "-- Chọn danh mục --",
+                new { @class = "form-control" }
+            )
+            @Html.ValidationMessageFor(model => model.danh_muc_id, "", new { @class = "text-danger" })
+        </div>
+
+        <!-- TÊN SẢN PHẨM -->
+        <div class="form-group mb-3">
+            @Html.LabelFor(model => model.ten_san_pham, "Tên sản phẩm")
+            @Html.TextBoxFor(model => model.ten_san_pham, new
+            {
+                @class = "form-control",
+                placeholder = "Nhập tên sản phẩm"
+            })
+            @Html.ValidationMessageFor(model => model.ten_san_pham, "", new { @class = "text-danger" })
+        </div>
+
+        <!-- MÔ TẢ -->
+        <div class="form-group mb-3">
+            @Html.LabelFor(model => model.mo_ta, "Mô tả")
+            @Html.TextAreaFor(model => model.mo_ta, new
+            {
+                @class = "form-control",
+                placeholder = "Nhập mô tả sản phẩm"
+            })
+            @Html.ValidationMessageFor(model => model.mo_ta, "", new { @class = "text-danger" })
+        </div>
+
+        <!-- HÌNH ẢNH + GIÁ -->
+        <div class="form-row">
+            <div class="form-col">
+                <div class="form-group">
+                    <div class="form-group mb-3">
+                        <label>Hình ảnh hiện tại</label><br />
+                        <img src="@Url.Content("~/Image/Image_DoUong/" + Model.hinh_anh)"
+                             style="width:120px; height:120px; object-fit:cover; border-radius:10px; border:1px solid #e5e7eb" />
+                    </div>
+                    <div class="form-group mb-3">
+                        <label>Chọn ảnh mới (nếu muốn)</label>
+                        <input type="file" name="ImageFile" class="form-control" />
+                    </div>
+
+                    @Html.HiddenFor(model => model.hinh_anh) <!-- giữ ảnh cũ -->
+
+                </div>
+            </div>
+
+            <div class="form-col">
+                <div class="form-group">
+                    @Html.LabelFor(model => model.gia_co_ban, "Giá cơ bản (VNĐ)")
+                    @Html.TextBoxFor(model => model.gia_co_ban, new
+                    {
+                        @class = "form-control",
+                        type = "number",
+                        min = "0"
+                    })
+                    @Html.ValidationMessageFor(model => model.gia_co_ban, "", new { @class = "text-danger" })
+                </div>
+            </div>
+        </div>
+
+        <!-- ACTION -->
+        <div class="form-actions">
+            <a href="@Url.Action("Index")" class="btn-cancel">Hủy</a>
+            <button type="submit" class="btn-submit">Lưu</button>
+        </div>
+    </div>
+}

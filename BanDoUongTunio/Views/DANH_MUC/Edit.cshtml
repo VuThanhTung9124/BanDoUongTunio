@@ -1,0 +1,134 @@
+﻿@model BanDoUongTunio.Models.DANH_MUC
+
+@{
+    ViewBag.Title = "Sửa danh mục";
+}
+
+<style>
+    .form-wrapper {
+        max-width: 520px;
+        margin: 40px auto;
+        background: #fff;
+        border-radius: 20px;
+        padding: 30px 28px;
+        box-shadow: 0 20px 40px rgba(0,0,0,0.08);
+        position: relative;
+    }
+
+    .form-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+
+        .form-header h5 {
+            font-weight: 600;
+            color: #111827;
+            margin: 0;
+        }
+
+    .close-btn {
+        font-size: 20px;
+        color: #9ca3af;
+        text-decoration: none;
+    }
+
+    .form-group label {
+        font-weight: 500;
+        color: #374151;
+        margin-bottom: 6px;
+    }
+
+    .form-control {
+        border-radius: 12px;
+        padding: 12px 14px;
+        border: 1px solid #e5e7eb;
+        box-shadow: none;
+    }
+
+        .form-control:focus {
+            border-color: #f97316;
+            box-shadow: 0 0 0 2px rgba(249,115,22,0.15);
+        }
+
+    textarea.form-control {
+        min-height: 100px;
+        resize: none;
+    }
+
+    .form-actions {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 25px;
+    }
+
+    .btn-cancel {
+        flex: 1;
+        border-radius: 999px;
+        padding: 10px;
+        border: 1px solid #e5e7eb;
+        background: #fff;
+        font-weight: 600;
+        color: #374151;
+        margin-right: 10px;
+        text-align: center;
+        text-decoration: none;
+    }
+
+    .btn-submit {
+        flex: 1;
+        border-radius: 999px;
+        padding: 10px;
+        background: #2563eb;
+        color: #fff;
+        font-weight: 600;
+        border: none;
+    }
+
+       
+</style>
+
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+    @Html.HiddenFor(model => model.id)
+
+    <div class="form-wrapper">
+        <!-- HEADER -->
+        <div class="form-header">
+            <h5>Sửa danh mục</h5>
+            <a href="@Url.Action("Index")" class="close-btn">&times;</a>
+        </div>
+
+        @Html.ValidationSummary(true, "", new { @class = "text-danger mb-3" })
+
+        <!-- TÊN DANH MỤC -->
+        <div class="form-group mb-3">
+            @Html.LabelFor(model => model.ten_danh_muc, "Tên danh mục")
+            @Html.TextBoxFor(model => model.ten_danh_muc, new
+            {
+                @class = "form-control",
+                placeholder = "Nhập tên danh mục"
+            })
+            @Html.ValidationMessageFor(model => model.ten_danh_muc, "", new { @class = "text-danger" })
+        </div>
+
+        <!-- MÔ TẢ -->
+        <div class="form-group">
+            @Html.LabelFor(model => model.mo_ta, "Mô tả")
+            @Html.TextAreaFor(model => model.mo_ta, new
+            {
+                @class = "form-control",
+                placeholder = "Nhập mô tả danh mục"
+            })
+            @Html.ValidationMessageFor(model => model.mo_ta, "", new { @class = "text-danger" })
+        </div>
+
+        <!-- ACTION -->
+        <div class="form-actions">
+            <a href="@Url.Action("Index")" class="btn-cancel">Hủy</a>
+            <button type="submit" class="btn-submit">Lưu</button>
+        </div>
+    </div>
+}

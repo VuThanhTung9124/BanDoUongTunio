@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parameters>
+  <parameter name="QL_BAN_DO_UONGDb-Web.config Connection String" description="QL_BAN_DO_UONGDb Connection String used in web.config by the application to access the database." defaultValue="data source=DESKTOP-H377CM6;initial catalog=QL_BAN_DO_UONG;integrated security=True;encrypt=False;MultipleActiveResultSets=True;App=EntityFramework" tags="SqlConnectionString">
+    <parameterEntry kind="XmlFile" scope="C:\\Thực\ tập\ doanh\ nghiệp\\Project\\BanDoUongTunio\\BanDoUong_User\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='QL_BAN_DO_UONGDb']/@connectionString" />
+  </parameter>
+</parameters>

@@ -1,0 +1,400 @@
+﻿@model BanDoUong_User.ViewModels.ThanhToanVM
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Thanh toán</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+
+<body class="bg-gray-50 min-h-screen">
+
+    <form method="post"
+          action="@Url.Action("XacNhanThanhToan")"
+          class="min-h-screen flex flex-col">
+
+        <!-- ================= HEADER ================= -->
+        <header class="h-14 flex items-center justify-between px-6
+                   bg-blue-600 text-white shadow">
+            <h1 class="font-semibold text-lg flex items-center gap-2">
+                <i class="fa-solid fa-credit-card"></i>
+                Thanh Toán
+            </h1>
+
+            <a href="@Url.Action("Index","GIO_HANG")"
+               class="text-2xl font-bold hover:opacity-80">×</a>
+        </header>
+
+        <!-- ================= MAIN ================= -->
+        <main class="flex-1 p-6 grid grid-cols-1 lg:grid-cols-3 gap-6">
+
+            <!-- ===== LEFT ===== -->
+            <div class="lg:col-span-1 space-y-6">
+
+                <!-- 1. SHIPPING -->
+                <section class="bg-white rounded-lg p-5 shadow-sm">
+                    <h2 class="font-semibold text-blue-600 mb-4">
+                        1. Thông tin giao hàng
+                    </h2>
+
+                    @if (ViewBag.LoiGiaoHang != null)
+                    {
+                        <div class="bg-red-100 text-red-600 p-3 rounded mb-3 text-sm">
+                            @ViewBag.LoiGiaoHang
+                        </div>
+                    }
+
+                <div class="space-y-3">
+                    <input name="NguoiNhan"
+                           placeholder="Tên người nhận"
+                           class="w-full border rounded-md px-3 py-2 text-sm
+                                  focus:ring-2 focus:ring-blue-500 outline-none" />
+
+                    <input name="SoDienThoai"
+                           placeholder="Số điện thoại"
+                           class="w-full border rounded-md px-3 py-2 text-sm
+                                  focus:ring-2 focus:ring-blue-500 outline-none" />
+
+                    <div class="relative">
+                        <input name="DiaChiCuThe" id="DiaChiCuThe"
+                               placeholder="Địa chỉ nhận hàng"
+                               class="w-full border rounded-md px-3 py-2 text-sm focus:ring-2 focus:ring-blue-500 outline-none pr-10" />
+
+                        <button type="button" onclick="getLocation()"
+                                class="absolute right-2 top-1/2 -translate-y-1/2 text-blue-600 hover:text-blue-800"
+                                title="Lấy vị trí hiện tại">
+                            <i class="fa-solid fa-location-crosshairs text-lg"></i>
+                        </button>
+                    </div>
+                    <p id="location-status" class="text-[10px] text-gray-500 mt-1"></p>
+
+                    <textarea name="GhiChu" rows="3"
+                              placeholder="Ghi chú cho cửa hàng..."
+                              class="w-full border rounded-md px-3 py-2 text-sm
+                                     focus:ring-2 focus:ring-blue-500 outline-none"></textarea>
+                </div>
+                </section>
+
+                <!-- 3. PAYMENT -->
+                <section class="bg-white rounded-lg p-5 shadow-sm">
+                    <h2 class="font-semibold text-blue-600 mb-4">
+                        3. Phương thức thanh toán
+                    </h2>
+
+                    <label class="flex gap-3 border rounded-lg p-3 cursor-pointer hover:border-blue-500">
+                        <input type="radio" name="PhuongThucThanhToan" value="BANK" checked class="accent-blue-600 mt-1" onclick="toggleQR(true)" />
+                        <div>
+                            <p class="font-medium text-sm">Chuyển khoản ngân hàng (VietQR)</p>
+                            <p class="text-xs text-gray-500">Tự động tạo mã QR thanh toán</p>
+                        </div>
+                    </label>
+
+                    <div id="qr-container" class="mt-4 p-4 border-2 border-dashed border-blue-200 rounded-lg text-center hidden">
+                        <p class="text-xs mb-2 font-semibold text-gray-600">Quét mã để thanh toán</p>
+                        <img id="qr-image" src="" alt="Mã QR Thanh toán" class="mx-auto w-48 h-48 shadow-lg" />
+                        <div class="mt-2 text-xs text-blue-800 bg-blue-50 p-2 rounded">
+                            <p>Ngân hàng: <strong>TECHCOMBANK</strong></p>
+                            <p>Chủ TK: <strong>VŨ THANH TÙNG</strong></p>
+                            <p>Nội dung: <strong id="qr-content">THANHTOAN DONHANG</strong></p>
+                        </div>
+                    </div>
+
+                    <div class="space-y-3">
+
+                        <label class="flex gap-3 items-center border rounded-lg p-3 cursor-pointer hover:border-blue-500">
+                            <input type="radio"
+                                   name="PhuongThucThanhToan"
+                                   value="COD"
+                                   class="accent-blue-600" />
+                            <span class="font-medium text-sm">
+                                Thanh toán khi nhận hàng
+                            </span>
+                        </label>
+                    </div>
+                </section>
+            </div>
+
+            <!-- ===== RIGHT ===== -->
+            <div class="lg:col-span-2 bg-white rounded-lg p-5 shadow-sm">
+                <h2 class="font-semibold text-blue-600 mb-4">
+                    2. Thông tin đơn hàng
+                </h2>
+
+                <table class="w-full text-xs text-center border rounded-md overflow-hidden">
+                    <thead class="bg-blue-50 text-blue-700">
+                        <tr>
+                            <th class="p-2">#</th>
+                            <th>Sản phẩm</th>
+                            <th>Size</th>
+                            <th>SL</th>
+                            <th>Topping</th>
+                            <th>Giá</th>
+                        </tr>
+                    </thead>
+
+                    <tbody class="divide-y">
+                        @for (int i = 0; i < Model.Items.Count; i++)
+                        {
+                            <tr>
+
+                                <!-- 🔥 BẮT BUỘC để bind List -->
+                                <input type="hidden" name="Items.Index" value="@i" />
+
+                                <td class="p-2">@(i + 1)</td>
+
+                                <td>
+                                    @Model.Items[i].TenSanPham
+                                    <input type="hidden" name="Items[@i].TenSanPham"
+                                           value="@Model.Items[i].TenSanPham" />
+                                </td>
+
+                                <td>
+                                    @Model.Items[i].TenSize
+                                    <input type="hidden" name="Items[@i].TenSize"
+                                           value="@Model.Items[i].TenSize" />
+                                </td>
+
+                                <td>
+                                    @Model.Items[i].SoLuong
+                                    <input type="hidden" name="Items[@i].SoLuong"
+                                           value="@Model.Items[i].SoLuong" />
+                                </td>
+
+                                <td>
+                                    <select name="Items[@i].SelectedToppingIds"
+                                            multiple
+                                            size="1"
+                                            class="topping-select border rounded px-2 py-1 text-xs w-36">
+                                        <option disabled hidden class="topping-placeholder">
+                                            Chọn topping
+                                        </option>
+                                        @foreach (var t in Model.Items[i].Toppings)
+                                        {
+                                            <option value="@t.id"
+                                                    data-price="@t.gia"
+                                                    @(Model.Items[i].SelectedToppingIds.Contains(t.id) ? "selected" : "")>
+                                                @t.ten_topping (+@t.gia đ)
+                                            </option>
+                                        }
+                                    </select>
+                                </td>
+
+                                <td class="font-semibold text-red-500">
+                                    <span class="item-price"
+                                          data-base-price="@Model.Items[i].DonGia"
+                                          data-quantity="@Model.Items[i].SoLuong">
+                                        @( (Model.Items[i].DonGia * Model.Items[i].SoLuong).ToString("N0") )
+                                    </span> đ
+
+                                    <input type="hidden" name="Items[@i].DonGia"
+                                           value="@Model.Items[i].DonGia" />
+                                </td>
+
+                                <!-- các id cần giữ -->
+                                <input type="hidden" name="Items[@i].SanPhamId"
+                                       value="@Model.Items[i].SanPhamId" />
+
+                                <input type="hidden" name="Items[@i].ChiTietGioHangId"
+                                       value="@Model.Items[i].ChiTietGioHangId" />
+
+                                <input type="hidden" name="Items[@i].SizeId"
+                                       value="@Model.Items[i].SizeId" />
+
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+            </div>
+
+        </main>
+
+        <!-- ================= FOOTER ================= -->
+        <footer class="bg-white border-t px-6 py-4">
+            <div class="max-w-7xl mx-auto flex items-center justify-between">
+
+                <div class="text-right">
+                    <p class="text-base text-gray-500">Tổng thanh toán</p>
+                    <p id="total-price" class="text-2xl font-bold text-blue-600">
+                        @Model.TongTien.ToString("N0")
+                    </p> đ
+
+                </div>
+
+                <button type="submit"
+                        class="bg-blue-600 hover:bg-blue-700
+                           text-white px-12 py-4
+                           rounded-xl text-lg font-semibold shadow">
+                    ĐẶT HÀNG
+                </button>
+
+            </div>
+        </footer>
+
+    </form>
+
+    <script>
+        function formatNumber(n) {
+            return n.toLocaleString("vi-VN");
+        }
+
+        function updatePrices() {
+            let total = 0;
+
+            document.querySelectorAll("tbody tr").forEach(row => {
+                const select = row.querySelector(".topping-select");
+                const priceSpan = row.querySelector(".item-price");
+                if (!select || !priceSpan) return;
+
+                const basePrice = parseFloat(priceSpan.dataset.basePrice);
+                const quantity = parseInt(priceSpan.dataset.quantity);
+
+                let toppingTotal = 0;
+                let toppingCount = 0;
+
+                [...select.options].forEach(opt => {
+                    if (opt.selected && opt.dataset.price) {
+                        toppingTotal += parseFloat(opt.dataset.price);
+                        toppingCount++;
+                    }
+                });
+
+                // 🔹 Update text hiển thị của select
+                const placeholder = select.querySelector(".topping-placeholder");
+                if (placeholder) {
+                    placeholder.textContent = toppingCount > 0
+                        ? `Đã chọn ${toppingCount} topping`
+                        : "Chọn topping";
+                }
+
+                const itemPrice = (basePrice + toppingTotal) * quantity;
+
+                priceSpan.textContent = formatNumber(itemPrice);
+
+                total += itemPrice;
+            });
+
+            document.getElementById("total-price").textContent = formatNumber(total);
+        }
+
+        document.querySelectorAll(".topping-select").forEach(select => {
+            select.addEventListener("change", updatePrices);
+        });
+
+        // load lần đầu
+        updatePrices();
+
+
+        function getLocation() {
+            const status = document.getElementById('location-status');
+            const addressInput = document.getElementById('DiaChiCuThe');
+
+            if (!navigator.geolocation) {
+                status.textContent = "Trình duyệt của bạn không hỗ trợ định vị.";
+                return;
+            }
+
+            status.textContent = "Đang xác định vị trí...";
+            status.classList.remove("text-red-500");
+
+            navigator.geolocation.getCurrentPosition(
+                // 1. Thành công
+                async (position) => {
+                    const lat = position.coords.latitude;
+                    const lon = position.coords.longitude;
+
+                    try {
+                        // Sử dụng API miễn phí của OpenStreetMap (Nominatim)
+                        const response = await fetch(`https://nominatim.openstreetmap.org/reverse?format=jsonv2&lat=${lat}&lon=${lon}`, {
+                            headers: { 'Accept-Language': 'vi' }
+                        });
+                        const data = await response.json();
+
+                        if (data && data.display_name) {
+                            addressInput.value = data.display_name;
+                            status.textContent = "Đã cập nhật vị trí hiện tại.";
+                            status.classList.add("text-green-600");
+                        } else {
+                            status.textContent = "Không tìm thấy địa chỉ.";
+                        }
+                    } catch (error) {
+                        status.textContent = "Lỗi khi lấy địa chỉ từ tọa độ.";
+                        console.error(error);
+                    }
+                },
+                // 2. Thất bại
+                (error) => {
+                    status.classList.add("text-red-500");
+                    switch (error.code) {
+                        case error.PERMISSION_DENIED:
+                            status.textContent = "Bạn đã từ chối quyền truy cập vị trí.";
+                            break;
+                        case error.POSITION_UNAVAILABLE:
+                            status.textContent = "Không có thông tin vị trí.";
+                            break;
+                        case error.TIMEOUT:
+                            status.textContent = "Hết thời gian yêu cầu vị trí.";
+                            break;
+                        default:
+                            status.textContent = "Lỗi định vị không xác định.";
+                            break;
+                    }
+                }
+            );
+        }
+
+        function generateQR() {
+            const totalText = document.getElementById("total-price").textContent;
+            // Chuyển "50.000" thành 50000
+            const amount = totalText.replace(/\./g, '').replace(/,/g, '');
+
+            const bankId = "TCB"; // Mã ngân hàng (ví dụ: VCB, ICB, MB...)
+            const accountNo = "77665568686868"; // Số tài khoản của bạn
+            const accountName = "VU THANH TUNG";
+            const description = "@ViewBag.NoiDungChuyenKhoan";
+
+            // Link API VietQR
+            const qrUrl = `https://img.vietqr.io/image/${bankId}-${accountNo}-compact2.png?amount=${amount}&addInfo=${description}&accountName=${accountName}`;
+
+            document.getElementById("qr-image").src = qrUrl;
+            document.getElementById("qr-content").textContent = description;
+        }
+
+        function toggleQR(show) {
+            const container = document.getElementById("qr-container");
+            if (show) {
+                container.classList.remove("hidden");
+                generateQR();
+            } else {
+                container.classList.add("hidden");
+            }
+        }
+
+        // Gọi tạo mã QR ngay khi load nếu đang chọn BANK
+        window.addEventListener('load', () => {
+            if (document.querySelector('input[name="PhuongThucThanhToan"]:checked').value === "BANK") {
+                toggleQR(true);
+            }
+        });
+
+        // Cập nhật lại QR khi thay đổi topping (làm thay đổi tổng tiền)
+        document.querySelectorAll(".topping-select").forEach(select => {
+            select.addEventListener("change", () => {
+                if (document.getElementById("qr-container").classList.contains("hidden") === false) {
+                    setTimeout(generateQR, 100); // Đợi giá cập nhật xong rồi tạo lại QR
+                }
+            });
+        });
+    </script>
+
+    
+</body>
+</html>

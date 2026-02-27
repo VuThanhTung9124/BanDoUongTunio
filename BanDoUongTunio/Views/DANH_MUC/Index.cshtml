@@ -1,0 +1,129 @@
+﻿@model IEnumerable<BanDoUongTunio.Models.DANH_MUC>
+
+@{
+    ViewBag.Title = "Quản lý danh mục";
+    int stt = 1;
+}
+
+<style>
+    .page-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 24px;
+    }
+
+    .page-title {
+        font-size: 26px;
+        font-weight: 700;
+        color: #111827;
+    }
+
+    .btn-add {
+        background: #2563eb;
+        color: #fff;
+        padding: 12px 20px;
+        border-radius: 999px;
+        font-weight: 600;
+        font-size: 15px;
+        text-decoration: none;
+    }
+
+        .btn-add:hover {
+            background: #1d4ed8;
+            color: #fff;
+        }
+
+    .card-table {
+        background: #fff;
+        border-radius: 16px;
+        padding: 24px;
+        box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+    }
+
+    table {
+        width: 100%;
+        border-collapse: collapse;
+    }
+
+    thead {
+        background: #f9fafb;
+    }
+
+    th {
+        padding: 16px;
+        text-align: left;
+        font-size: 17px;
+        font-weight: 700;
+        color: #374151;
+    }
+
+    td {
+        padding: 18px 16px;
+        font-size: 16px;
+        color: #374151;
+        border-top: 1px solid #e5e7eb;
+        vertical-align: middle;
+        line-height: 1.6;
+    }
+
+    tr:hover {
+        background: #f9fafb;
+    }
+
+    .action-buttons a {
+        margin-right: 14px;
+        font-weight: 600;
+        font-size: 15px;
+        text-decoration: none;
+    }
+
+    .btn-edit {
+        color: #2563eb;
+    }
+
+    .btn-delete {
+        color: #ef4444;
+    }
+
+    .text-center {
+        text-align: center;
+    }
+</style>
+
+<!-- HEADER -->
+<div class="page-header">
+    <div class="page-title">Quản lý danh mục</div>
+    <a href="@Url.Action("Create")" class="btn-add">
+        + Thêm danh mục
+    </a>
+</div>
+
+<!-- TABLE -->
+<div class="card-table">
+    <table>
+        <thead>
+            <tr>
+                <th style="width:70px;" class="text-center">STT</th>
+                <th>Tên danh mục</th>
+                <th>Mô tả</th>
+                <th style="width:180px;" class="text-center">Thao tác</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td class="text-center">@stt</td>
+                    <td><b>@item.ten_danh_muc</b></td>
+                    <td>@item.mo_ta</td>
+                    <td class="action-buttons text-center">
+                        <a href="@Url.Action("Edit", new { id = item.id })" class="btn-edit">Sửa</a>
+                        <a href="@Url.Action("Delete", new { id = item.id })" class="btn-delete">Xóa</a>
+                    </td>
+                </tr>
+                stt++;
+            }
+        </tbody>
+    </table>
+</div>

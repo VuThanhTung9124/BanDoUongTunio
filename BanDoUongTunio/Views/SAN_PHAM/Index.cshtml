@@ -1,0 +1,364 @@
+﻿@*@model IEnumerable<BanDoUongTunio.Models.SAN_PHAM>*@
+
+@model PagedList.IPagedList<BanDoUongTunio.Models.SAN_PHAM>
+@using PagedList.Mvc
+
+
+@{
+    ViewBag.Title = "Quản lý sản phẩm";
+
+}
+
+<style>
+
+    .page-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 24px;
+    }
+
+    .page-title {
+        font-size: 26px;
+        font-weight: 700;
+        color: #111827;
+    }
+
+    .btn-add {
+        background: #2563eb;
+        color: #fff;
+        padding: 12px 20px;
+        border-radius: 999px;
+        font-weight: 600;
+        font-size: 15px;
+        text-decoration: none;
+    }
+
+        .btn-add:hover {
+            background: #1d4ed8;
+            color: #fff;
+        }
+
+    .card-table {
+        background: #fff;
+        border-radius: 16px;
+        padding: 24px;
+        box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+    }
+
+    table {
+        width: 100%;
+        border-collapse: collapse;
+    }
+
+    thead {
+        background: #f9fafb;
+    }
+
+    th {
+        padding: 16px;
+        text-align: left;
+        font-size: 17px;
+        font-weight: 700;
+        color: #374151;
+    }
+
+    td {
+        padding: 18px 16px;
+        font-size: 16px;
+        color: #374151;
+        border-top: 1px solid #e5e7eb;
+        vertical-align: middle;
+        line-height: 1.6;
+    }
+
+    tr:hover {
+        background: #f9fafb;
+    }
+
+    .action-buttons a {
+        margin-right: 14px;
+        font-weight: 600;
+        font-size: 15px;
+        text-decoration: none;
+    }
+
+    .btn-edit {
+        color: #2563eb;
+    }
+
+    .btn-delete {
+        color: #ef4444;
+    }
+
+    .product-img {
+        width: 60px;
+        height: 60px;
+        object-fit: cover;
+        border-radius: 8px;
+        border: 1px solid #e5e7eb;
+    }
+
+    .text-center {
+        text-align: center;
+    }
+    /* PAGINATION FIXED BOTTOM CENTER */
+    .pagination-top {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 16px;
+    }
+
+
+    /* pagination container */
+    .pagination {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 6px;
+        background: #ffffff;
+        padding: 10px 16px;
+        border-radius: 16px;
+        box-shadow: 0 8px 25px rgba(0,0,0,0.12);
+        max-width: 90vw;
+        overflow-x: auto;
+    }
+
+        /* bỏ scroll bar xấu */
+        .pagination::-webkit-scrollbar {
+            height: 4px;
+        }
+
+        .pagination::-webkit-scrollbar-thumb {
+            background: #e5e7eb;
+            border-radius: 4px;
+        }
+
+        /* item */
+        .pagination li {
+            list-style: none;
+        }
+
+            /* link & span */
+            .pagination li a,
+            .pagination li span {
+                display: inline-flex;
+                align-items: center;
+                justify-content: center;
+                min-width: 36px;
+                height: 36px;
+                padding: 0 12px;
+                border-radius: 10px;
+                font-size: 14px;
+                font-weight: 600;
+                color: #374151;
+                background: #f9fafb;
+                border: 1px solid #e5e7eb;
+                text-decoration: none;
+                transition: all 0.2s ease;
+                white-space: nowrap;
+            }
+
+                /* hover */
+                .pagination li a:hover {
+                    background: #2563eb;
+                    color: #fff;
+                    border-color: #2563eb;
+                }
+
+            /* active */
+            .pagination li.active span {
+                background: #2563eb;
+                color: #fff;
+                border-color: #2563eb;
+            }
+
+            /* disabled */
+            .pagination li.disabled span {
+                color: #9ca3af;
+                background: #f3f4f6;
+                cursor: not-allowed;
+            }
+</style>
+
+
+
+
+<!-- HEADER -->
+<div class="page-header">
+    <div class="page-title">Quản lý sản phẩm</div>
+    @using (Html.BeginForm("Index", "SAN_PHAM", FormMethod.Get))
+    {
+        <div style="margin-bottom:20px; display:flex; gap:10px; align-items:center;">
+
+            <!-- 🔍 SEARCH -->
+            <input type="text"
+                   name="searchSP"
+                   value="@ViewBag.SearchSP"
+                   placeholder="Tìm theo tên sản phẩm..."
+                   style="padding:10px 14px; width:240px; border-radius:10px; border:1px solid #e5e7eb;" />
+
+
+
+            <!-- BUTTON -->
+            <button type="submit"
+                    style="padding:10px 18px; border-radius:10px; background:#2563eb; color:white; border:none; font-weight:600;">
+                Tìm kiếm
+            </button>
+        </div>
+    }
+
+    <a href="@Url.Action("Create")" class="btn-add">
+        + Thêm sản phẩm
+    </a>
+</div>
+@*@Html.PagedListPager(
+        Model,
+        page => Url.Action("Index", new
+        {
+            page,
+            searchSP = ViewBag.SearchSP,
+            sortPrice = ViewBag.SortPrice
+        })
+    )*@
+@{
+    int currentPage = Model.PageNumber;
+    int totalPage = Model.PageCount;
+
+    int blockStart;
+
+    if (currentPage <= 2)
+    {
+        blockStart = 1;
+    }
+    else
+    {
+        blockStart = ((currentPage - 1) / 2) * 2 + 1;
+    }
+
+    int blockEnd = Math.Min(blockStart + 2, totalPage);
+}
+<div class="pagination-top">
+
+    <ul class="pagination">
+
+        <!-- ⏮ ĐẦU -->
+        <li class="@(currentPage == 1 ? "disabled" : "")">
+            <a href="@Url.Action("Index", new {
+                page = 1,
+                searchSP = ViewBag.SearchSP,
+                sortPrice = ViewBag.SortPrice
+            })">Đầu</a>
+        </li>
+
+        <!-- 🔢 3 NÚT GIỮA -->
+        @for (int i = blockStart; i <= blockEnd; i++)
+        {
+            if (i == currentPage)
+            {
+                <li class="active">
+                    <span>@i</span>
+                </li>
+            }
+            else
+            {
+                <li>
+                    <a href="@Url.Action("Index", new {
+                page = i,
+                searchSP = ViewBag.SearchSP,
+                sortPrice = ViewBag.SortPrice
+            })">@i</a>
+        </li>
+    }
+}
+
+
+        <!-- ⏭ CUỐI -->
+        <li class="@(currentPage == totalPage ? "disabled" : "")">
+            <a href="@Url.Action("Index", new {
+                page = totalPage,
+                searchSP = ViewBag.SearchSP,
+                sortPrice = ViewBag.SortPrice
+            })">Cuối</a>
+        </li>
+
+    </ul>
+</div>
+<!-- TABLE -->
+<div class="card-table">
+
+    <!-- SORT BAR -->
+    @using (Html.BeginForm("Index", "SAN_PHAM", FormMethod.Get))
+    {
+        <!-- giữ search khi sort -->
+        <input type="hidden" name="searchSP" value="@ViewBag.SearchSP" />
+
+        <div style="display:flex; justify-content:flex-end; margin-bottom:16px;">
+            <select name="sortPrice"
+                    onchange="this.form.submit()"
+                    style="padding:10px 14px;
+                           border-radius:10px;
+                           border:1px solid #e5e7eb;
+                           font-weight:600;
+                           min-width:180px;">
+                <option value="" @(ViewBag.SortPrice == null ? "selected" : "")>
+                    Sắp xếp: Mặc định
+                </option>
+                <option value="asc" @(ViewBag.SortPrice == "asc" ? "selected" : "")>
+                    Giá tăng dần
+                </option>
+                <option value="desc" @(ViewBag.SortPrice == "desc" ? "selected" : "")>
+                    Giá giảm dần
+                </option>
+            </select>
+        </div>
+    }
+
+    <!-- TABLE -->
+    <table>
+        <thead>
+            <tr>
+                <th style="width:70px;" class="text-center">STT</th>
+                <th>Tên sản phẩm</th>
+                <th>Mô tả</th>
+                <th class="text-center">Hình ảnh</th>
+                <th>Giá cơ bản</th>
+                <th style="width:180px;" class="text-center">Thao tác</th>
+            </tr>
+        </thead>
+        <tbody>
+            @{
+                int stt = (Model.PageNumber - 1) * Model.PageSize + 1;
+            }
+
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td class="text-center">@stt</td>
+                    <td>@item.ten_san_pham</td>
+                    <td>@item.mo_ta</td>
+                    <td class="text-center">
+
+                        @{
+                            string imagePath = "~/Image/Image_DoUong/" + item.hinh_anh;
+                        }
+
+                        <img src="@Url.Content(imagePath)" class="product-img" />
+
+                    </td>
+                    <td>@String.Format("{0:N0} VNĐ", item.gia_co_ban)</td>
+                    <td class="action-buttons text-center">
+                        <a href="@Url.Action("Edit", new { id = item.id })" class="btn-edit">Sửa</a>
+                        <a href="@Url.Action("Delete", new { id = item.id })" class="btn-delete">Xóa</a>
+                    </td>
+                </tr>
+                stt++;
+            }
+        </tbody>
+    </table>
+</div>
+
+
+
+
+<br />

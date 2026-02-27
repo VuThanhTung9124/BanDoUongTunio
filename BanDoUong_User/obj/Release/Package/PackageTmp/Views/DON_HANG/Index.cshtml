@@ -1,0 +1,157 @@
+﻿@model List<BanDoUong_User.Models.DON_HANG>
+
+@{
+    ViewBag.Title = "Đơn hàng của tôi";
+}
+
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="utf-8" />
+    <title>Đơn hàng của tôi</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-100 py-10">
+
+    <div class="max-w-5xl mx-auto space-y-10 px-4">
+
+        <!-- HEADER -->
+        <div class="flex justify-between items-center">
+            <h1 class="text-2xl font-bold text-gray-800">
+                Đơn hàng của tôi
+            </h1>
+
+            <!-- NÚT QUAY VỀ TRANG SẢN PHẨM -->
+            <a href="@Url.Action("Index", "SAN_PHAM")"
+               class="px-4 py-2 bg-gray-800 text-white rounded-md text-sm hover:bg-black transition">
+                🛍Tiếp tục mua hàng
+            </a>
+        </div>
+
+        @if (!Model.Any())
+        {
+            <div class="bg-white rounded-lg shadow p-10 text-center text-gray-500">
+                Bạn chưa có đơn hàng nào
+            </div>
+        }
+
+        @foreach (var dh in Model)
+        {
+            <!-- KHUNG ĐƠN HÀNG -->
+    <div class="bg-white rounded-lg shadow p-6 space-y-6">
+
+        <!-- TIÊU ĐỀ -->
+        <div class="flex justify-between items-center border-b pb-3">
+            <h2 class="text-lg font-bold text-gray-800">
+                Đơn hàng
+                <span class="ml-2 px-2 py-1 text-xs rounded bg-gray-200">
+                    @("DH" + dh.id + "" + dh.tai_khoan_id)
+                </span>
+            </h2>
+
+           
+        </div>
+
+        <!-- THÔNG TIN GIAO HÀNG -->
+        <div class="grid grid-cols-2 gap-4 text-sm">
+            <div class="space-y-1">
+                <p><span class="font-semibold">Người nhận:</span> @(dh.DIA_CHI?.nguoi_nhan ?? "Chưa có")</p>
+                <p><span class="font-semibold">SĐT:</span> @(dh.DIA_CHI?.so_dien_thoai ?? "Chưa có")</p>
+                <p><span class="font-semibold">Địa chỉ:</span> @(dh.DIA_CHI?.dia_chi_cu_the ?? "Chưa có")</p>
+            </div>
+
+            <div class="space-y-1">
+                <p><span class="font-semibold">Ghi chú:</span> @(dh.DIA_CHI?.ghi_chu ?? "Không có")</p>
+                <p>
+                    <span class="font-semibold">Thanh toán:</span>
+                    @(dh.THANH_TOAN.Any()
+                            ? dh.THANH_TOAN.First().phuong_thuc
+                            : "Chưa thanh toán")
+                </p>
+            </div>
+        </div>
+
+        <!-- BẢNG SẢN PHẨM -->
+        <div class="overflow-x-auto">
+            <table class="w-full border border-gray-300 text-sm">
+                <thead class="bg-gray-100">
+                    <tr>
+                        <th class="border px-3 py-2 text-left">Tên sản phẩm</th>
+                        <th class="border px-3 py-2 text-center">Size</th>
+                        <th class="border px-3 py-2 text-center">SL</th>
+                        <th class="border px-3 py-2 text-left">Topping</th>
+                        <th class="border px-3 py-2 text-right">Giá</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var ct in dh.CHI_TIET_DON_HANG)
+                    {
+                        <tr>
+                            <td class="border px-3 py-2">
+                                @ct.SAN_PHAM.ten_san_pham
+                            </td>
+                            <td class="border px-3 py-2 text-center">
+                                @ct.SIZE.ten_size
+                            </td>
+                            <td class="border px-3 py-2 text-center">
+                                @ct.so_luong
+                            </td>
+                            <td class="border px-3 py-2">
+                                @if (ct.CHI_TIET_DON_HANG_TOPPING.Any())
+                                {
+                                    <ul class="list-disc pl-4">
+                                        @foreach (var t in ct.CHI_TIET_DON_HANG_TOPPING)
+                                        {
+                                            <li>@t.TOPPING.ten_topping</li>
+                                        }
+                                    </ul>
+                                }
+                                else
+                                {
+                                    <span class="text-gray-400">Không có</span>
+                                }
+                            </td>
+                            <td class="border px-3 py-2 text-right">
+                                @{
+                                    var thanhTien = ct.don_gia * ct.so_luong;
+                                }
+                                @string.Format("{0:N0}đ", thanhTien)
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+
+        <!-- TỔNG TIỀN -->
+        <div class="flex justify-end items-center pt-4 border-t">
+            <span class="text-lg font-semibold mr-2">Tổng tiền:</span>
+            <span class="text-xl font-bold text-red-600">
+                @string.Format("{0:N0}đ", dh.tong_tien)
+            </span>
+        </div>
+
+        <!-- GHI CHÚ HỖ TRỢ -->
+        <div class="mt-4 bg-blue-50 border border-blue-200
+            rounded-lg p-4 text-sm text-blue-800 flex gap-3">
+
+            <span class="text-xl">📞</span>
+
+            <p class="leading-relaxed">
+                Nếu bạn cần <span class="font-semibold">sửa thông tin giao hàng</span>
+                hoặc <span class="font-semibold">thay đổi ý mua hàng</span>,
+                vui lòng liên hệ hotline
+                <span class="font-bold text-blue-700">1900 1900</span>
+                để được hỗ trợ sớm nhất.
+            </p>
+        </div>
+
+
+    </div>
+        }
+
+    </div>
+
+</body>
+</html>

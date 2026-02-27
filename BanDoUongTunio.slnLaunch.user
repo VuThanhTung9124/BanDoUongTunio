@@ -1,0 +1,15 @@
+[
+  {
+    "Name": "New Profile",
+    "Projects": [
+      {
+        "Path": "BanDoUongTunio\\BanDoUongTunio.csproj",
+        "Action": "Start"
+      },
+      {
+        "Path": "BanDoUong_User\\BanDoUong_User.csproj",
+        "Action": "Start"
+      }
+    ]
+  }
+]

@@ -1,0 +1,125 @@
+﻿@model IEnumerable<BanDoUongTunio.Models.TOPPING>
+
+@{
+    ViewBag.Title = "Quản lý topping";
+    int stt = 1;
+}
+
+<style>
+    .page-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 24px;
+    }
+
+    .page-title {
+        font-size: 26px; /* to hơn */
+        font-weight: 700;
+        color: #111827;
+    }
+
+    .btn-add {
+        background: #2563eb;
+        color: #fff;
+        padding: 12px 20px; /* to hơn */
+        border-radius: 999px;
+        font-weight: 600;
+        font-size: 15px;
+        text-decoration: none;
+    }
+
+        .btn-add:hover {
+            background: #1d4ed8;
+            color: #fff;
+        }
+
+    .card-table {
+        background: #fff;
+        border-radius: 16px;
+        padding: 24px;
+        box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+    }
+
+    table {
+        width: 100%;
+        border-collapse: collapse;
+    }
+
+    thead {
+        background: #f9fafb;
+    }
+
+    th {
+        padding: 16px; /* dãn hơn */
+        text-align: left;
+        font-size: 17px; /* chữ to hơn */
+        font-weight: 700;
+        color: #374151;
+    }
+
+    td {
+        padding: 18px 16px; /* dãn hàng */
+        font-size: 16px; /* chữ to hơn */
+        color: #374151;
+        border-top: 1px solid #e5e7eb;
+        vertical-align: middle;
+        line-height: 1.6;
+    }
+
+    tr:hover {
+        background: #f9fafb;
+    }
+
+    .action-buttons a {
+        margin-right: 14px;
+        font-weight: 600;
+        font-size: 15px;
+        text-decoration: none;
+    }
+
+    .btn-edit {
+        color: #2563eb;
+    }
+
+    .btn-delete {
+        color: #ef4444;
+    }
+</style>
+
+<!-- HEADER -->
+<div class="page-header">
+    <div class="page-title">Quản lý topping</div>
+    <a href="@Url.Action("Create")" class="btn-add">
+        + Thêm topping
+    </a>
+</div>
+
+<!-- TABLE -->
+<div class="card-table">
+    <table>
+        <thead>
+            <tr>
+                <th>STT</th>
+                <th>Tên topping</th>
+                <th>Giá</th>
+                <th style="width: 180px;">Thao tác</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>@stt</td>
+                    <td><b>@item.ten_topping</b></td>
+                    <td>@String.Format("{0:N0} VNĐ", item.gia)</td>
+                    <td class="action-buttons">
+                        <a href="@Url.Action("Edit", new { id = item.id })" class="btn-edit">Sửa</a>
+                        <a href="@Url.Action("Delete", new { id = item.id })" class="btn-delete">Xóa</a>
+                    </td>
+                </tr>
+                stt++;
+            }
+        </tbody>
+    </table>
+</div>

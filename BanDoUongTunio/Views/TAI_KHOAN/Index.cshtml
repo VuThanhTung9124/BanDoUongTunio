@@ -1,0 +1,378 @@
+﻿@*@model IEnumerable<BanDoUongTunio.Models.TAI_KHOAN>*@
+@model PagedList.IPagedList<BanDoUongTunio.Models.TAI_KHOAN>
+@using PagedList.Mvc
+
+
+@{
+    ViewBag.Title = "Quản lý tài khoản";
+
+}
+
+<style>
+    .page-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 24px;
+    }
+
+    .page-title {
+        font-size: 26px;
+        font-weight: 700;
+        color: #111827;
+    }
+
+    .btn-add {
+        background: #2563eb;
+        color: #fff;
+        padding: 12px 20px;
+        border-radius: 999px;
+        font-weight: 600;
+        font-size: 15px;
+        text-decoration: none;
+    }
+
+        .btn-add:hover {
+            background: #1d4ed8;
+            color: #fff;
+        }
+
+    .card-table {
+        background: #fff;
+        border-radius: 16px;
+        padding: 24px;
+        box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+    }
+
+    table {
+        width: 100%;
+        border-collapse: collapse;
+    }
+
+    thead {
+        background: #f9fafb;
+    }
+
+    th {
+        padding: 16px;
+        text-align: left;
+        font-size: 17px;
+        font-weight: 700;
+        color: #374151;
+    }
+
+    td {
+        padding: 18px 16px;
+        font-size: 16px;
+        color: #374151;
+        border-top: 1px solid #e5e7eb;
+        vertical-align: middle;
+        line-height: 1.6;
+    }
+
+    tr:hover {
+        background: #f9fafb;
+    }
+
+    .action-buttons a {
+        margin-right: 14px;
+        font-weight: 600;
+        font-size: 15px;
+        text-decoration: none;
+    }
+
+    .btn-edit {
+        color: #2563eb;
+    }
+
+    .btn-delete {
+        color: #ef4444;
+    }
+
+    .text-center {
+        text-align: center;
+    }
+
+    .page-header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 16px;
+        margin-bottom: 24px;
+    }
+
+    .page-title {
+        font-size: 26px;
+        font-weight: 700;
+        color: #111827;
+        white-space: nowrap;
+    }
+
+    /* search box trong header */
+    .header-search {
+        display: flex;
+        gap: 10px;
+    }
+
+        .header-search input {
+            padding: 10px 14px;
+            width: 280px;
+            border-radius: 10px;
+            border: 1px solid #e5e7eb;
+            font-size: 14px;
+        }
+
+        .header-search button {
+            padding: 10px 18px;
+            border-radius: 10px;
+            background: #2563eb;
+            color: #fff;
+            border: none;
+            font-weight: 600;
+            cursor: pointer;
+        }
+
+            .header-search button:hover {
+                background: #1d4ed8;
+            }
+
+    /* table card */
+    .card-table {
+        background: #fff;
+        border-radius: 16px;
+        padding: 24px;
+        box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+    }
+
+    table {
+        width: 100%;
+        border-collapse: collapse;
+    }
+
+    thead {
+        background: #f9fafb;
+    }
+
+    th {
+        padding: 16px;
+        font-size: 16px;
+        font-weight: 700;
+        color: #374151;
+    }
+
+    td {
+        padding: 16px;
+        font-size: 15px;
+        color: #374151;
+        border-top: 1px solid #e5e7eb;
+    }
+
+    tr:hover {
+        background: #f9fafb;
+    }
+
+    .text-center {
+        text-align: center;
+    }
+
+    .action-buttons a {
+        font-weight: 600;
+        text-decoration: none;
+    }
+
+    .btn-delete {
+        color: #ef4444;
+    }
+
+    /* PAGINATION */
+    .pagination-fixed {
+        position: fixed;
+        bottom: 20px;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 1000;
+    }
+
+    .pagination {
+        display: flex;
+        gap: 6px;
+        background: #ffffff;
+        padding: 10px 16px;
+        border-radius: 16px;
+        box-shadow: 0 8px 25px rgba(0,0,0,0.12);
+    }
+
+    /* PAGINATION TOP */
+    .pagination-top {
+        display: flex;
+        justify-content: center;
+        margin: 24px 0;
+    }
+
+        .pagination-top .pagination {
+            display: flex;
+            gap: 8px;
+            background: #ffffff;
+            padding: 10px 16px;
+            border-radius: 16px;
+            box-shadow: 0 8px 25px rgba(0,0,0,0.12);
+            list-style: none;
+        }
+
+            /* nút */
+            .pagination-top .pagination li a,
+            .pagination-top .pagination li span {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                min-width: 40px;
+                height: 40px;
+                padding: 0 14px;
+                border-radius: 999px;
+                border: 1px solid #e5e7eb;
+                background: #fff;
+                color: #374151;
+                font-weight: 600;
+                text-decoration: none;
+                transition: all 0.2s ease;
+            }
+
+                /* hover */
+                .pagination-top .pagination li a:hover {
+                    background: #2563eb;
+                    color: #fff;
+                    border-color: #2563eb;
+                }
+
+            /* active */
+            .pagination-top .pagination li.active span {
+                background: #2563eb;
+                color: #fff;
+                border-color: #2563eb;
+                box-shadow: 0 6px 18px rgba(37,99,235,0.35);
+            }
+
+            /* disabled */
+            .pagination-top .pagination li.disabled a {
+                color: #9ca3af;
+                pointer-events: none;
+                background: #f3f4f6;
+            }
+
+</style>
+
+
+<div class="page-header">
+    <div class="page-title">Quản lý tài khoản</div>
+
+    @using (Html.BeginForm("Index", "TAI_KHOAN", FormMethod.Get))
+    {
+        <div class="header-search">
+            <input type="text"
+                   name="searchTK"
+                   value="@ViewBag.SearchTK"
+                   placeholder="Tìm theo email hoặc SĐT..." />
+            <button type="submit">Tìm kiếm</button>
+        </div>
+    }
+</div>
+
+<br />
+@{
+    int currentPage = Model.PageNumber;
+    int totalPage = Model.PageCount;
+
+    int blockStart;
+
+    if (currentPage <= 2)
+    {
+        blockStart = 1;
+    }
+    else
+    {
+        blockStart = ((currentPage - 1) / 2) * 2 + 1;
+    }
+
+    int blockEnd = Math.Min(blockStart + 2, totalPage);
+}
+<div class="pagination-top">
+
+    <ul class="pagination">
+
+        <!-- ⏮ ĐẦU -->
+        <li class="@(currentPage == 1 ? "disabled" : "")">
+            <a href="@Url.Action("Index", new {
+                page = 1,
+                searchSP = ViewBag.SearchSP,
+                sortPrice = ViewBag.SortPrice
+            })">Đầu</a>
+        </li>
+
+        <!-- 🔢 3 NÚT GIỮA -->
+        @for (int i = blockStart; i <= blockEnd; i++)
+        {
+            if (i == currentPage)
+            {
+                <li class="active">
+                    <span>@i</span>
+                </li>
+            }
+            else
+            {
+                <li>
+                    <a href="@Url.Action("Index", new {
+                page = i,
+                searchSP = ViewBag.SearchSP,
+                sortPrice = ViewBag.SortPrice
+            })">@i</a>
+        </li>
+    }
+}
+
+
+        <!-- ⏭ CUỐI -->
+        <li class="@(currentPage == totalPage ? "disabled" : "")">
+            <a href="@Url.Action("Index", new {
+                page = totalPage,
+                searchSP = ViewBag.SearchSP,
+                sortPrice = ViewBag.SortPrice
+            })">Cuối</a>
+        </li>
+
+    </ul>
+</div>
+
+
+<!-- TABLE -->
+<div class="card-table">
+    <table>
+        <thead>
+            <tr>
+                <th style="width:70px;" class="text-center">STT</th>
+                <th>Họ tên</th>
+                <th>Email</th>
+                <th>Số điện thoại</th>
+                <th style="width:180px;" class="text-center">Thao tác</th>
+            </tr>
+        </thead>
+        <tbody>
+            @{
+                int stt = (Model.PageNumber - 1) * Model.PageSize + 1;
+            }
+
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td class="text-center">@stt</td>
+                    <td>@item.ho_ten</td>
+                    <td>@item.email</td>
+                    <td>@item.so_dien_thoai</td>
+                    <td class="action-buttons text-center">
+                        <a href="@Url.Action("Delete", new { id = item.id })" class="btn-delete">Xóa</a>
+                    </td>
+                </tr>
+                stt++;
+            }
+        </tbody>
+    </table>
+</div>

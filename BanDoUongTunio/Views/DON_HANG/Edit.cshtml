@@ -1,0 +1,180 @@
+﻿@model BanDoUongTunio.Models.DON_HANG
+
+@{
+    ViewBag.Title = "Chỉnh sửa thông tin giao hàng";
+}
+
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="utf-8" />
+    <title>@ViewBag.Title</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-100 py-10">
+
+    <div class="max-w-5xl mx-auto space-y-8 px-4">
+
+        <!-- HEADER -->
+        <div class="flex justify-between items-center">
+            <h1 class="text-2xl font-bold text-gray-800">
+                Chỉnh sửa thông tin giao hàng
+            </h1>
+
+            <a href="@Url.Action("Details", new { id = Model.id })"
+               class="px-4 py-2 bg-gray-800 text-white rounded-md text-sm hover:bg-black transition">
+                ← Quay lại chi tiết
+            </a>
+        </div>
+
+        @using (Html.BeginForm())
+        {
+            @Html.AntiForgeryToken()
+            @Html.HiddenFor(m => m.id)
+
+            <!-- KHUNG ĐƠN HÀNG -->
+            <div class="bg-white rounded-lg shadow p-6 space-y-6">
+
+                <!-- TIÊU ĐỀ -->
+                <div class="flex justify-between items-center border-b pb-3">
+                    <h2 class="text-lg font-bold text-gray-800">
+                        Đơn hàng
+                        <span class="ml-2 px-2 py-1 text-xs rounded bg-gray-200">
+                            @($"DH{Model.id}{Model.tai_khoan_id}")
+                        </span>
+                    </h2>
+
+                  
+                </div>
+
+                <!-- THÔNG TIN GIAO HÀNG (EDIT) -->
+                <div class="grid grid-cols-2 gap-6 text-sm">
+
+                    <div class="space-y-4">
+                        <div>
+                            <label class="font-semibold block mb-1">Người nhận</label>
+                            <input name="nguoi_nhan"
+                                   value="@(Model.DIA_CHI != null ? Model.DIA_CHI.nguoi_nhan : "")"
+                                   class="w-full border rounded px-3 py-2" />
+
+                        </div>
+
+                        <div>
+                            <label class="font-semibold block mb-1">Số điện thoại</label>
+                            <input name="so_dien_thoai"
+                                   value="@(Model.DIA_CHI != null ? Model.DIA_CHI.so_dien_thoai : "")"
+                                   class="w-full border rounded px-3 py-2" />
+                        </div>
+
+
+                        <div>
+                            <label class="font-semibold block mb-1">Địa chỉ giao hàng</label>
+                            <textarea name="dia_chi_cu_the"
+                                      class="w-full border rounded px-3 py-2">
+@(Model.DIA_CHI != null ? Model.DIA_CHI.dia_chi_cu_the : "")
+</textarea>
+
+                        </div>
+                    </div>
+
+                    <div class="space-y-4">
+                        <div>
+                            <label class="font-semibold block mb-1">Ghi chú</label>
+                            <textarea name="ghi_chu"
+                                      class="w-full border rounded px-3 py-2">
+@(Model.ghi_chu ?? "")
+</textarea>
+
+                        </div>
+
+                        <p>
+                            <span class="font-semibold">Thanh toán:</span>
+                            @(Model.THANH_TOAN.Any()
+                            ? Model.THANH_TOAN.First().phuong_thuc
+                            : "Chưa thanh toán")
+                        </p>
+
+                        <p>
+                            <span class="font-semibold">Trạng thái:</span>
+                            @(Model.THANH_TOAN.Any()
+                            ? Model.THANH_TOAN.First().trang_thai
+                            : "—")
+                        </p>
+                    </div>
+
+                </div>
+
+                <!-- BẢNG SẢN PHẨM (CHỈ XEM) -->
+                <div class="overflow-x-auto">
+                    <table class="w-full border border-gray-300 text-sm">
+                        <thead class="bg-gray-100">
+                            <tr>
+                                <th class="border px-3 py-2 text-left">Tên sản phẩm</th>
+                                <th class="border px-3 py-2 text-center">Size</th>
+                                <th class="border px-3 py-2 text-center">SL</th>
+                                <th class="border px-3 py-2 text-left">Topping</th>
+                                <th class="border px-3 py-2 text-right">Giá</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach (var ct in Model.CHI_TIET_DON_HANG)
+                            {
+                                <tr>
+                                    <td class="border px-3 py-2">
+                                        @(ct.SAN_PHAM != null ? ct.SAN_PHAM.ten_san_pham : "")
+                                    </td>
+                                    <td class="border px-3 py-2 text-center">
+                                        @(ct.SIZE != null ? ct.SIZE.ten_size : "")
+                                    </td>
+                                    <td class="border px-3 py-2 text-center">
+                                        @ct.so_luong
+                                    </td>
+                                    <td class="border px-3 py-2">
+                                        @if (ct.CHI_TIET_DON_HANG_TOPPING != null && ct.CHI_TIET_DON_HANG_TOPPING.Any())
+                                        {
+                                            <ul class="list-disc pl-4">
+                                                @foreach (var t in ct.CHI_TIET_DON_HANG_TOPPING)
+                                                {
+                                                    <li>
+                                                        @(t.TOPPING != null ? t.TOPPING.ten_topping : "")
+                                                    </li>
+                                                }
+                                            </ul>
+                                        }
+                                        else
+                                        {
+                                            <span class="text-gray-400">Không có</span>
+                                        }
+                                    </td>
+
+                                    <td class="border px-3 py-2 text-right">
+                                        @string.Format("{0:N0}đ", ct.don_gia)
+                                    </td>
+                                </tr>
+                            }
+                        </tbody>
+                    </table>
+                </div>
+
+                <!-- TỔNG TIỀN -->
+                <div class="flex justify-between items-center pt-4 border-t">
+                    <span class="text-lg font-semibold">
+                        Tổng tiền:
+                        <span class="text-red-600 font-bold">
+                            @string.Format("{0:N0}đ", Model.tong_tien)
+                        </span>
+                    </span>
+
+                    <button type="submit"
+                            class="px-6 py-2 bg-blue-600 text-white rounded hover:bg-blue-700">
+                        💾 Lưu thay đổi
+                    </button>
+                </div>
+
+            </div>
+        }
+    </div>
+
+</body>
+</html>

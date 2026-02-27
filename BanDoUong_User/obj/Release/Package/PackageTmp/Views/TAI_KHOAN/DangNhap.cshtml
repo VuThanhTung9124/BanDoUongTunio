@@ -1,0 +1,104 @@
+﻿@{
+    ViewBag.Title = "Đăng nhập";
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Đăng nhập</title>
+
+    <!-- Tailwind -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+
+<body class="bg-gray-100 min-h-screen flex items-center justify-center">
+
+    <div class="w-full max-w-md bg-white rounded-2xl shadow-lg overflow-hidden">
+
+        <!-- HEADER -->
+        <div class="bg-blue-600 text-white text-center py-8 px-6">
+            <div class="w-16 h-16 bg-white text-blue-600
+                        rounded-full flex items-center justify-center
+                        mx-auto mb-4 shadow">
+                <i class="fa-solid fa-mug-hot text-2xl"></i>
+            </div>
+
+            <h2 class="text-xl font-semibold">
+                Đăng nhập để đặt đồ uống
+            </h2>
+
+            @if (!string.IsNullOrEmpty(ViewBag.ThongBaoTaiKhoan as string))
+            {
+                <p class="mt-2 text-sm text-yellow-200">
+                    @ViewBag.ThongBaoTaiKhoan
+                </p>
+            }
+        </div>
+
+        <!-- BODY -->
+        <form action="/TAI_KHOAN/DangNhap" method="post" class="p-6 space-y-5">
+
+            <!-- USERNAME -->
+            <div>
+                <label class="text-sm font-semibold text-gray-600">
+                    Tên đăng nhập
+                </label>
+
+                <div class="mt-1 flex items-center border rounded-xl px-3 py-2">
+                    <i class="fa-solid fa-user text-gray-400 mr-2"></i>
+                    <input type="text"
+                           name="taiKhoan"
+                           placeholder="Nhập tên đăng nhập"
+                           class="w-full outline-none text-sm" />
+                </div>
+            </div>
+
+            <!-- PASSWORD -->
+            <div>
+                <label class="text-sm font-semibold text-gray-600">
+                    Mật khẩu
+                </label>
+
+                <div class="mt-1 flex items-center border rounded-xl px-3 py-2">
+                    <i class="fa-solid fa-lock text-gray-400 mr-2"></i>
+                    <input type="password"
+                           name="matKhau"
+                           placeholder="Nhập mật khẩu"
+                           class="w-full outline-none text-sm" />
+                </div>
+            </div>
+
+            <!-- BUTTON -->
+            <button type="submit"
+                    class="w-full bg-blue-600 hover:bg-blue-700
+                           text-white py-3 rounded-full
+                           font-semibold text-sm flex items-center
+                           justify-center gap-2">
+                <i class="fa-solid fa-right-to-bracket"></i>
+                Đăng nhập
+            </button>
+
+            <!-- REGISTER -->
+            <a href="@Url.Action("DangKy", "TAI_KHOAN")"
+               class="block text-center border border-blue-600
+                      text-blue-600 py-3 rounded-full
+                      font-semibold text-sm hover:bg-blue-50">
+                Tạo tài khoản mới
+            </a>
+
+            <!-- FORGOT -->
+            <div class="text-center text-sm text-gray-500 hover:underline cursor-pointer">
+                Quên mật khẩu?
+            </div>
+
+        </form>
+    </div>
+
+</body>
+</html>

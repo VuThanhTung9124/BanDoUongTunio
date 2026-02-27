@@ -1,0 +1,267 @@
+﻿@model IEnumerable<BanDoUongTunio.Models.DON_HANG>
+
+@{
+    ViewBag.Title = "Danh sách đơn hàng";
+}
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <div class="bg-gray-100 p-6">
+
+        <h1 class="text-2xl font-bold mb-6">Danh sách đơn hàng</h1>
+        <div class="flex gap-3 mb-5">
+
+            <a href="@Url.Action("Index")"
+               class="px-4 py-2 rounded text-sm font-medium
+       @(string.IsNullOrEmpty(ViewBag.TrangThai)
+           ? "bg-blue-600 text-white"
+           : "bg-gray-200")">
+                Tất cả
+            </a>
+
+            <a href="@Url.Action("Index", new { trangThai = "Chờ xác nhận" })"
+               class="px-4 py-2 rounded text-sm font-medium
+       @(ViewBag.TrangThai == "Chờ xác nhận"
+           ? "bg-yellow-500 text-white"
+           : "bg-gray-200")">
+                Chờ xác nhận
+            </a>
+
+            <a href="@Url.Action("Index", new { trangThai = "Đã xác nhận" })"
+               class="px-4 py-2 rounded text-sm font-medium
+       @(ViewBag.TrangThai == "Đã xác nhận"
+           ? "bg-green-600 text-white"
+           : "bg-gray-200")">
+                Đã xác nhận
+            </a>
+
+            <a href="@Url.Action("Index", new { trangThai = "Đã hủy" })"
+               class="px-4 py-2 rounded text-sm font-medium
+       @(ViewBag.TrangThai == "Đã hủy"
+           ? "bg-red-600 text-white"
+           : "bg-gray-200")">
+                Đã hủy
+            </a>
+
+        </div>
+
+        <form method="get" class="mb-4 flex flex-wrap gap-3 items-center">
+
+            <!-- TÌM KIẾM -->
+            <input type="text"
+                   name="searchMaDon"
+                   value="@Request.QueryString["searchMaDon"]"
+                   placeholder="Nhập mã đơn hàng..."
+                   class="border rounded px-3 py-2 text-sm w-56" />
+
+            <button type="submit"
+                    class="bg-blue-500 text-white px-4 py-2 rounded text-sm">
+                Tìm
+            </button>
+
+            <!-- SẮP XẾP (CHỌN LÀ CHẠY LUÔN) -->
+            <select name="sortGia"
+                    onchange="this.form.submit()"
+                    class="border rounded px-3 py-2 text-sm">
+
+                <option value="">-- Sắp xếp theo giá --</option>
+
+                <option value="gia_asc"
+                        @(ViewBag.SortGia == "gia_asc" ? "selected" : "")>
+                    Giá tăng dần
+                </option>
+
+                <option value="gia_desc"
+                        @(ViewBag.SortGia == "gia_desc" ? "selected" : "")>
+                    Giá giảm dần
+                </option>
+            </select>
+
+            <!-- RESET -->
+            @*<a href="@Url.Action("Index")"
+               class="bg-gray-300 px-4 py-2 rounded text-sm">
+                Reset
+            </a>*@
+
+        </form>
+
+        @if (ViewBag.TotalPages > 1)
+        {
+            <div class="flex justify-center mt-6 space-x-1">
+
+                <!-- PREV -->
+                @if (ViewBag.CurrentPage > 1)
+                {
+                    <a href="@Url.Action("Index", new {
+                page = ViewBag.CurrentPage - 1,
+                searchMaDon = Request.QueryString["searchMaDon"],
+                sortGia = ViewBag.SortGia,
+                trangThai = ViewBag.TrangThai
+            })"
+                       class="px-3 py-1 border rounded bg-white">
+                        «
+                    </a>
+                }
+
+                <!-- PAGE NUMBER -->
+                @for (int i = 1; i <= ViewBag.TotalPages; i++)
+                {
+                    <a href="@Url.Action("Index", new {
+                page = i,
+                searchMaDon = Request.QueryString["searchMaDon"],
+                sortGia = ViewBag.SortGia,
+                trangThai = ViewBag.TrangThai
+            })"
+                       class="px-3 py-1 border rounded
+               @(i == ViewBag.CurrentPage ? "bg-blue-500 text-white" : "bg-white")">
+                        @i
+                    </a>
+                }
+
+                <!-- NEXT -->
+                @if (ViewBag.CurrentPage < ViewBag.TotalPages)
+                {
+                    <a href="@Url.Action("Index", new {
+                page = ViewBag.CurrentPage + 1,
+                searchMaDon = Request.QueryString["searchMaDon"],
+                sortGia = ViewBag.SortGia,
+                trangThai = ViewBag.TrangThai
+            })"
+                       class="px-3 py-1 border rounded bg-white">
+                        »
+                    </a>
+                }
+
+            </div>
+        }
+
+
+
+        <div class="bg-white border rounded shadow overflow-x-auto">
+            <table class="w-full border-collapse text-sm">
+                <thead class="bg-gray-50">
+                    <tr class="border-b">
+                        <th class="border px-3 py-2 text-center w-12">STT</th>
+
+                        <th class="border px-3 py-2 text-left">Mã đơn</th>
+                        <th class="border px-3 py-2 text-left">Người nhận</th>
+                        <th class="border px-3 py-2 text-left">SĐT</th>
+                        <th class="border px-3 py-2 text-right">Tổng tiền</th>
+                        <th class="border px-3 py-2 text-left">Thanh toán</th>
+                        <th class="border px-3 py-2 text-left">Trạng thái</th>
+
+                        <th class="border px-3 py-2 text-center">Thao tác</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @{
+                        int stt = (ViewBag.CurrentPage - 1) * 10;
+                    }
+
+                    @foreach (var item in Model)
+                    {
+                        stt++;
+                        <tr class="hover:bg-gray-50 border-b">
+                            <!-- STT -->
+                            <td class="border px-3 py-2 text-center font-semibold text-gray-600">
+                                @stt
+                            </td>
+                            <!-- Mã đơn -->
+
+                            <td class="border px-3 py-2 font-medium">
+                                @($"DH{item.id}{item.tai_khoan_id}")
+                            </td>
+
+                            <!-- Người nhận -->
+                            <td class="border px-3 py-2">
+                                @(item.DIA_CHI != null ? item.DIA_CHI.nguoi_nhan : "Chưa có")
+                            </td>
+
+                            <!-- SĐT -->
+                            <td class="border px-3 py-2">
+                                @(item.DIA_CHI != null ? item.DIA_CHI.so_dien_thoai : "—")
+                            </td>
+
+                            <!-- Tổng tiền -->
+                            <td class="border px-3 py-2 text-right font-semibold">
+                                @String.Format("{0:N0}đ", item.tong_tien)
+                            </td>
+
+                            <!-- Phương thức thanh toán -->
+                            <td class="border px-3 py-2">
+                                @(item.THANH_TOAN != null
+                                ? item.THANH_TOAN.FirstOrDefault().phuong_thuc
+                                : "Chưa chọn")
+                            </td>
+
+                            <td class="border px-3 py-2">
+                                <select class="border rounded px-2 py-1 text-sm"
+                                        onchange="updateTrangThai(@item.id, this.value)">
+                                    <option value="Chờ xác nhận"
+                                            @(item.THANH_TOAN?.FirstOrDefault()?.trang_thai == "Chờ xác nhận" ? "selected" : "")>
+                                        Chờ xác nhận
+                                    </option>
+
+                                    <option value="Đã xác nhận"
+                                            @(item.THANH_TOAN?.FirstOrDefault()?.trang_thai == "Đã xác nhận" ? "selected" : "")>
+                                        Đã xác nhận
+                                    </option>
+
+                                    <option value="Đã hủy"
+                                            @(item.THANH_TOAN?.FirstOrDefault()?.trang_thai == "Đã hủy" ? "selected" : "")>
+                                        Đã hủy
+                                    </option>
+                                </select>
+                            </td>
+
+
+
+                            <!-- Thao tác -->
+                            <td class="border px-3 py-2 text-center space-x-1">
+                                <a href="@Url.Action("Details", new { id = item.id })"
+                                   class="inline-block bg-blue-500 text-white px-3 py-1 rounded">
+                                    Xem
+                                </a>
+                                <a href="@Url.Action("Edit", new { id = item.id })"
+                                   class="inline-block bg-green-500 text-white px-3 py-1 rounded">
+                                    Sửa
+                                </a>
+                                <a href="@Url.Action("Delete", new { id = item.id })"
+                                   class="inline-block bg-red-500 text-white px-3 py-1 rounded">
+                                    Xóa
+                                </a>
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+
+
+        </div>
+        </div>
+
+        <script>
+            function updateTrangThai(donHangId, trangThai) {
+                fetch('/DON_HANG/UpdateTrangThai', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                        'RequestVerificationToken':
+                            document.querySelector('input[name="__RequestVerificationToken"]')?.value
+                    },
+                    body: JSON.stringify({
+                        donHangId: donHangId,
+                        trangThai: trangThai
+                    })
+                })
+                    .then(res => res.json())
+                    .then(data => {
+                        if (!data.success) {
+                            alert('Cập nhật trạng thái thất bại');
+                        }
+                    })
+                    .catch(() => alert('Lỗi kết nối server'));
+            }
+        </script>
+
+

@@ -1,0 +1,72 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.13.35825.156
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BanDoUongTunio", "BanDoUongTunio\BanDoUongTunio.csproj", "{D819550F-F6F7-4C88-A4C7-BA7DBC1CC9A0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BanDoUong_User", "BanDoUong_User\BanDoUong_User.csproj", "{07EE7CDE-77FA-40CF-B47D-66CCFF3289BA}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Image", "Image", "{02EA681E-C7D8-13C7-8484-4AC65E1B71E8}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Image_DoUong", "Image_DoUong", "{802EE37F-0F23-4999-A9C4-8C495DB36AC5}"
+	ProjectSection(SolutionItems) = preProject
+		BanDoUongTunio\Image\Image_DoUong\bac_xiu.jpg = BanDoUongTunio\Image\Image_DoUong\bac_xiu.jpg
+		BanDoUongTunio\Image\Image_DoUong\cappuccino.jpg = BanDoUongTunio\Image\Image_DoUong\cappuccino.jpg
+		BanDoUongTunio\Image\Image_DoUong\ca_phe_da_xay.jpg = BanDoUongTunio\Image\Image_DoUong\ca_phe_da_xay.jpg
+		BanDoUongTunio\Image\Image_DoUong\ca_phe_den.jpg = BanDoUongTunio\Image\Image_DoUong\ca_phe_den.jpg
+		BanDoUongTunio\Image\Image_DoUong\ca_phe_den_da.jpg = BanDoUongTunio\Image\Image_DoUong\ca_phe_den_da.jpg
+		BanDoUongTunio\Image\Image_DoUong\ca_phe_sua.jpg = BanDoUongTunio\Image\Image_DoUong\ca_phe_sua.jpg
+		BanDoUongTunio\Image\Image_DoUong\che_buoi.jpg = BanDoUongTunio\Image\Image_DoUong\che_buoi.jpg
+		BanDoUongTunio\Image\Image_DoUong\che_dau_do.jpg = BanDoUongTunio\Image\Image_DoUong\che_dau_do.jpg
+		BanDoUongTunio\Image\Image_DoUong\che_khuc_bach.jpg = BanDoUongTunio\Image\Image_DoUong\che_khuc_bach.jpg
+		BanDoUongTunio\Image\Image_DoUong\che_thap_cam.jpg = BanDoUongTunio\Image\Image_DoUong\che_thap_cam.jpg
+		BanDoUongTunio\Image\Image_DoUong\nuoc_cam.jpg = BanDoUongTunio\Image\Image_DoUong\nuoc_cam.jpg
+		BanDoUongTunio\Image\Image_DoUong\nuoc_cam_ep.jpg = BanDoUongTunio\Image\Image_DoUong\nuoc_cam_ep.jpg
+		BanDoUongTunio\Image\Image_DoUong\nuoc_dua_hau.jpg = BanDoUongTunio\Image\Image_DoUong\nuoc_dua_hau.jpg
+		BanDoUongTunio\Image\Image_DoUong\nuoc_ep_dua_hau.jpg = BanDoUongTunio\Image\Image_DoUong\nuoc_ep_dua_hau.jpg
+		BanDoUongTunio\Image\Image_DoUong\nuoc_ep_tao.jpg = BanDoUongTunio\Image\Image_DoUong\nuoc_ep_tao.jpg
+		BanDoUongTunio\Image\Image_DoUong\sinh_to_bo.jpg = BanDoUongTunio\Image\Image_DoUong\sinh_to_bo.jpg
+		BanDoUongTunio\Image\Image_DoUong\sinh_to_xoai.jpg = BanDoUongTunio\Image\Image_DoUong\sinh_to_xoai.jpg
+		BanDoUongTunio\Image\Image_DoUong\tra_chanh.jpg = BanDoUongTunio\Image\Image_DoUong\tra_chanh.jpg
+		BanDoUongTunio\Image\Image_DoUong\tra_dao.jpg = BanDoUongTunio\Image\Image_DoUong\tra_dao.jpg
+		BanDoUongTunio\Image\Image_DoUong\tra_dao_cam_sa.jpg = BanDoUongTunio\Image\Image_DoUong\tra_dao_cam_sa.jpg
+		BanDoUongTunio\Image\Image_DoUong\tra_gung_mat_ong.jpg = BanDoUongTunio\Image\Image_DoUong\tra_gung_mat_ong.jpg
+		BanDoUongTunio\Image\Image_DoUong\tra_hoa_qua_nhiet_doi.jpg = BanDoUongTunio\Image\Image_DoUong\tra_hoa_qua_nhiet_doi.jpg
+		BanDoUongTunio\Image\Image_DoUong\tra_sa_tac.jpg = BanDoUongTunio\Image\Image_DoUong\tra_sa_tac.jpg
+		BanDoUongTunio\Image\Image_DoUong\tra_sua_dau.jpg = BanDoUongTunio\Image\Image_DoUong\tra_sua_dau.jpg
+		BanDoUongTunio\Image\Image_DoUong\tra_sua_matcha.jpg = BanDoUongTunio\Image\Image_DoUong\tra_sua_matcha.jpg
+		BanDoUongTunio\Image\Image_DoUong\tra_sua_matcha_dau_do.jpg = BanDoUongTunio\Image\Image_DoUong\tra_sua_matcha_dau_do.jpg
+		BanDoUongTunio\Image\Image_DoUong\tra_sua_oreo.jpg = BanDoUongTunio\Image\Image_DoUong\tra_sua_oreo.jpg
+		BanDoUongTunio\Image\Image_DoUong\tra_sua_socola.jpg = BanDoUongTunio\Image\Image_DoUong\tra_sua_socola.jpg
+		BanDoUongTunio\Image\Image_DoUong\tra_sua_thai_xanh.jpg = BanDoUongTunio\Image\Image_DoUong\tra_sua_thai_xanh.jpg
+		BanDoUongTunio\Image\Image_DoUong\tra_sua_tran_chau.jpg = BanDoUongTunio\Image\Image_DoUong\tra_sua_tran_chau.jpg
+		BanDoUongTunio\Image\Image_DoUong\tra_tra_sua_caramel.jpg = BanDoUongTunio\Image\Image_DoUong\tra_tra_sua_caramel.jpg
+		BanDoUongTunio\Image\Image_DoUong\tra_vai.jpg = BanDoUongTunio\Image\Image_DoUong\tra_vai.jpg
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D819550F-F6F7-4C88-A4C7-BA7DBC1CC9A0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D819550F-F6F7-4C88-A4C7-BA7DBC1CC9A0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D819550F-F6F7-4C88-A4C7-BA7DBC1CC9A0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D819550F-F6F7-4C88-A4C7-BA7DBC1CC9A0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{07EE7CDE-77FA-40CF-B47D-66CCFF3289BA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{07EE7CDE-77FA-40CF-B47D-66CCFF3289BA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{07EE7CDE-77FA-40CF-B47D-66CCFF3289BA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{07EE7CDE-77FA-40CF-B47D-66CCFF3289BA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{802EE37F-0F23-4999-A9C4-8C495DB36AC5} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {23A5C73F-FAE9-4EF7-AF42-DE7ABE6F08BF}
+	EndGlobalSection
+EndGlobal
