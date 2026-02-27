@@ -9,6 +9,10 @@ Em xin chân thành cảm ơn!
 
 ---
 
+##  Video về dự án
+- Video 1 (Tổng quan về dự án): https://drive.google.com/file/d/1UsXw9P-hzYJR4Vcus8ISPih-xLzHWc9v/view?usp=sharing
+- Video 2 (Bổ sung tính năng nâng cao): https://drive.google.com/file/d/1_jUj2SZDdovGG2Wpk7PCzBGsn-87JLOl/view?usp=sharing
+
 ##  Mô tả dự án
 Website bán đồ uống trực tuyến được xây dựng bằng **ASP.NET MVC** kết hợp **Tailwind CSS** với mục tiêu học hỏi cách xây dựng giao diện, kết nối cơ sở dữ liệu và tổ chức mã nguồn trong một ứng dụng web hoàn chỉnh.
 
